@@ -7,6 +7,7 @@
 
 package com.wincomplm.wex.example.config.impl.config;
 
+import com.wincomplm.wex.config.auxs.handlers.LifeCycleStateHandler;
 import com.wincomplm.wex.config.impl.annotations.ConfigOption;
 import com.wincomplm.wex.config.impl.exceptions.WexValidationException;
 import com.wincomplm.wex.config.impl.ifc.IWexConfiguration;
@@ -17,40 +18,120 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.io.OptionalDataException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
 
 /**
- *
- * @author Nassim Bouayad-Agha
+ * And
+ * @author Simon
  */
-@WexComponent(uid = "exa,`ñe-config", description = "Example configuration")
+@WexComponent(uid = "example-config", description = "Example configuration")
 public class ExampleConfiguration implements Externalizable,IWexConfiguration<ExampleConfiguration>, Serializable {
 
-    public static final long serialVersionUID = 1L;
+    public static final long serialVersionUID = 1L; // We need to not fail to serialize, worst case is a reset
 
-    @ConfigOption(category = "String", description = "A simple string", required = false)
-    String exampleString;
+    @ConfigOption(category = "Basic", description = "Simple string", required = false)
+    String exampleString = "bad";
+
+    //Other
+    @ConfigOption(category = "Basic", description = "Boolean",
+            longdesc = "A true/false boolean", required = false)
+    boolean exampleBoolean = false;
+
+    
+    @ConfigOption(category = "Collections", description = "String list",
+            longdesc = "A string list", required = false)
+    List<String> exampleList = new ArrayList();
+    
+    @ConfigOption(category = "Collections", description = "String map",
+            longdesc = "A string map", required = false)
+    Map<String,String> exampleMap = new HashMap();
+    
+    @ConfigOption(category = "Collections", description = "String list with handler",
+            longdesc = "String list with handler", required = false, handler = LifeCycleStateHandler.class)
+    List<String> exampleStateList = new ArrayList();
+
+    public boolean isExampleBoolean() {
+        return exampleBoolean;
+    }
+
+    public void setExampleBoolean(boolean exampleBoolean) {
+        this.exampleBoolean = exampleBoolean;
+    }
+
+    public List<String> getExampleList() {
+        return exampleList;
+    }
+
+    public void setExampleList(List<String> exampleList) {
+        this.exampleList = exampleList;
+    }
+
+    public Map<String, String> getExampleMap() {
+        return exampleMap;
+    }
+
+    public void setExampleMap(Map<String, String> exampleMap) {
+        this.exampleMap = exampleMap;
+    }
+
+    public List<String> getExampleStateList() {
+        return exampleStateList;
+    }
+
+    public void setExampleStateList(List<String> exampleStateList) {
+        this.exampleStateList = exampleStateList;
+    }
+
+    public String getExampleString() {
+        return exampleString;
+    }
+
+    public void setExampleString(String exampleString) {
+        this.exampleString = exampleString;
+    }
 
 
     public void assign(ExampleConfiguration configuration) throws WexValidationException {
-
+        // Can add code here to adjust assignment
+        // for example cross ref the system
     }
         
     @Override
     public void validate() throws WexValidationException {
-
+        // We ccheck the consistency of the data here
+        if (exampleString.equals("bad")) {
+            throw new WexValidationException("exampleString","Please change to something that is not bad!");
+        }
     }
-
-   @Override
+    
+    // These methods must repeat the order
+    // Never take anything away otherwise we break serialization we hide values no longer needed
+    // We add new items at the end 
+    @Override
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeObject(exampleString);
+        out.writeObject(exampleBoolean);
+        out.writeObject(exampleList);
+        out.writeObject(exampleMap);
+        out.writeObject(exampleStateList);
     }//writeExternal
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         try {
             this.exampleString = (String) in.readObject();      
+            this.exampleBoolean = (Boolean) in.readObject();   
+            this.exampleList = (List<String>) in.readObject();   
+            this.exampleMap = (Map<String,String>) in.readObject();   
+            this.exampleStateList = (List<String>) in.readObject();   
+            
         } catch (OptionalDataException ode) {
-            System.out.println("Failed to process config wex-siliconexpert-sync [OK] if post install");
+            System.out.println("Failed to process config [OK] if post install");
         }
     }//readExternal
 

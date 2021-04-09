@@ -19,7 +19,7 @@ public class ExampleMethods {
     
     @WexMethod(name = "string", description = "A simple string test")
     public void string() throws Exception {
-   
+        
     }//string
 
 }
