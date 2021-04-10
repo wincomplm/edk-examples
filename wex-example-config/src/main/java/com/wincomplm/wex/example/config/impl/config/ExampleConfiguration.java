@@ -26,11 +26,11 @@ import java.util.Map;
 
 
 /**
- * And
+ * An example configuration
  * @author Simon
  */
 @WexComponent(uid = "example-config", description = "Example configuration")
-public class ExampleConfiguration implements Externalizable,IWexConfiguration<ExampleConfiguration>, Serializable {
+public class ExampleConfiguration implements IWexConfiguration<ExampleConfiguration>,Externalizable, Serializable {
 
     public static final long serialVersionUID = 1L; // We need to not fail to serialize, worst case is a reset
 

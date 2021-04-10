@@ -6,7 +6,10 @@
  */
 package com.wincomplm.wex.example.config.methods;
 
+
+import com.wincomplm.wex.config.auxs.helpers.WexConfigRegistryHelper;
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
+import com.wincomplm.wex.example.config.impl.config.ExampleConfiguration;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
 
 /**
@@ -16,10 +19,19 @@ import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
 @WexComponent(uid = "methods", description = "Wex Diagnostic Methods")
 public class ExampleMethods {
     
-    
-    @WexMethod(name = "string", description = "A simple string test")
-    public void string() throws Exception {
-        
+    public static ExampleConfiguration config = (ExampleConfiguration) WexConfigRegistryHelper.instance.getConfig();
+
+    @WexMethod(name = "test", description = "Display configuration")
+    public String test() throws Exception {
+        // This is test code but generally rendering HTML server side is not a good practice ;-)
+        final String EOL = "<br>";
+        String result = "";
+        result += "Example String: " + config.getExampleString() + EOL;
+        result += "Example Boolean: " + config.isExampleBoolean()+ EOL;
+        result += "Example List: " + config.getExampleList()+ EOL;
+        result += "Example Map: " + config.getExampleMap()+ EOL;
+        result += "Example State List: " + config.getExampleStateList()+ EOL;
+        return result;
     }//string
 
 }
