@@ -37,7 +37,6 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
     @ConfigOption(category = "Basic", description = "Simple string", required = false)
     String exampleString = "bad";
 
-    //Other
     @ConfigOption(category = "Basic", description = "Boolean",
             longdesc = "A true/false boolean", required = false)
     boolean exampleBoolean = false;
