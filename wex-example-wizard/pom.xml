@@ -13,10 +13,10 @@
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
     <groupId>com.wincomplm</groupId>
-    <artifactId>wex-example-helloworld</artifactId>
+    <artifactId>wex-example-wizard</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
-    <name>wex-example-helloworld</name>
+    <name>wex-example-wizard</name>
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
@@ -29,6 +29,10 @@
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-system</artifactId>
+        </dependency>
+         <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-log</artifactId>
         </dependency>
     </dependencies> 
 </project>
