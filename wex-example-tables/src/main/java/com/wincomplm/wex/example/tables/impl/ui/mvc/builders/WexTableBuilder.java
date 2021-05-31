@@ -42,7 +42,7 @@ public class WexTableBuilder extends AbstractConfigurableTableBuilder {
         table.setSelectable(false);
         table.setConfigurable(false);
         table.setLabel("Title");
-        addColumn(factory, "data", "wex-default-du", "", 20, table);
+        addColumn(factory, "data", "wex-default-du", "Example Data", 200, table);
         logger.trace("<=buildComponentConfig");
         return table;
     }//buildComponentConfig
