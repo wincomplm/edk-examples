@@ -17,7 +17,6 @@ import com.ptc.mvc.components.ComponentConfigFactory;
 import com.ptc.mvc.components.ComponentParams;
 import com.ptc.mvc.components.FindInTableMode;
 import com.ptc.mvc.components.TreeConfig;
-import com.ptc.mvc.components.ds.DataSourceMode;
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.log.api.WexLogger;
 import com.wincomplm.wex.log.base.api.IWexLogger;
