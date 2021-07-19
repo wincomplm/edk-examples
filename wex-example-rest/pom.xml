@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.wincomplm</groupId>
+        <artifactId>wex-parent-private</artifactId>
+        <version>1.11</version>
+    </parent>
+    <groupId>com.wincomplm</groupId>
+    <artifactId>wex-example-rest</artifactId>
+    <properties>   
+        <major>1</major>
+        <minor>0</minor>
+        <beta></beta>
+        <revision>${major}.${minor}b${beta}-${wex.wt}</revision>
+        <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
+    </properties>
+    <version>${revision}</version>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-kernel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-system</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ptc</groupId>
+            <artifactId>windchill-pdmlink</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-log</artifactId>
+        </dependency>  
+         <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wt-framework-commons</artifactId>
+        </dependency> 
+      
+    </dependencies>
+
+	
+</project>
