@@ -1,0 +1,14 @@
+{
+    "functions": [
+        {
+            "name": "HelloWorld",
+            "importName": "HelloWorld",
+            "description": "Hello to the world",
+            "includeInServiceDocument": true,
+            "parameters":[],
+            "returnType": {
+                "type": "String"
+            }
+        }
+    ]
+}
