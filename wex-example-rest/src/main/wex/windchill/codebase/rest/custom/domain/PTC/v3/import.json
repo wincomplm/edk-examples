@@ -3,8 +3,7 @@
         {
             "name": "HelloWorld",
             "importName": "HelloWorld",
-            "description": "Hello to the world",
-            "includeInServiceDocument": true,
+            "description": "Hello to the world",s
             "parameters":[],
             "returnType": {
                 "type": "String"
@@ -14,7 +13,6 @@
             "name": "HelloWex",
             "importName": "HelloWex",
             "description": "Hello to the world from Wex",
-            "includeInServiceDocument": true,
             "parameters":[],
             "returnType": {
                 "type": "String"
