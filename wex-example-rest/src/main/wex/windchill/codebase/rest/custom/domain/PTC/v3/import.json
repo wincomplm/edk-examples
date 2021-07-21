@@ -3,7 +3,7 @@
         {
             "name": "HelloWorld",
             "importName": "HelloWorld",
-            "description": "Hello to the world",s
+            "description": "Hello to the world",
             "parameters":[],
             "returnType": {
                 "type": "String"
