@@ -1,0 +1,470 @@
+-- Listing extra properties --
+cve.check.skip = false
+pluginArtifactPath = C:\Users\simon\.m2\repository\com\wincomplm\wex-obfuscate\1.0\wex-obfuscate-1.0.jar;C:\data\code\wex\build\zkm\ZKM.jar;C:\Users\simon\.m2\repository\org\codehaus\plexus\plexus-utils\1.1\plexus-utils-1.1.jar
+project.build.directory = C:\data\code\GitHub\edk-examples\wex-example-ui\target
+minor = 0
+wex.sign = true
+wex.skip.attach = false
+isParseOnly = false
+jar.sign = true
+wex.version = 1.0-12.1
+major = 1
+logFileName = C:\data\code\GitHub\edk-examples\wex-example-ui/ZKM_log.txt
+project.build.sourceEncoding = UTF-8
+project.build.outputDirectory = C:\data\code\GitHub\edk-examples\wex-example-ui\target\classes
+classpathLibs = C:\Program Files\Java\jdk-11.0.6\lib\rt.jar;C:\Program Files\Java\jdk-11.0.6\lib\jce.jar
+wex.output.directory = C:\data\code\GitHub\edk-examples\wex-example-ui\target
+beta = 
+trimLogFileName = C:\data\code\GitHub\edk-examples\wex-example-ui/ZKM_TrimLog.txt
+isSkip = false
+obfuscate = true
+maven.compiler.source = 1.8
+isVerbose = true
+project.build.finalName = wex-example-ui
+compileArtifactPath = C:\Users\simon\.m2\repository\com\ptc\windchill-pdmlink\12.1\windchill-pdmlink-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-kernel\1.12-12.1\wex-kernel-1.12-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-system\1.2-12.1\wex-system-1.2-12.1.jar;C:\Users\simon\.m2\repository\args4j\args4j\2.33\args4j-2.33.jar;C:\Users\simon\.m2\repository\io\github\classgraph\classgraph\4.8.7\classgraph-4.8.7.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log\1.6-12.1\wex-log-1.6-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-base\1.1\wex-log-base-1.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-commons\1.2-12.1\wex-log-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-jmx-commons\1.2-12.1\wex-jmx-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-ui-commons\1.2-12.1\wt-ui-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-framework-commons\1.3-12.1\wt-framework-commons-1.3-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-security-commons\1.5-12.1\wt-security-commons-1.5-12.1.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar
+project.artifactId = wex-example-ui
+wex = true
+scriptFile = C:\data\code\wex\build\zkm\wex.zkm
+project.version = 1.0-12.1
+revision = 1.0-12.1
+basedir = C:\data\code\GitHub\edk-examples\wex-example-ui
+project.packaging = jar
+maven.compiler.target = 1.8
+wex.wt = 12.1
+wex.package = true
+
+-- Listing system properties --
+sun.desktop = windows
+awt.toolkit = sun.awt.windows.WToolkit
+cve.check.skip = true
+java.specification.version = 11
+sun.cpu.isalist = amd64
+sun.jnu.encoding = Cp1252
+java.class.path = C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar
+java.vm.vendor = Oracle Corporation
+sun.arch.data.model = 64
+jar.sign = true
+user.variant = 
+java.vendor.url = http://java.oracle.com/
+user.timezone = Europe/Paris
+maven.conf = C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\../conf
+os.name = Windows 10
+java.vm.specification.version = 11
+sun.java.launcher = SUN_STANDARD
+user.country = US
+sun.boot.library.path = C:\Program Files\Java\jdk-11.0.6\bin
+sun.java.command = org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 -Dcve.check.skip=true -Djar.sign=true -Dwex.sign=true -Dobfuscate=true -DaltDeploymentRepository=WINCOM-RELEASES-REPO::default::https://nexus.wex-cloud.net/repository/releases/ -P12.1 clean install
+jdk.debug = release
+maven.home = C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..
+sun.cpu.endian = little
+user.home = C:\Users\simon
+user.language = en
+java.specification.vendor = Oracle Corporation
+java.version.date = 2020-01-14
+java.home = C:\Program Files\Java\jdk-11.0.6
+file.separator = \
+java.vm.compressedOopsMode = Zero based
+line.separator = 
+
+java.specification.name = Java Platform API Specification
+java.vm.specification.vendor = Oracle Corporation
+java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+user.script = 
+sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+wex.sign = true
+java.runtime.version = 11.0.6+8-LTS
+user.name = simon
+path.separator = ;
+os.version = 10.0
+java.runtime.name = Java(TM) SE Runtime Environment
+file.encoding = UTF-8
+guice.disable.misplaced.annotation.check = true
+java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+java.vendor.version = 18.9
+maven.ext.class.path = C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar
+java.vendor.url.bug = http://bugreport.java.com/bugreport/
+java.io.tmpdir = C:\Users\simon\AppData\Local\Temp\
+altDeploymentRepository = WINCOM-RELEASES-REPO::default::https://nexus.wex-cloud.net/repository/releases/
+obfuscate = true
+java.version = 11.0.6
+user.dir = C:\data\code\GitHub\edk-examples\wex-example-ui
+os.arch = amd64
+maven.multiModuleProjectDirectory = C:\data\code\GitHub\edk-examples\wex-example-ui
+java.vm.specification.name = Java Virtual Machine Specification
+java.awt.printerjob = sun.awt.windows.WPrinterJob
+sun.os.patch.level = 
+java.library.path = C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\simon\Downloads\WINDOWS.X64_193000_db_home\bin;C:\data\code\development\trunk\inkscape\inkscape_win64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\app\simon\virtual\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Android;C:\Users\simon\AppData\Local\Programs\Python\Python39\;C:\Users\simon\AppData\Local\Programs\Python\Python39\Scripts;C:\msys64\mingw64\bin;C:\Users\simon\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Users\simon\AppData\Local\Microsoft\WindowsApps;C:\Users\simon\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\simon\AppData\Roaming\npm;C:\Users\simon\AppData\Local\GitHubDesktop\bin;.
+java.vendor = Oracle Corporation
+java.vm.info = mixed mode
+java.vm.version = 11.0.6+8-LTS
+classworlds.conf = C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\bin\m2.conf
+sun.io.unicode.encoding = UnicodeLittle
+library.jansi.path = C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\lib\jansi-native
+java.class.version = 55.0
+
+defaultCharset=windows-1252
+
+Maximum memory is 8351744K.
+
+JVM options: '-Dclassworlds.conf=C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\bin\m2.conf', '-Dmaven.home=C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..', '-Dlibrary.jansi.path=C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\lib\jansi-native' and '-Dmaven.multiModuleProjectDirectory=C:\data\code\GitHub\edk-examples\wex-example-ui'
+
+[2021.10.14 10:30:04] Using "jrt:/" as path to java.lang.Object (A)
+[2021.10.14 10:30:04] Zelix KlassMaster 12.0.6 - License #15472
+                      Single - Standard
+                      Wincom Consulting S.L
+                      Calle Sepúlveda 65.  Bajos 3 & 4 / Bajos 3 & 4 Barcelona Spain
+                      Copyright 1997-2020 Zelix Pty Ltd (ABN 47 078 740 093)
+                      All rights reserved
+[2021.10.14 10:30:04] Preprocessing ZKM Script file "C:\data\code\wex\build\zkm\wex.zkm"
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+classpath "C:\Program Files\Java\jdk-11.0.6\lib\rt.jar;C:\Program Files\Java\jdk-11.0.6\lib\jce.jar"
+          "C:\Users\simon\.m2\repository\com\ptc\windchill-pdmlink\12.1\windchill-pdmlink-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-kernel\1.12-12.1\wex-kernel-1.12-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-system\1.2-12.1\wex-system-1.2-12.1.jar;C:\Users\simon\.m2\repository\args4j\args4j\2.33\args4j-2.33.jar;C:\Users\simon\.m2\repository\io\github\classgraph\classgraph\4.8.7\classgraph-4.8.7.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log\1.6-12.1\wex-log-1.6-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-base\1.1\wex-log-base-1.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-commons\1.2-12.1\wex-log-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-jmx-commons\1.2-12.1\wex-jmx-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-ui-commons\1.2-12.1\wt-ui-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-framework-commons\1.3-12.1\wt-framework-commons-1.3-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-security-commons\1.5-12.1\wt-security-commons-1.5-12.1.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar"
+          "C:\Users\simon\.m2\repository\com\wincomplm\wex-obfuscate\1.0\wex-obfuscate-1.0.jar;C:\data\code\wex\build\zkm\ZKM.jar;C:\Users\simon\.m2\repository\org\codehaus\plexus\plexus-utils\1.1\plexus-utils-1.1.jar"
+          ;
+
+open		"C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar";
+
+trimExclude *.* @*.ConfigOption * and
+            public *.* and
+            *.* public * and
+            *.* protected * and
+            *.* public *(*) and
+            *.* protected *(*)
+            ;
+
+fixedClasses  *.* extends wt.util.resource.WTListResourceBundle and
+              *.* implements com.wincomplm.wex.kernel.impl.utils.IWexNonObfuscable and
+              com.sun.*.* and
+              com.wincomplm.wex.kernel.impl.dynamic.thirdparty.*.* and
+              javax.xml.*.* and
+              org.apache.commons.codec.*.*
+              ;
+
+trim        deleteSourceFileAttributes=true
+            deleteDeprecatedAttributes=false
+            deleteAnnotationAttributes=false
+            deleteExceptionAttributes=false
+            deleteUnknownAttributes=false;
+
+exclude     *.* @*.ConfigOption * and
+            public *.^* and
+            *.* public * and
+            *.* protected * and
+            *.* public *(*) and
+            *.* protected *(*)
+            ;
+
+obfuscate   keepInnerClassInfo=true
+            keepGenericsInfo=true
+            changeLogFileIn=""
+            changeLogFileOut=""
+            obfuscateFlow=aggressive
+            exceptionObfuscation=heavy
+            encryptStringLiterals=enhanced
+            mixedCaseClassNames=ifInArchive
+            randomize=true
+            localVariables=delete
+            lineNumbers=delete
+            autoReflectionHandling=normal
+            obfuscateReferences=normal
+            methodParameterChanges=flowObfuscate
+            keepBalancedLocks=true
+            ;
+
+
+
+saveAll     archiveCompression=all "C:\data\code\GitHub\edk-examples\wex-example-ui\target";
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+[2021.10.14 10:30:04] Parsing ZKM Script file "C:\data\code\wex\build\zkm\wex.zkm"
+ERROR: Invalid classpath in "classpath" statement at line 1 : "C:\Program Files\Java\jdk-11.0.6\lib\jce.jar" and "C:\Program Files\Java\jdk-11.0.6\lib\rt.jar" are not valid paths.
+[2021.10.14 10:30:07] Using "jrt:/" as path to java.lang.Object (B)
+[2021.10.14 10:30:05] Setting classpath to "C:\Users\simon\.m2\repository\com\ptc\windchill-pdmlink\12.1\windchill-pdmlink-12.1.jar;C:\Users\simon\AppData\Local\Temp\ZKM18029578262307729177.tmp(C:\Users\simon\.m2\repository\com\ptc\windchill-pdmlink\12.1\windchill-pdmlink-12.1.jar!rome-utils-1.15.0.jar);C:\Users\simon\.m2\repository\com\wincomplm\wex-kernel\1.12-12.1\wex-kernel-1.12-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-system\1.2-12.1\wex-system-1.2-12.1.jar;C:\Users\simon\.m2\repository\args4j\args4j\2.33\args4j-2.33.jar;C:\Users\simon\.m2\repository\io\github\classgraph\classgraph\4.8.7\classgraph-4.8.7.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log\1.6-12.1\wex-log-1.6-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-base\1.1\wex-log-base-1.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-commons\1.2-12.1\wex-log-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-jmx-commons\1.2-12.1\wex-jmx-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-ui-commons\1.2-12.1\wt-ui-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-framework-commons\1.3-12.1\wt-framework-commons-1.3-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-security-commons\1.5-12.1\wt-security-commons-1.5-12.1.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-obfuscate\1.0\wex-obfuscate-1.0.jar;C:\data\code\wex\build\zkm\ZKM.jar;C:\Users\simon\.m2\repository\org\codehaus\plexus\plexus-utils\1.1\plexus-utils-1.1.jar"
+	Adding 'jrt:/' to classpath. Must be able to find java.lang.Object.
+	Changing classpath...
+	from	"C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"
+	to	"C:\Users\simon\.m2\repository\com\ptc\windchill-pdmlink\12.1\windchill-pdmlink-12.1.jar;C:\Users\simon\AppData\Local\Temp\ZKM18029578262307729177.tmp(C:\Users\simon\.m2\repository\com\ptc\windchill-pdmlink\12.1\windchill-pdmlink-12.1.jar!rome-utils-1.15.0.jar);C:\Users\simon\.m2\repository\com\wincomplm\wex-kernel\1.12-12.1\wex-kernel-1.12-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-system\1.2-12.1\wex-system-1.2-12.1.jar;C:\Users\simon\.m2\repository\args4j\args4j\2.33\args4j-2.33.jar;C:\Users\simon\.m2\repository\io\github\classgraph\classgraph\4.8.7\classgraph-4.8.7.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log\1.6-12.1\wex-log-1.6-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-base\1.1\wex-log-base-1.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-log-commons\1.2-12.1\wex-log-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-jmx-commons\1.2-12.1\wex-jmx-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-ui-commons\1.2-12.1\wt-ui-commons-1.2-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-framework-commons\1.3-12.1\wt-framework-commons-1.3-12.1.jar;C:\Users\simon\.m2\repository\com\wincomplm\wt-security-commons\1.5-12.1\wt-security-commons-1.5-12.1.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\simon\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\simon\.m2\repository\com\wincomplm\wex-obfuscate\1.0\wex-obfuscate-1.0.jar;C:\data\code\wex\build\zkm\ZKM.jar;C:\Users\simon\.m2\repository\org\codehaus\plexus\plexus-utils\1.1\plexus-utils-1.1.jar"
+[2021.10.14 10:30:07] Opening classes...
+	com/wincomplm/wex/example/ui/impl/bootstrap/WexBootstrap.class opened from C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar
+	com/wincomplm/wex/example/ui/impl/ui/methods/ExampleUIMethods.class opened from C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar
+	com/wincomplm/wex/example/ui/impl/ui/validator/WexMenuAdminUIValidator.class opened from C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar
+	com/wincomplm/wex/example/ui/resources/WexResources.class opened from C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar
+	com/wincomplm/wex/example/ui/resources/WexResources_fr.class opened from C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar
+5 classes opened in 0 seconds. 448023K of memory used. 178664K of memory free.
+
+[2021.10.14 10:30:08] Setting trim exclusions...
+[2021.10.14 10:30:08] Setting fixed classes...
+[2021.10.14 10:30:08] Trimming...
+	deleteSourceFileAttributes=true
+	deleteDeprecatedAttributes=false
+	deleteAnnotationAttributes=false
+	deleteUnknownAttributes=false
+	deleteExceptionAttributes=false
+	deleteDebugExtensionAttributes=true
+	Fixed classes parameters:
+		org.apache.commons.codec.*.*
+		javax.xml.*.*
+		com.wincomplm.wex.kernel.impl.dynamic.thirdparty.*.*
+		com.sun.*.*
+		*.* implements com.wincomplm.wex.kernel.impl.utils.IWexNonObfuscable
+		*.* extends wt.util.resource.WTListResourceBundle
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* extends wt.util.resource.WTListResourceBundle'"
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* extends wt.util.resource.WTListResourceBundle'"
+	Trim exclusion parameters:
+		*.* protected *(*)
+		*.* public *(*)
+		*.* protected *
+		*.* public *
+		public *.*
+		*.* @*.ConfigOption *
+	Matching method "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent public com.wincomplm.wex.example.ui.impl.ui.methods.ExampleUIMethods" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "public void initialize(com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage)" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @com.wincomplm.wex.kernel.impl.annotations.WexValidator public com.wincomplm.wex.example.ui.impl.ui.validator.WexMenuAdminUIValidator" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "public void terminate(com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage)" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "public com.ptc.core.ui.validation.UIValidationStatus preValidateAction(com.ptc.core.ui.validation.UIValidationKey, com.ptc.core.ui.validation.UIValidationCriteria)" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @com.wincomplm.wex.kernel.impl.annotations.WexValidator public com.wincomplm.wex.example.ui.impl.ui.validator.WexMenuAdminUIValidator" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "public void <init>()" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *(*)'"
+	Matching method "@com.wincomplm.wex.kernel.impl.annotations.WexMethod public void securePage()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent public com.wincomplm.wex.example.ui.impl.ui.methods.ExampleUIMethods" because of "exclusion parameter '*.* public *(*)'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P1" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P2" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P4" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P4" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P6" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P6" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P2" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P3" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P3" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P5" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P5" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Matching field "@wt.util.resource.RBEntry public static final java.lang.String P1" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent public com.wincomplm.wex.example.ui.impl.ui.methods.ExampleUIMethods" because of "exclusion parameter 'public *.*'"
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter 'public *.*'"
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @com.wincomplm.wex.kernel.impl.annotations.WexValidator public com.wincomplm.wex.example.ui.impl.ui.validator.WexMenuAdminUIValidator" because of "exclusion parameter 'public *.*'"
+	Matching class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "exclusion parameter 'public *.*'"
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter 'public *.*'"
+	Using internal default trim exclusions. File 'C:\data\code\GitHub\edk-examples\wex-example-ui\defaultTrimExclude.txt' not found
+	Default trim exclusion parameters:
+		"*.* lambda$*(*)"
+		"*.* $deserializeLambda$(java.lang.invoke.SerializedLambda)"
+		"*.* @javafx.fxml.FXML *(*)"
+		"*.* @javafx.fxml.FXML *"
+		"*.* containing{@java.beans.ConstructorProperties *(*)} public get*()"
+		"*.*MXBean public *(*)"
+		"*.*MBean public *(*)"
+		"*.* @javax.annotation.PreDestroy *(*)"
+		"*.* @javax.annotation.PostConstructor *(*)"
+		"@javax.xml.bind.annotation.XmlRootElement *.* public set*(*)"
+		"@javax.xml.bind.annotation.XmlRootElement *.* public is*()"
+		"@javax.xml.bind.annotation.XmlRootElement *.* public get*()"
+		"@javax.xml.bind.annotation.XmlRootElement *.* private *"
+		"@javax.xml.bind.annotation.XmlType *.* public set*(*)"
+		"@javax.xml.bind.annotation.XmlType *.* public is*()"
+		"@javax.xml.bind.annotation.XmlType *.* public get*()"
+		"@javax.xml.bind.annotation.XmlType *.* *"
+		"*.* extends javax.swing.JComponent getUI()"
+		"*.* static createUI(javax.swing.JComponent)"
+		"@javax.jws.WebService *.*^ @javax.jws.WebMethod public *(*)"
+		"@javax.persistence.IdClass(value=*.*^) public *(*)"
+		"*.* @javax.persistence.Id *(*)"
+		"*.* @javax.persistence.Id *"
+		"@javax.persistence.Entity *.* @javax.persistence.Column *"
+		"@javax.persistence.Table *.*^ public *(*)"
+		"@javax.persistence.Entity *.*^ public *(*)"
+		"@javax.ejb.MessageDriven *.*^ public *(*)"
+		"@javax.ejb.Stateful *.*^ public *(*)"
+		"@javax.ejb.Stateless *.*^ public *(*)"
+		"@javax.ejb.RemoteHome *.*^ public *(*)"
+		"@javax.ejb.Remote *.*^ public *(*)"
+		"*.*^ implements javax.ejb.EnterpriseBean public *(*)"
+		"*.*^ implements javax.ejb.EJBLocalHome public find*(*)"
+		"*.*^ implements javax.ejb.EJBLocalHome public create(*)"
+		"*.*^ implements javax.ejb.EJBHome public find*(*)"
+		"*.*^ implements javax.ejb.EJBHome public create(*)"
+		"*.*^ implements javax.ejb.EJBLocalObject public *(*)"
+		"*.*^ implements javax.ejb.EJBObject public *(*)"
+		"*.* extends java.lang.Enum public valueOf(java.lang.String)"
+		"*.* extends java.lang.Enum public values()"
+		"*.* extends java.lang.Enum public *"
+		"*.* implements javax.servlet.Servlet"
+		"*.* java.io.ObjectStreamField[] serialPersistentFields"
+		"*.* readObjectNoData() throws java.io.ObjectStreamException"
+		"*.* readResolve()"
+		"*.* writeReplace()"
+		"*.* static final long serialVersionUID"
+		"*.* private writeObject(java.io.ObjectOutputStream)"
+		"*.* private readObject(java.io.ObjectInputStream)"
+		"interface *.*^ implements java.rmi.Remote *(*) throws java.rmi.RemoteException"
+		"*.*_Tie implements javax.rmi.CORBA.Tie"
+		"*.*_Stub extends javax.rmi.CORBA.Stub"
+		"*.*_Stub extends java.rmi.server.RemoteStub"
+		"*.*_Skel implements java.rmi.server.Skeleton"
+		"*.* extends java.rmi.server.RemoteStub <init>(java.rmi.server.RemoteRef)"
+		"*.* <init>()"
+	Applying trim exclusions specified by fixedClasses statement
+MESSAGE: No classes, fields or methods were trimmed.
+[2021.10.14 10:30:08] Setting exclusions...
+[2021.10.14 10:30:08] Obfuscating classes...
+	changeLogFileIn=""
+	changeLogFileOut="null"
+	aggressiveMethodRenaming=false
+	randomize=true
+	allClassesOpened=true
+	keepInnerClassInfo=true
+	keepGenericsInfo=true
+	keepBalancedLocks=true
+	mixedCaseClassNames=ifInArchive
+	uniqueClassNames=false
+	methodParameterChanges=flowObfuscate
+	obfuscateFlow=aggressive
+	encryptStringLiterals=enhanced
+	lineNumbers=delete
+	localVariables=delete
+	methodParameters=keepVisible
+	deriveGroupingsFromInputChangeLog=false
+	exceptionObfuscation=heavy
+	autoReflectionHandling=normal
+	obfuscateReferences=normal
+	obfuscateReferenceStructures=inSpecialClass
+	Fixed classes parameters:
+		org.apache.commons.codec.*.*
+		javax.xml.*.*
+		com.wincomplm.wex.kernel.impl.dynamic.thirdparty.*.*
+		com.sun.*.*
+		*.* implements com.wincomplm.wex.kernel.impl.utils.IWexNonObfuscable
+		*.* extends wt.util.resource.WTListResourceBundle
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* extends wt.util.resource.WTListResourceBundle'"
+	Matching class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* extends wt.util.resource.WTListResourceBundle'"
+WARNING: You elected to obfuscate references but you have not specified any references to be obfuscate.
+	Exclusion parameters:
+		public *.^*
+		*.* protected *(*)
+		*.* public *(*)
+		*.* protected *
+		*.* public *
+		*.* @*.ConfigOption *
+	Excluding class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "exclusion parameter 'public *.^*'"
+	Excluding package "com.wincomplm.wex.example.ui.impl.bootstrap" because of "exclusion parameter 'public *.^*'"
+	Excluding package "com.wincomplm.wex.example.ui.impl" because "com.wincomplm.wex.example.ui.impl.bootstrap" has been excluded
+	Excluding package "com.wincomplm.wex.example.ui" because "com.wincomplm.wex.example.ui.impl.bootstrap" has been excluded
+	Excluding package "com.wincomplm.wex.example" because "com.wincomplm.wex.example.ui.impl.bootstrap" has been excluded
+	Excluding package "com.wincomplm.wex" because "com.wincomplm.wex.example.ui.impl.bootstrap" has been excluded
+	Excluding package "com.wincomplm" because "com.wincomplm.wex.example.ui.impl.bootstrap" has been excluded
+	Excluding package "com" because "com.wincomplm.wex.example.ui.impl.bootstrap" has been excluded
+	Excluding class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent public com.wincomplm.wex.example.ui.impl.ui.methods.ExampleUIMethods" because of "exclusion parameter 'public *.^*'"
+	Excluding package "com.wincomplm.wex.example.ui.impl.ui.methods" because of "exclusion parameter 'public *.^*'"
+	Excluding package "com.wincomplm.wex.example.ui.impl.ui" because "com.wincomplm.wex.example.ui.impl.ui.methods" has been excluded
+	Excluding class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @com.wincomplm.wex.kernel.impl.annotations.WexValidator public com.wincomplm.wex.example.ui.impl.ui.validator.WexMenuAdminUIValidator" because of "exclusion parameter 'public *.^*'"
+	Excluding package "com.wincomplm.wex.example.ui.impl.ui.validator" because of "exclusion parameter 'public *.^*'"
+	Excluding class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter 'public *.^*'"
+	Excluding package "com.wincomplm.wex.example.ui.resources" because of "exclusion parameter 'public *.^*'"
+	Excluding class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter 'public *.^*'"
+	Excluding method "public void initialize(com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage)" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "exclusion parameter '*.* public *(*)'"
+	Excluding method "public void terminate(com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage)" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "exclusion parameter '*.* public *(*)'"
+	Excluding method "public com.ptc.core.ui.validation.UIValidationStatus preValidateAction(com.ptc.core.ui.validation.UIValidationKey, com.ptc.core.ui.validation.UIValidationCriteria)" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @com.wincomplm.wex.kernel.impl.annotations.WexValidator public com.wincomplm.wex.example.ui.impl.ui.validator.WexMenuAdminUIValidator" because of "exclusion parameter '*.* public *(*)'"
+	Excluding method "@com.wincomplm.wex.kernel.impl.annotations.WexMethod public void securePage()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent public com.wincomplm.wex.example.ui.impl.ui.methods.ExampleUIMethods" because of "exclusion parameter '*.* public *(*)'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P1" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P2" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P4" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P4" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P6" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P6" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P2" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P3" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P3" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P5" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P5" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* public *'"
+	Excluding field "@wt.util.resource.RBEntry public static final java.lang.String P1" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* public *'"
+	Using internal default exclusions. File 'C:\data\code\GitHub\edk-examples\wex-example-ui\defaultExclude.txt' not found
+	Default exclusion parameters:
+		"@javax.persistence.IdClass(value=*.^*^) public *(*)"
+		"@javax.persistence.Table *.^*^ public *(*)"
+		"@javax.persistence.Entity *.^*^ public *(*)"
+		"@javax.ejb.Stateful *.^*^ public *(*)"
+		"@javax.ejb.Stateless *.^*^ public *(*)"
+		"@javax.ejb.RemoteHome *.^*^ public *(*)"
+		"@javax.ejb.Remote *.^*^ public *(*)"
+		"*.^*^ native *(*) +signatureClasses"
+		"@javax.ejb.MessageDriven *.*^ public *(*)"
+		"@javax.jws.WebService *.*^ @javax.jws.WebMethod *(*)"
+		"*.* lambda$*(*)"
+		"*.* implements javax.ejb.EnterpriseBean public *(*)"
+		"*.* implements javax.ejb.EJBLocalObject public *(*)"
+		"*.* implements javax.ejb.EJBObject public *(*)"
+		"*.* extends java.lang.Enum public *"
+		"*.* implements javax.ejb.EJBLocalHome public find*(*)"
+		"*.* implements javax.ejb.EJBHome public find*(*)"
+		"@javax.xml.bind.annotation.XmlType *.* *"
+		"*.* @javax.persistence.Id *(*)"
+		"*.* @javax.persistence.Id *"
+		"*.*Key implements java.io.Serializable public *"
+		"*.* java.io.ObjectStreamField[] serialPersistentFields"
+		"*.* readObjectNoData() throws java.io.ObjectStreamException"
+		"*.* readResolve()"
+		"*.* writeReplace()"
+		"interface *.* implements java.rmi.Remote *(*) throws java.rmi.RemoteException +signatureClasses"
+		"*.* containing{@java.beans.ConstructorProperties *(*)} public get<link>()"
+		"*.<link>MXBean"
+		"*.<link>MBean"
+		"*.* @javax.xml.bind.annotation.XmlTransient public set<link>(*)"
+		"*.* @javax.xml.bind.annotation.XmlTransient public is<link>()"
+		"*.* @javax.xml.bind.annotation.XmlTransient public get<link>()"
+		"*.<link>Customizer"
+		"*.<link>BeanInfo"
+		"*._<link>_Tie implements javax.rmi.CORBA.Tie"
+		"*._<link>_Stub extends javax.rmi.CORBA.Stub"
+		"*.<link>_Stub extends java.rmi.server.RemoteStub"
+		"*.<link>_Skel implements java.rmi.server.Skeleton"
+		"@javax.xml.bind.annotation.XmlRootElement *.* private *"
+		"*.* implements java.lang.annotation.Annotation public value()"
+		"*.* implements javax.ejb.EJBLocalHome public create(*)"
+		"*.* implements javax.ejb.EJBHome public create(*)"
+		"*.* extends java.lang.Enum public values()"
+		"*.* $deserializeLambda$(java.lang.invoke.SerializedLambda)"
+		"com.javafx.main.Main"
+		"*.* @javafx.fxml.FXML initialize()"
+		"@javax.persistence.Entity *.* @javax.persistence.Column *"
+		"@javax.xml.bind.annotation.XmlRootElement *.* public set<link>(*)"
+		"@javax.xml.bind.annotation.XmlRootElement *.* public is<link>()"
+		"@javax.xml.bind.annotation.XmlRootElement *.* public get<link>()"
+		"@javax.xml.bind.annotation.XmlType *.* public set<link>(*)"
+		"@javax.xml.bind.annotation.XmlType *.* public is<link>()"
+		"@javax.xml.bind.annotation.XmlType *.* public get<link>()"
+		"*.* static final long serialVersionUID"
+		"*.* extends java.lang.Enum public valueOf(java.lang.String)"
+		"*.* private writeObject(java.io.ObjectOutputStream)"
+		"*.* private readObject(java.io.ObjectInputStream)"
+		"*.* static createUI(javax.swing.JComponent)"
+	Using internal default method parameter changes exclusions. File 'defaultMethodParameterChangeExclude.txt' not found
+	Default method parameter changes exclusion parameters:
+		"*.* lambda$*(*)"
+		"*.* extends java.util.ResourceBundle <init>()"
+		"*.* $deserializeLambda$(java.lang.invoke.SerializedLambda)"
+	Matched as EXcluded from possible method parameter changes "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "exclusion parameter '*.* extends java.util.ResourceBundle <init>()'"
+	Matched as EXcluded from possible method parameter changes "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "exclusion parameter '*.* extends java.util.ResourceBundle <init>()'"
+	Matched as EXcluded from possible method parameter changes "public void terminate(com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage)" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "Direct specification in Trim exclusion"
+	Matched as EXcluded from possible method parameter changes "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent public com.wincomplm.wex.example.ui.impl.ui.methods.ExampleUIMethods" because of "Direct specification in Trim exclusion"
+	Matched as EXcluded from possible method parameter changes "public void initialize(com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage)" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "Direct specification in Trim exclusion"
+	Matched as EXcluded from possible method parameter changes "@com.wincomplm.wex.kernel.impl.annotations.WexMethod public void securePage()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent public com.wincomplm.wex.example.ui.impl.ui.methods.ExampleUIMethods" because of "Direct specification in Trim exclusion"
+	Matched as EXcluded from possible method parameter changes "public com.ptc.core.ui.validation.UIValidationStatus preValidateAction(com.ptc.core.ui.validation.UIValidationKey, com.ptc.core.ui.validation.UIValidationCriteria)" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @com.wincomplm.wex.kernel.impl.annotations.WexValidator public com.wincomplm.wex.example.ui.impl.ui.validator.WexMenuAdminUIValidator" because of "Direct specification in Trim exclusion"
+	Matched as EXcluded from possible method parameter changes "public void <init>()" in class "public com.wincomplm.wex.example.ui.impl.bootstrap.WexBootstrap" because of "Direct specification in Trim exclusion"
+	Matched as EXcluded from possible method parameter changes "public void <init>()" in class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @com.wincomplm.wex.kernel.impl.annotations.WexValidator public com.wincomplm.wex.example.ui.impl.ui.validator.WexMenuAdminUIValidator" because of "Direct specification in Trim exclusion"
+	Applying exclusions specified by fixedClasses statement
+	Excluding from flow obfuscation class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "Fixed class '@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr'"
+	Excluding from exception obfuscation class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "Fixed class '@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr'"
+	Excluding from String encryption class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr" because of "Fixed class '@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @com.wincomplm.wex.kernel.impl.annotations.WexLocale @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources_fr'"
+	Excluding from flow obfuscation class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "Fixed class '@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources'"
+	Excluding from exception obfuscation class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "Fixed class '@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources'"
+	Excluding from String encryption class "@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources" because of "Fixed class '@com.wincomplm.wex.kernel.impl.annotations.WexComponent @wt.util.resource.RBNameException @wt.util.resource.RBUUID public com.wincomplm.wex.example.ui.resources.WexResources'"
+MESSAGE: Auto Reflection Handling : There is no 'accessedByReflection' statement in effect so all classes, fields and methods are by default eligible for AutoReflection mapping.
+MESSAGE: Auto Reflection Handling : No remaining unresolved Reflection API calls found so no processing required or done.
+	StackMap algorithm=0
+[2021.10.14 10:30:10] Saving 5 classes in "C:\data\code\GitHub\edk-examples\wex-example-ui\target"
+WARNING: File 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar' already exists in 'C:\data\code\GitHub\edk-examples\wex-example-ui\target'. Renaming to 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar.BACKUP'.
+	Class file 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar!com/wincomplm/wex/example/ui/impl/bootstrap/WexBootstrap.class' saved to 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar' as 'com/wincomplm/wex/example/ui/impl/bootstrap/WexBootstrap.class'.
+	Class file 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar!com/wincomplm/wex/example/ui/impl/ui/methods/ExampleUIMethods.class' saved to 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar' as 'com/wincomplm/wex/example/ui/impl/ui/methods/ExampleUIMethods.class'.
+	Class file 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar!com/wincomplm/wex/example/ui/impl/ui/validator/WexMenuAdminUIValidator.class' saved to 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar' as 'com/wincomplm/wex/example/ui/impl/ui/validator/WexMenuAdminUIValidator.class'.
+	Class file 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar!com/wincomplm/wex/example/ui/resources/WexResources.class' saved to 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar' as 'com/wincomplm/wex/example/ui/resources/WexResources.class'.
+	Class file 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar!com/wincomplm/wex/example/ui/resources/WexResources_fr.class' saved to 'C:\data\code\GitHub\edk-examples\wex-example-ui\target\wex-example-ui.jar' as 'com/wincomplm/wex/example/ui/resources/WexResources_fr.class'.
+[2021.10.14 10:30:10] Terminating normally.

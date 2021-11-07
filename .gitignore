@@ -1,0 +1,8 @@
+/wex-example-helloworld/target/
+wex-example-helloworld/ZKM_log.txt
+wex-example-helloworld/ZKM_TrimLog.txt
+/wex-example-listener/target/
+/wex-example-ui/target/
+/wex-example-wizard/target/
+/wex-example-diags/target/
+/wex-example-tables/target/
