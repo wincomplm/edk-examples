@@ -42,7 +42,7 @@ public class PartNameHelper {
         return calculatedName;
     }
 
-    private void createPart(String calculatedName, String folderName, String productName, String partType) throws WTPropertyVetoException, Exception, WTException {
+    public void createPart(String calculatedName, String folderName, String productName, String partType) throws WTPropertyVetoException, Exception, WTException {
         WTPart part = WTPart.newWTPart();
         part.setName(calculatedName);
         PDMLinkProduct product = BootcampAPIHelper.instance.getProductByName(productName);
