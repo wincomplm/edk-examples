@@ -1,0 +1,43 @@
+<wex-definition>
+    <meta>
+        <group-id>com.wincomplm</group-id>   
+        <artifact-id>wex-part-naming-nikosp</artifact-id>
+        <display-name>Part naming/ Nikos Papadakis</display-name>
+        <system>false</system>   
+        <description>A custom extension to name parts according to IBAs</description>
+    </meta>
+    <build>
+        <version>
+            <major>${major}</major>
+            <minor>${minor}</minor>
+            <beta>${beta}</beta>
+            <revision>${revision}</revision>
+        </version>
+        <host>
+            <release>${wex.wt}</release>
+        </host>
+    </build>
+    
+    <install>
+        <menus>
+            <extension menu="more parts actions" file="PartClient-actionmodels" action="wexPartNamingNikosP"/>
+            <extension menu="search_table_actions_toolbar" file="search-actionmodels" action="wexPartNamingNikosP"/>
+            <extension menu="folderbrowser_toolbar_actions" file="FolderManagement-actionModels" action="wexPartNamingNikosP"/>
+        </menus>
+        <actions>
+            <wizard class="com.wincomplm.wex.kernel.impl.forms.WexObjectFormProcessor" name="wexPartNamingNikosP"
+                    url="wexPartNamingNikosP.jsp?wex-form-processor=com.wincomplm.wex-part-naming-nikosp.WexPartNamingFormProcessor" shortcut="false"/>
+            <wizard-step name="wexPartNamingNikosPStep" url="wexPartNamingNikosPStep.jsp" preloadWizardPage="false"/>
+        </actions>
+    </install>
+    
+    <additional>
+        <trial/>
+        <timestamp>0</timestamp>
+        <expires>0</expires>
+        <client-id/>
+        <client-name/>
+        <user-id/>
+    </additional>
+
+</wex-definition>
