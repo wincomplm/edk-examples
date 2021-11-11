@@ -18,7 +18,7 @@
     
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-bootcamp-part-commons</artifactId>
-    <version>1.0-${wex.wt}</version>
+    <version>1.1-${wex.wt}</version>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
