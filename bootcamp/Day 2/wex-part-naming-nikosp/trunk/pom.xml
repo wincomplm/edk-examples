@@ -9,7 +9,7 @@
     <properties>
         <major>1</major>
         <minor>0</minor>
-        <beta>3</beta>
+        <beta>1</beta>
         <revision></revision>
     </properties>
  
@@ -17,11 +17,12 @@
     <artifactId>wex-part-naming-nikosp</artifactId>
     <version>${major}.${minor}b${beta}-${wex.wt}</version>
     <packaging>jar</packaging>
+    
     <dependencies>
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-bootcamp-part-commons</artifactId>
-                <version>1.1-${wex.wt}</version>
+            <version>1.1-${wex.wt}</version>
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>
@@ -43,6 +44,10 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-log</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-config</artifactId>
+        </dependency>
     </dependencies>
-    <name>wex-part-naming-nikosp DAY 1</name>
+    <name>wex-part-naming-nikosp DAY 2</name>
 </project>

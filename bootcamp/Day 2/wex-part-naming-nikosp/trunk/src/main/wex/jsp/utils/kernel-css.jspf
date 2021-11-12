@@ -1,0 +1,66 @@
+
+.wex-back {
+  position: fixed;
+  bottom: 10px;
+  right: 65px;
+  background-color: #666; 
+ }
+ 
+ .wex-close {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #666; 
+ }
+ 
+ 
+ .wex-button-active {
+    background-color: #4CAF50; 
+ }
+ 
+ .wex-button {
+  border: 1px solid #ddd;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+ .wex-button:hover {
+  background-color: #444;
+}
+
+.wex-header {
+    width: 100%;
+    background: #444;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    padding-left: 40px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.wex-input {
+    padding: 3px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #555;
+    
+}
+
+.wex-results {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 6px;
+    margin-left: 10px;
+
+}
