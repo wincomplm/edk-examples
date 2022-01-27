@@ -7,3 +7,5 @@ wex-example-helloworld/ZKM_TrimLog.txt
 /wex-example-diags/target/
 /wex-example-tables/target/
 bootcamp/wex-bootcamp-part-commons/trunk/nbactions.xml
+/wex-example-method/target/
+/wex-example-tree/target/
