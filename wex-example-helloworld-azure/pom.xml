@@ -33,8 +33,8 @@
     </dependencies> 
     <repositories>
         <repository>
-            <id>EDKBuild</id>
-            <url>https://pkgs.dev.azure.com/simonh0765/_packaging/EDKBuild/maven/v1</url>
+            <id>EDK2</id>
+            <url>https://pkgs.dev.azure.com/simonh0765/EDK/_packaging/EDK2/maven/v1</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
