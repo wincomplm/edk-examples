@@ -1,0 +1,32 @@
+<wex-definition>
+    <meta>
+        <group-id>${groupId}</group-id>      
+        <artifact-id>${artifactId}</artifact-id>      
+        <display-name>Example - Hello World</display-name>
+        <system>false</system> 
+        <description>Hello to the world</description>  
+    </meta>
+    <build>
+        <version>
+            <major>${major}</major>
+            <minor>${minor}</minor>
+            <beta>${beta}</beta>
+        </version>
+        <host>
+            <release>${wex.wt}</release>
+        </host>
+    </build> 
+    <install>
+        <menus>
+            <extension menu="more parts actions" file="PartClient-actionmodels" action="edkHelloWorld"/>
+            <extension menu="header actions" file="navigation-actionModels" action="edkHelloWorldNonPop"/>
+            
+        </menus>
+        <actions>
+            <wizard name="edkHelloWorld"   url="edkHelloWorld.jsp" shortcut="false"/>
+            <page name="edkHelloWorldNonPop"   url="edkHelloWorld.jsp"/>
+           
+        </actions>
+        
+    </install>
+</wex-definition>
