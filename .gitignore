@@ -10,3 +10,5 @@ bootcamp/wex-bootcamp-part-commons/trunk/nbactions.xml
 /wex-example-method/target/
 /wex-example-tree/target/
 /wex-example-helloworld-azure/target/
+/wex-example-config/target/
+/wex-example-log/target/
