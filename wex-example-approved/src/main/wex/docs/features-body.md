@@ -1,6 +1,6 @@
 ## Features
 
-+ Implements method examples
++ Test extension for Windchill approval
 
 
 
