@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wex-definition>
+  <meta>
+    <group-id>com.wincomplm</group-id>
+    <artifact-id>wex-example-method</artifact-id>
+    <display-name>Example - Methods</display-name>
+    <system>false</system>
+    <description>Extension methods examples</description>
+  </meta>
+  <build>
+    <version>
+      <major>1</major>
+      <minor>0</minor>
+      <beta/>
+    </version>
+    <host>
+      <release>12.1</release>
+    </host>
+  </build>
+  <approval>
+    <windchill-plus>true</windchill-plus>
+  </approval>
+</wex-definition>
