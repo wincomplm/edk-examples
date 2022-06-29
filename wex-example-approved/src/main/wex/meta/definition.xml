@@ -2,7 +2,7 @@
     <meta>
         <group-id>${groupId}</group-id>      
         <artifact-id>${artifactId}</artifact-id>      
-        <display-name>Example - Approved</display-name>
+        <display-name>Example - Approval</display-name>
         <system>false</system> 
         <description>Extension demonstrating approvals</description>  
     </meta>
@@ -17,6 +17,7 @@
         </host>
     </build> 
     <approval>
-        <windchill-plus>true</windchill-plus>
+        <approved>windchill-plus</approved>
+        <approved>client-product</approved>
     </approval>
 </wex-definition>

@@ -3,20 +3,20 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-parent-private</artifactId>
-        <version>2.35</version>
+        <artifactId>wex-parent</artifactId>
+        <version>2.23</version>
     </parent>
     <properties>
         <major>1</major>
         <minor>0</minor>
-        <beta></beta>
-        <revision>${major}.${minor}-${wex.wt}</revision>
+        <beta>1</beta>
+        <revision>${major}.${minor}b${beta}-${wex.wt}</revision>
     </properties>
     <groupId>com.wincomplm</groupId>
-    <artifactId>wex-example-approved</artifactId>
+    <artifactId>wex-example-approval</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
-    <name>wex-example-approved</name>
+    <name>wex-example-approval</name>
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>

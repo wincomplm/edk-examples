@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-parent-private</artifactId>
-        <version>2.35</version>
+        <artifactId>wex-parent</artifactId>
+        <version>2.23</version>
     </parent>
     <properties>
         <major>1</major>
@@ -30,13 +30,7 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-system</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.ptc</groupId>
-            <artifactId>windchill-projectlink</artifactId>
-            <version>${wex.wt}</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
+
         
     </dependencies> 
 </project>
