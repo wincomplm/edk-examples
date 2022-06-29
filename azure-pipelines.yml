@@ -3,7 +3,6 @@ pool:
 
 variables:
 - group: EDK Build Settings
-- group: EDK Deploy
 
 jobs:
 - job: BuildExtension
