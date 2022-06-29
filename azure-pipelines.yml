@@ -35,7 +35,7 @@ jobs:
     inputs:
       mavenPomFile: '$(artifactId)/pom.xml'
       mavenOptions: '-Xmx3072m'
-      options: '-P $(wcversion) -Dcve.check.skip=true -Djar.sign=true -Dwex.sign=true -Dobfuscate=false'
+      options: '-P $(wcversion) -Dcve.check.skip=true -Djar.sign=true -Dwex.sign=true'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
