@@ -1,5 +1,4 @@
-## Release Notes
-### 1.0b2
-    * Updated to Latest Parent 
+## Release Notes   
 ### 1.0
     * Initial release
+    * Updated to Latest Parent 
