@@ -9,7 +9,7 @@
     <properties>
         <major>1</major>
         <minor>0</minor>
-        <beta>1</beta>
+        <beta>2</beta>
         <revision>${major}.${minor}b${beta}-${wex.wt}</revision>
     </properties>
     <groupId>com.wincomplm</groupId>
