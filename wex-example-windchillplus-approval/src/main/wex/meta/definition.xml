@@ -2,9 +2,9 @@
     <meta>
         <group-id>${groupId}</group-id>      
         <artifact-id>${artifactId}</artifact-id>      
-        <display-name>Example - Approval</display-name>
+        <display-name>Example - 'Windchill +' Approval</display-name>
         <system>false</system> 
-        <description>Extension demonstrating approvals</description>  
+        <description>Extension demonstrating 'Windchill +' approvals</description>  
     </meta>
     <build>
         <version>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bootstrap>
+    <uid>com.wincomplm.wex-example-approval</uid>
+    <service>com.wincomplm.wex.example.method.impl.bootstrap.WexBootstrap</service>
+    <classpath>
+        <element>codebase/com.wincomplm-wex-example-approval.jar</element>
+    </classpath>
+    <required>
+        <uid>com.wincomplm.wex-system</uid>
+    </required>
+</bootstrap>
