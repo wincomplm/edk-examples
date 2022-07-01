@@ -13,10 +13,10 @@
         <revision>${major}.${minor}${beta}-${wex.wt}</revision>
     </properties>
     <groupId>com.wincomplm</groupId>
-    <artifactId>wex-example-windchillplus-approval</artifactId>
+    <artifactId>wex-example-windchillplus</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
-    <name>wex-example-windchillplus-approval</name>
+    <name>wex-example-windchillplus</name>
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
