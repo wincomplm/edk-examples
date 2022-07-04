@@ -38,7 +38,7 @@ jobs:
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
-      goals: 'install'
+      goals: 'clean install'
   - task: CopyFiles@2
     displayName: 'Copy Files Staging'
     inputs:
@@ -54,7 +54,7 @@ jobs:
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
-      goals: 'install'
+      goals: 'clean install'
 
   - task: CopyFiles@2
     displayName: 'Copy Files Staging'
