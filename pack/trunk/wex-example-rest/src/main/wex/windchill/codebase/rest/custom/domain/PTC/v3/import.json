@@ -1,0 +1,22 @@
+{
+    "functions": [
+        {
+            "name": "HelloWorld",
+            "importName": "HelloWorld",
+            "description": "Hello to the world",
+            "parameters":[],
+            "returnType": {
+                "type": "String"
+            }
+        },       
+        {
+            "name": "HelloWex",
+            "importName": "HelloWex",
+            "description": "Hello to the world from Wex",
+            "parameters":[],
+            "returnType": {
+                "type": "String"
+            }
+        }
+    ]
+}

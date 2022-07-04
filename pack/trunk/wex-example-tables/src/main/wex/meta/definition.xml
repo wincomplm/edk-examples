@@ -1,0 +1,31 @@
+<wex-definition>
+    <meta>
+        <group-id>${groupId}</group-id>      
+        <artifact-id>${artifactId}</artifact-id>      
+        <display-name>Example - Table</display-name>
+        <system>false</system> 
+        <description>Extension table example</description>  
+    </meta>
+    <build>
+        <version>
+            <major>${major}</major>
+            <minor>${minor}</minor>
+            <beta>${beta}</beta>
+        </version>
+        <host>
+            <release>${wex.wt}</release>
+        </host>
+    </build> 
+    
+    <install>
+        <menus>
+            <extension menu="header actions" file="navigation-actionModels" action="edkExampleTable"/>
+            
+        </menus>
+        <actions>
+            <page name="edkExampleTable"   url="edkExampleTable.jsp"/>
+           
+        </actions>
+        
+    </install>
+</wex-definition>
