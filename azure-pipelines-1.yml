@@ -1,0 +1,72 @@
+pool:
+  vmImage: windows-latest
+
+variables:
+- group: EDK Build Settings
+
+jobs:
+- job: BuildExtension
+  displayName: Build Extension
+  
+  steps:
+
+  - task: JavaToolInstaller@0
+    displayName: 'Use Java 11'
+    inputs:
+      versionSpec: 11
+      jdkArchitectureOption: x64
+      jdkSourceOption: PreInstalled
+  - task: MavenAuthenticate@0
+    inputs:
+      artifactsFeeds: 'wincomplm-products'
+  - task: PowerShell@2
+    displayName: 'Maven setup'
+    inputs:
+      targetType: 'inline'
+      script: |  
+        $pwd = '$(support-wex-pwd)'
+        $userid = '$(support-wex-userid)'
+        ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
+        ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
+        Copy-Item $(Build.SourcesDirectory)/build/settings.xml -Destination ~/.m2
+  - task: Maven@3
+    displayName: 'Build for 12.0'
+    inputs:
+      mavenPomFile: 'pack/trunk/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      options: '-P 12.0 -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      goals: 'install'
+  - task: CopyFiles@2
+    displayName: 'Copy Files Staging'
+    inputs:
+      SourceFolder: '$(system.defaultworkingdirectory)'
+      Contents: '**/*.wex'
+      TargetFolder: '$(build.artifactstagingdirectory)'      
+  - task: Maven@3
+    displayName: 'Build for 12.1'
+    inputs:
+      mavenPomFile: 'pack/trunk/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      options: '-P 12.1 -Dcve.check.skip=$(cve.check.skip) -Djar.sign=$(jar.sign) -Dwex.sign=$(wex.sign) -Dobfuscate=false'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      goals: 'install'
+
+  - task: CopyFiles@2
+    displayName: 'Copy Files Staging'
+    inputs:
+      SourceFolder: '$(system.defaultworkingdirectory)'
+      Contents: '**/*.wex'
+      TargetFolder: '$(build.artifactstagingdirectory)'
+        
+  - task: PowerShell@2
+    displayName: 'Upload to teams'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/build/uploadToSharePointFilePath.ps1'
+      arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK-External -SPFolder /Documentos%20compartidos%2FGeneral%2FLatest -Folder $(build.artifactstagingdirectory)'
+      
