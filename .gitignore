@@ -36,3 +36,7 @@ pack/trunk/wex-example-rest/target/
 pack/trunk/wex-example-windchillplus/target/
 pack/trunk/wex-example-ui/ZKM_log.txt
 pack/trunk/wex-example-ui/ZKM_TrimLog.txt
+wex-example-queues/ZKM_log.txt
+wex-example-queues/ZKM_TrimLog.txt
+wex-example-features/ZKM_log.txt
+wex-example-features/ZKM_TrimLog.txt

@@ -30,6 +30,10 @@
             <groupId>com.ptc</groupId>
             <artifactId>windchill-pdmlink</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-log</artifactId>
+        </dependency>
     </dependencies>
 
 

@@ -1,10 +1,10 @@
 <wex-definition>
     <meta>
         <group-id>com.wincomplm</group-id>   
-        <artifact-id>wex-example-queues</artifact-id>
-        <display-name>Display name here</display-name>
+        <artifact-id>${artifactId}</artifact-id>
+        <display-name>Queue Examples</display-name>
         <system>false</system>   
-        <description>Description here</description>
+        <description>Queue Examples</description>
     </meta>
    <build>
         <version>

@@ -2,9 +2,9 @@
     <meta>
         <group-id>com.wincomplm</group-id>   
         <artifact-id>wex-example-features</artifact-id>
-        <display-name>Display name here</display-name>
+        <display-name>Features example</display-name>
         <system>false</system>   
-        <description>Description here</description>
+        <description>Features example</description>
     </meta>
    <build>
         <version>
