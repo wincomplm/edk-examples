@@ -11,7 +11,7 @@ jobs:
   steps:
 
   - task: JavaToolInstaller@0
-    displayName: 'Use Java 11'
+    displayName: 'Use Java $(wc-version)'
     inputs:
       versionSpec: 11
       jdkArchitectureOption: x64
@@ -32,9 +32,9 @@ jobs:
   - task: Maven@3
     displayName: 'Build for 12.0'
     inputs:
-      mavenPomFile: 'pack/trunk/pom.xml'
+      mavenPomFile: 'pom.xml'
       mavenOptions: '-Xmx3072m'
-      options: '-P 12.0 -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
+      options: '-P $(wc-version) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
