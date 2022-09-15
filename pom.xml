@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-parent-private</artifactId>
-        <version>2.49</version>
+        <artifactId>wex-parent</artifactId>
+        <version>2.23</version>
     </parent>
     <artifactId>wex-watermark-pack</artifactId>
     <version>1.3</version>
