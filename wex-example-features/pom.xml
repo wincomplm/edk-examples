@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-parent-private</artifactId>
-        <version>2.42</version>
+        <artifactId>wex-parent</artifactId>
+        <version>2.23</version>
     </parent>
     <properties>
         <major>1</major>
