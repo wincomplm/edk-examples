@@ -34,7 +34,7 @@ jobs:
     inputs:
       mavenPomFile: 'pom.xml'
       mavenOptions: '-Xmx3072m'
-      options: '-P $(wc-version) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
+      options: '-P $(wc-version) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true -Dobfuscate=false'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
@@ -45,23 +45,7 @@ jobs:
       SourceFolder: '$(system.defaultworkingdirectory)'
       Contents: '**/*.wex'
       TargetFolder: '$(build.artifactstagingdirectory)'      
-  - task: Maven@3
-    displayName: 'Build for 12.1'
-    inputs:
-      mavenPomFile: 'pack/trunk/pom.xml'
-      mavenOptions: '-Xmx3072m'
-      options: '-P 12.1 -Dcve.check.skip=$(cve.check.skip) -Djar.sign=$(jar.sign) -Dwex.sign=$(wex.sign) -Dobfuscate=false'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '1.11'
-      jdkArchitectureOption: 'x64'
-      goals: 'clean install'
 
-  - task: CopyFiles@2
-    displayName: 'Copy Files Staging'
-    inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)'
         
   - task: PowerShell@2
     displayName: 'Upload to teams'
