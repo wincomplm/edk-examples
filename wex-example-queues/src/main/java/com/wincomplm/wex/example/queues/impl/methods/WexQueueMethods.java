@@ -5,7 +5,8 @@ import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
 import com.wincomplm.wex.log.api.WexLogger;
 import com.wincomplm.wex.log.base.api.IWexLogger;
-import wt.fc.Persistable;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import wt.queue.ProcessingQueue;
 
 /**
@@ -20,13 +21,18 @@ public class WexQueueMethods  {
     private static final String WEX_EXAMPLE_QUEUE = "WexExampleQueue";
 
     @WexMethod(name = "addProcessQueueEntry", description = "Add process Q entry")
-    public void addProcessQueueEntry(String text) throws Exception {
+    public String addProcessQueueEntry(HttpServletRequest request, HttpServletResponse response) throws Exception {
         logger.trace("=>addProcessQueueEntry");
+        String result = ""; 
+        String text = request.getParameter("text");
         ProcessingQueue queue = WexProcessQueueHelper.instance.getQueue(WEX_EXAMPLE_QUEUE);
+        result = "Queue: " + queue;
         Object[] objects = new Object[]{text};
         Object[] params = new Object[]{"com.wincomplm.wex-example-queues", "methods.queueMethod", objects};
         Class[] klasses = new Class[]{String.class, String.class, Object[].class};
         WexProcessQueueHelper.instance.addQueueEntry(queue, "invoke", "com.wincomplm.wex.kernel.api.invoke.WexInvoker", klasses, params);
+        result = "Queue entry added... check logs";
+        return result;
     }//addProcessQueueEntry
         
     @WexMethod(name = "queueMethod", description = "Add process Q entry")

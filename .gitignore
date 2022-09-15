@@ -40,3 +40,4 @@ wex-example-queues/ZKM_log.txt
 wex-example-queues/ZKM_TrimLog.txt
 wex-example-features/ZKM_log.txt
 wex-example-features/ZKM_TrimLog.txt
+/target/

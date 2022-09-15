@@ -3,19 +3,21 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-parent</artifactId>
-        <version>2.23</version>
+        <artifactId>wex-parent-private</artifactId>
+        <version>2.49</version>
     </parent>
-    <artifactId>EDK-Examples</artifactId>
-    <version>1.1-${wex.wt}</version>
+    <artifactId>wex-watermark-pack</artifactId>
+    <version>1.3</version>
     <packaging>pom</packaging>
     <modules>
         <module>wex-example-config</module>
         <module>wex-example-diags</module>
+        <module>wex-example-features</module>
         <module>wex-example-helloworld</module>
         <module>wex-example-listener</module>
         <module>wex-example-log</module>
         <module>wex-example-method</module>
+        <module>wex-example-queues</module>
         <module>wex-example-rest</module>
         <module>wex-example-tables</module>
         <module>wex-example-tree</module>
@@ -23,5 +25,5 @@
         <module>wex-example-windchillplus</module>
         <module>wex-example-wizard</module>
     </modules>
-    <name>EDK-Examples</name>
+    <name>wex-example-pack</name>
 </project>

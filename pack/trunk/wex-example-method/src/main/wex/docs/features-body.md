@@ -1,8 +1,0 @@
-## Features
-
-+ Implements method examples
-
-
-
-
-
