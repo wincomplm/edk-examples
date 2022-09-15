@@ -15,7 +15,8 @@ bootcamp/wex-bootcamp-part-commons/trunk/nbactions.xml
 /wex-example-approved/target/
 /wex-example-rest/target/
 /wex-example-windchillplus/target/
-
+/wex-example-features/target/
+/wex-example-queues/target/
 pack/trunk/wex-example-helloworld/target/
 pack/trunk/wex-example-helloworld/ZKM_log.txt
 pack/trunk/wex-example-helloworld/ZKM_TrimLog.txt
@@ -33,3 +34,5 @@ pack/trunk/wex-example-log/target/
 pack/trunk/wex-example-approved/target/
 pack/trunk/wex-example-rest/target/
 pack/trunk/wex-example-windchillplus/target/
+pack/trunk/wex-example-ui/ZKM_log.txt
+pack/trunk/wex-example-ui/ZKM_TrimLog.txt
