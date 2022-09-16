@@ -7,11 +7,15 @@
 
 package com.wincomplm.wex.example.queues.impl.queue;
 
+import com.ptc.core.components.util.TimeZoneHelper;
 import com.wincomplm.wex.log.api.WexLogger;
 import com.wincomplm.wex.log.base.api.IWexLogger;
+import java.sql.Timestamp;
+import java.util.Calendar;
 import wt.org.WTPrincipal;
 import wt.queue.ProcessingQueue;
 import wt.queue.QueueHelper;
+import wt.queue.ScheduleQueue;
 import wt.session.SessionHelper;
 import wt.session.SessionServerHelper;
 import wt.util.WTException;
@@ -20,16 +24,39 @@ import wt.util.WTException;
  *
  * @author simon
  */
-public class WexProcessQueueHelper {
+public class WexQueueHelper {
     
 
 // --- Operation Section ---
 
-    private static IWexLogger logger = WexLogger.getLogger(WexProcessQueueHelper.class);
-    public static WexProcessQueueHelper instance = new WexProcessQueueHelper(); 
+    private static IWexLogger logger = WexLogger.getLogger(WexQueueHelper.class);
+    public static WexQueueHelper instance = new WexQueueHelper(); 
             
-    /** Will create a required */
-    public ProcessingQueue getQueue(String queueName) throws WTException {
+   
+    
+    public void addScheduledEntry(String queueName,Class[] klasses,Object[] params, long time) throws Exception { 
+        ScheduleQueue sQueue = getScheduleQueue(queueName);       
+        sQueue.addEntry(SessionHelper.getPrincipal(), "invoke", "com.wincomplm.wex.kernel.api.invoke.WexInvoker", 
+                klasses, params, new Timestamp(time));
+    }
+
+        
+    private  synchronized ScheduleQueue getScheduleQueue(String queueName) throws WTException {
+        ScheduleQueue queue = (ScheduleQueue) QueueHelper.manager.getQueue(queueName, ScheduleQueue.class);
+        if (queue != null) {
+            return queue;
+        }
+        queue = QueueHelper.manager.createScheduleQueue(queueName);
+        QueueHelper.manager.setSuspendDuration(queue, "10");
+        QueueHelper.manager.setExceptionRetries(queue, "0");
+        QueueHelper.manager.startQueue(queue);
+        return queue;
+    }
+      
+      
+    
+    /** Will create as required */
+    public ProcessingQueue getProcessQueue(String queueName) throws WTException {
         ProcessingQueue theProcessingQueue = QueueHelper.manager.getQueue(queueName);
         boolean starting = false;
         if (theProcessingQueue==null) {

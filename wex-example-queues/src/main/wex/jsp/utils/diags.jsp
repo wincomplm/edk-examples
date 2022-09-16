@@ -17,7 +17,8 @@
             <tr><td>Text for Q</td>
                 <td><input class="wex-input" value="Example" id="wex-diags-text" size="30"/></td>
                 <td></td>
-                <td><button class="wex-button wex-button-active" onclick="doAction()">Add queue entry</button></td>
+                <td><button class="wex-button wex-button-active" onclick="doAction(true)">Add process queue entry</button></td>
+                <td><button class="wex-button wex-button-active" onclick="doAction(false)">Add scheduled queue entry</button></td>
             </tr>
         </table>
 
@@ -25,13 +26,13 @@
         <div class="wex-results" id="wex-diags-result"></div>
 
         <script language="JavaScript">
-            var doAction = function () {
+            var doAction = function (process) {
                 var result = $("#wex-diags-result");
                 result.html("Running....");
                 var text = $("#wex-diags-text").val();
                 $.ajax({
                     url: "rundiags.jsp",
-                    data: {'text': text},
+                    data: {'text': text, 'process': process},
                     success: function (data) {
                         result.html(data);
                     }
