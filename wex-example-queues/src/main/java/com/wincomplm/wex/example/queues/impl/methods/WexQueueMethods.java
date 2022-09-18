@@ -56,7 +56,7 @@ public class WexQueueMethods  {
         String result="Added entry to execute in 1 minute";
         logger.trace("<=addScheduledQueueEntry");
         return result;
-    }//addProcessQueueEntry
+    }//addScheduledQueueEntry
     
     public String addProcessQueueEntry(HttpServletRequest request, HttpServletResponse response) throws Exception {
         logger.trace("=>addProcessQueueEntry");
