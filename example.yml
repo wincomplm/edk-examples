@@ -1,8 +1,6 @@
 pool:
   vmImage: windows-latest
 
-variables:
-- group: EDK Build Settings
 
 jobs:
 - job: BuildExtension
