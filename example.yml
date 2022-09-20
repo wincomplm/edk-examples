@@ -1,0 +1,17 @@
+pool:
+  vmImage: windows-latest
+
+variables:
+- group: EDK Build Settings
+
+jobs:
+- job: BuildExtension
+  displayName: Build Extension
+  
+  steps:
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
