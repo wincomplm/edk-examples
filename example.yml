@@ -12,5 +12,4 @@ jobs:
     inputs:
       script: |
         echo Write your commands here
-      
         echo Hello world
