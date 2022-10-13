@@ -24,5 +24,6 @@ public class ExampleUIMethods {
         WexSecurePage.secureAdminOnly();
     }//securePage
 
+
     
 }

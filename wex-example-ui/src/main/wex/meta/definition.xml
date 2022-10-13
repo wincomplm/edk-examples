@@ -20,9 +20,11 @@
     <install>
         <menus>
             <extension menu="more parts actions" file="PartClient-actionmodels" action="edkHelloWorld" position="SETSTATE"/>
+            <extension menu="more parts actions" file="PartClient-actionmodels" action="action-methods.example-command" position="SETSTATE"/>
             <extension menu="header actions" file="navigation-actionModels" action="edkHelloWorldNonPop"/>
         </menus>
         <actions>
+            <command class="com.wincomplm.wex.kernel.impl.actions.WexActionMethods" method="execute" name="action-methods.example-command"  shortcut="false"/>
             <wizard name="edkHelloWorld"   url="edkHelloWorld.jsp" shortcut="false"/>
             <page name="edkHelloWorldNonPop"   url="edkHelloWorld.jsp"/>
         </actions>

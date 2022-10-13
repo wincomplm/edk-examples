@@ -30,4 +30,11 @@ public class WexResources extends WTListResourceBundle {
     public static final String P5 = "com.wincomplm.wex.example.ui.edkHelloWorldNonPop.tooltip";
     @RBEntry("Example Quick Menu")
     public static final String P6 = "com.wincomplm.wex.example.ui.edkHelloWorldNonPop.activetooltip";
+
+    @RBEntry("Example Command Menu")
+    public static final String P7 = "com.wincomplm.wex.example.ui.action-methods.example-command.description";
+    @RBEntry("Example Command Menu")
+    public static final String P8 = "com.wincomplm.wex.example.ui.action-methods.example-command.tooltip";
+    @RBEntry("Example Command Menu")
+    public static final String P9 = "com.wincomplm.wex.example.ui.action-methods.example-command.activetooltip";
 }
