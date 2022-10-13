@@ -29,7 +29,7 @@ import wt.util.WTException;
 public class ExampleActionMethods {
 
     @WexActionMethod("example-command")
-    public static FormResult downloadCad2(NmCommandBean ncb) throws Exception {
+    public static FormResult exampleCommand(NmCommandBean ncb) throws Exception {
         FormResult formResult = new FormResult();
         formResult.setStatus(FormProcessingStatus.SUCCESS);
         Set<Object> selected = getSelected(ncb, null, true);
