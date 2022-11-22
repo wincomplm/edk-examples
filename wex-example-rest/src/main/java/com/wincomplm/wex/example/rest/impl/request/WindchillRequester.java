@@ -102,7 +102,7 @@ public class WindchillRequester {
         String result = gson.toJson(exParts);
         logger.trace("<=getModifiedParts");
         return result;
-    }//string
+    }
 
     private List<WTPart> getModifiedPartsFrom(Date from) throws QueryException, WTException {
         QuerySpec qs = new QuerySpec(WTPart.class);
