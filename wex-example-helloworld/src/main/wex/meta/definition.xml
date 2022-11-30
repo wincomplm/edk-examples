@@ -1,4 +1,4 @@
-<wex-definition>
+    <wex-definition>
     <meta>
         <group-id>${groupId}</group-id>      
         <artifact-id>${artifactId}</artifact-id>      

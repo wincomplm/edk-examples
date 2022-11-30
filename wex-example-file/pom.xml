@@ -13,10 +13,10 @@
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
     <groupId>com.wincomplm</groupId>
-    <artifactId>wex-example-method</artifactId>
+    <artifactId>wex-example-file</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
-    <name>wex-example-method</name>
+    <name>wex-example-file</name>
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
@@ -31,9 +31,8 @@
             <artifactId>wex-system</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-text</artifactId>
-            <version>1.10.0</version>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wt-framework-commons</artifactId>
         </dependency>
     </dependencies> 
 </project>
