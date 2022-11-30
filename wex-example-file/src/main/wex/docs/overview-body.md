@@ -1,3 +1,3 @@
 ## Overview
 
-Demo extension to show a configuration example
+Demo extension to show a file upload example

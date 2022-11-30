@@ -1,6 +1,6 @@
 ## Features
 
-+ Implements a extension configuration
++ Implements a simple file upload
 
 
 
