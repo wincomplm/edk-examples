@@ -11,7 +11,7 @@
     <properties>   
         <major>1</major>
         <minor>1</minor>
-        <beta></beta>
+        <beta>2</beta>
         <revision>${major}.${minor}b${beta}-${wex.wt}</revision>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
     </properties>
@@ -34,11 +34,14 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-log</artifactId>
         </dependency>  
-         <dependency>
+        <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-framework-commons</artifactId>
         </dependency> 
-      
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-config</artifactId>
+        </dependency>
     </dependencies>
 
 	
