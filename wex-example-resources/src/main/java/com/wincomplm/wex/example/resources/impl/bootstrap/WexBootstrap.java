@@ -11,6 +11,8 @@ import com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage;
 import com.wincomplm.wex.loadconfig.impl.actions.ResourceAction;
 import com.wincomplm.wex.loadconfig.impl.helper.InstallHelper;
 import com.wincomplm.wex.system.impl.scan.WexScanner;
+import java.io.File;
+import org.apache.commons.io.FileUtils;
 
 
 /**
@@ -24,24 +26,25 @@ public class WexBootstrap implements IWexBootstrap {
         WexScanner.scan(wex, "com.wincomplm.wex.example.resources");
         
         InstallHelper.setWexid(wex.getUid());
-        InstallHelper.setVersion("1.1");
+        InstallHelper.setVersion("1.0");
         
         try {
             System.out.println("Is deploy:" + InstallHelper.isDeploy());
             if (InstallHelper.isDeploy()) {
-                new ResourceAction().run();
-                
+                new ResourceAction().run(); 
             }      
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Failed to init " + wex.getUid());
-        }
-                
-                
-    }
+        }           
+    }   
 
     @Override
     public void terminate(IWexKernelPackage wex) throws Exception {
+        if (InstallHelper.isUndeploy()) {
+            File lockPath = new File(InstallHelper.getLockPath());
+            FileUtils.deleteDirectory(lockPath);
+        }
     }
 
 }
