@@ -4,14 +4,14 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-parent</artifactId>
-        <version>2.23</version>
+        <version>2.26</version>
     </parent>
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-rest</artifactId>
     <properties>   
         <major>1</major>
-        <minor>1</minor>
-        <beta>2</beta>
+        <minor>2</minor>
+        <beta></beta>
         <revision>${major}.${minor}b${beta}-${wex.wt}</revision>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
     </properties>

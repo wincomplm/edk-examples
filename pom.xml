@@ -24,6 +24,8 @@
         <module>wex-example-ui</module>
         <module>wex-example-windchillplus</module>
         <module>wex-example-wizard</module>
+        <module>wex-example-file</module>
+        <module>wex-example-resources</module>
     </modules>
     <name>wex-example-pack</name>
 </project> 
