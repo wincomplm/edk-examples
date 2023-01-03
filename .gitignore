@@ -43,3 +43,4 @@ wex-example-features/ZKM_TrimLog.txt
 /target/
 /wex-example-file/target/
 /wex-example-resources/target/
+/wex-example-badapi/target/
