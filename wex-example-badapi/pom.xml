@@ -41,7 +41,7 @@
                 <executions>
                     <execution>
                         <configuration>
-                            <skipErrors>${err.skip}</skipErrors>
+                            <skipErrors>${windchill.api.skip}</skipErrors>
                         </configuration>
                         <phase>compile</phase>
                         <goals>
