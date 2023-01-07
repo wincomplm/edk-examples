@@ -37,6 +37,12 @@
                 <groupId>com.wincomplm</groupId>
                 <artifactId>wex-windchill-api-scan</artifactId>
                 <version>1.0-SNAPSHOT</version>
+                
+                <configuration>
+                  <skipErrors>true</skipErrors>
+                </configuration>
+        
+        
                 <executions>
                     <execution>
                         <phase>compile</phase>
