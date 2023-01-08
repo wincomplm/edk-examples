@@ -13,4 +13,7 @@ package com.wincomplm.wex.example.badapi.examples;
  */
 public class GoodCode {
 
+    static public void hello() {
+        System.out.println("Hello world");
+    }
 }
