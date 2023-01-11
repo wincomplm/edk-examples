@@ -9,13 +9,13 @@
     <properties>
         <major>1</major>
         <minor>0</minor>
-        <beta>1</beta>
+        <beta></beta>
         <revision></revision>
     </properties>
  
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-badapi</artifactId>
-    <version>${major}.${minor}b${beta}-${wex.wt}</version>
+    <version>${major}.${minor}-${wex.wt}</version>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
