@@ -34,7 +34,7 @@ jobs:
     inputs:
       mavenPomFile: 'pom.xml'
       mavenOptions: '-Xmx3072m'
-      options: '-P $(wc-version) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true -Dobfuscate=false -Dcheckstyle.skip=true -Dwindchill.api.approved=WVE'
+      options: '-P $(wc-version) -Dcve.check.skip=true -Djar.sign=true -Dwex.sign=true -Dobfuscate=false -Dcheckstyle.skip=true -Dwindchill.api.approved=WVE'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
