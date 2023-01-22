@@ -5,14 +5,15 @@
  * You shall not disclose such confidential information and shall use it only in accordance with the terms and conditions of the license agreement.
  */
 
-package com.wincomplm.wex.example.badapi.examples;
-
-import java.sql.Connection;
+package com.wincomplm.wex.example.sast.examples;
 
 /**
  *
  * @author SimonHeath
  */
-public class SQLBad {
-    Connection conn = null;
+public class GoodCode {
+
+    static public void hello() {
+        System.out.println("Hello world");
+    }
 }

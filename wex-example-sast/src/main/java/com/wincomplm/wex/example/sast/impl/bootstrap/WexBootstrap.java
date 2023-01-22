@@ -1,5 +1,5 @@
 
-package com.wincomplm.wex.example.badapi.impl.bootstrap;
+package com.wincomplm.wex.example.sast.impl.bootstrap;
 
 import com.wincomplm.wex.kernel.impl.bootstrap.IWexBootstrap;
 import com.wincomplm.wex.kernel.impl.manager.IWexKernelPackage;

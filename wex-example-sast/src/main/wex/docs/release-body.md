@@ -1,5 +1,5 @@
 ## Release Notes
 ### 1.1
-    * Added approval checks
+    * Updated to Latest Parent
 ### 1.0
     * Initial release

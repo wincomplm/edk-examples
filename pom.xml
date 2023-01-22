@@ -53,7 +53,7 @@
             
     <module>wex-example-resources</module>
           
-    <module>wex-example-badapi</module>
+    <module>wex-example-sast</module>
       
   </modules>
       

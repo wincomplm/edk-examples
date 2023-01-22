@@ -1,8 +1,8 @@
 <wex-definition>
     <meta>
         <group-id>com.wincomplm</group-id>   
-        <artifact-id>wex-example-badapi</artifact-id>
-        <display-name>Display name here</display-name>
+        <artifact-id>wex-example-sast</artifact-id>
+        <display-name>Static analysis test example</display-name>
         <system>false</system>   
         <description>Description here</description>
     </meta>
