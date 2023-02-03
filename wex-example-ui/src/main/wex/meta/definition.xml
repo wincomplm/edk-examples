@@ -20,10 +20,25 @@
     <install>
         <menus>
             <extension menu="more parts actions" file="PartClient-actionmodels" action="action-methods.example-command" position="SETSTATE"/>
+            <extension menu="header actions" file="navigation-actionModels" action="exampleManager"/>
         </menus>
         <actions>
             <command class="com.wincomplm.wex.kernel.impl.actions.WexActionMethods" method="execute" name="action-methods.example-command"  shortcut="false"/>
+            <page name="exampleManager"   url="manager.jsp"/>  
         </actions>
     </install>
+ 
+    <license>
+        <dependency>
+            <groupId>jBox</groupId>
+            <artifactId>jBox</artifactId>
+            <version>1.0</version>
+            <type>MIT</type>
+            <license-version>1.0</license-version>
+            <copyright>Copyright (c) 2021 Stephan Wagner</copyright>
+        </dependency>
+    </license>
+    
+    
     
 </wex-definition>
