@@ -1,0 +1,21 @@
+
+<div class="pos-f-t p-4 m-2">
+    <nav class="navbar navbar-dark bg-dark bd-navbar fixed-top" style="display: block">
+        <div class="d-flex align-middle">
+            <!-- logo -->
+            <a class="navbar-brand mr-0 mr-md-2" aria-label="Bootstrap">
+                <img class="wex-nav-logo" src="images/ptc_color.svg"/>
+            </a>
+
+            <%-- Title --%>
+            <div class="wex-nav-page-title ml-2 mr-2">Example Manager</div>
+            <div class="navbar-nav-scroll ml-auto align-self-center d-flex">
+                <%-- help button for kb info article --%>
+                <button class="btn btn-dark wex-nav-bar-icon" type="button" handler="navbarButton" onclick="gotoInfoArticle()" title="Go To Documentation">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+

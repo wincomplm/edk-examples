@@ -1,0 +1,8 @@
+<div class="wex-body">
+    <div style="margin-top: 20px;">
+        <div class="btn-group col-auto pr-0" role="group">
+            <button type="button" class="btn wex-btn" onclick="doSomething()" id="wex-ui-test-btn">Test Button</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,34 @@
+<%@include file="pindex.jspf" %>
+<%@ page import="javax.servlet.http.HttpUtils"%>
+<%@ page import="com.ptc.core.appsec.CSRFProtector"%>
+<%@ taglib uri="http://www.wincom-plm.com/taglib/wex-kernel" prefix="wex" %>
+
+${wex:invoke("com.wincomplm.wex-watermark-manager","ui-methods.securePage",null)}
+
+<%
+    String urlpath = request.getRequestURI(); // Get the full URL
+    urlpath=urlpath.substring(0,request.getRequestURI().lastIndexOf("/")); // Shorten
+    String jspath =  urlpath.replace("/jsp/","/javascript/"); // Adjust to new paths
+    String csspath = urlpath.replace("/jsp/","/css/");
+    String nonce = CSRFProtector.getNonce(request.getSession());
+%>
+
+
+<script src="<%=jspath%>/main.js"></script>   
+<script src="<%=jspath%>/lib/jquery-3.6.0.min.js"></script>   
+<script src="<%=jspath%>/lib/bootstrap.min.js"></script>   
+<script src="<%=jspath%>/lib/jBox.all.min.js<%=PINDEX%>"></script>   
+
+
+<link href="<%=csspath%>/lib/bootstrap.min.css<%=PINDEX%>" rel="stylesheet">
+<link href="<%=csspath%>/lib/jBox.all.min.css<%=PINDEX%>" rel="stylesheet">
+<link href="<%=csspath%>/lib/fa/css/all.min.css<%=PINDEX%>" rel="stylesheet">
+<link href="<%=csspath%>/main.css<%=PINDEX%>" rel="stylesheet">
+
+
+<input type="hidden" id="CSRF_NONCE" name="CSRF_NONCE" value="<%=nonce%>"/>
+
+<div class="wex-background-body global-body" >   
+    <%@include file="header.jspf" %>
+    <%@include file="body.jspf" %>
+</div>

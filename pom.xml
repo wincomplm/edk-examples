@@ -54,7 +54,7 @@
     <module>wex-example-resources</module>
           
     <module>wex-example-sast</module>
-      
+    <module>mavenproject1</module>
   </modules>
       
   <name>wex-example-pack</name>

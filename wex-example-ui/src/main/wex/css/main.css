@@ -1,0 +1,62 @@
+
+.wex-background-body {
+    background-color: #fff;
+}
+
+.wex-body {
+    margin: 20px;
+}
+
+.global-body {
+    height:100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wex-nav-page-title {
+    color: white; font-size:180%;
+}
+
+.wex-nav-bar-icon {
+    height:2.62em; 
+    width:2.62em; 
+    border-radius: 10%;
+}
+
+.wex-nav-logo {
+    height: 1.8em;
+    width: 1.8em;
+}
+
+.wex-btn {
+    color: #fff;
+    background-color: #6BC04B;
+    border-color: #f8f9fa;
+}
+
+.wex-btn:hover {
+    color: #fff;
+    background-color: #57993D;
+}
+
+.wex-icon {
+    margin: -2px;    
+}
+
+.wex-notice-info {
+    background-color:  #6BC04B
+}
+.wex-notice-error {
+    background-color:  orange
+}
+
+.jBox-Confirm-button-submit {
+    border-bottom-right-radius: 4px;
+    background: #6BC04B;
+    color: #fff;
+}
+
+.jBox-Confirm-button-submit:hover {
+    background: #57993D;
+}
