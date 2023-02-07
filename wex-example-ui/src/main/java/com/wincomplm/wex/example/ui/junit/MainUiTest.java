@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
 import org.openqa.selenium.By;
-import com.wincomplm.wex.wt.framework.commons.system.WTConstants;
 import org.openqa.selenium.WebElement;
 
 public class MainUiTest extends JunitTestAbstract {
