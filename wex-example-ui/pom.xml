@@ -4,13 +4,13 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-parent</artifactId>
-        <version>2.30</version>
+        <version>2.31</version>
     </parent>
     <properties>
         <major>1</major>
         <minor>5</minor>
-        <beta>1</beta>
-        <revision>${major}.${minor}b${beta}-${wex.wt}</revision>
+        <beta></beta>
+        <revision>${major}.${minor}-${wex.wt}</revision>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 
     </properties>
@@ -44,15 +44,16 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-security-commons</artifactId>
         </dependency>
-    
+         <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-wt-framework</artifactId>
+        </dependency>  
   
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-junit</artifactId>
-            <version>1.0b1-${wex.wt}</version>
-            <scope>provided</scope>
         </dependency>
-        
+
     </dependencies> 
     
     <build>
