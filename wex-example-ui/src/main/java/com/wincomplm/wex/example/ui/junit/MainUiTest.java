@@ -9,9 +9,6 @@ import org.openqa.selenium.WebElement;
 
 public class MainUiTest extends JunitTestAbstract {
 
-    // Modify this if your test server has different credentials
-    // Warning do not use unencrypted credentials here 
-    String auth = "wcadmin:wcadmin";    
 
     @Before
     public void setUp() {
@@ -25,7 +22,7 @@ public class MainUiTest extends JunitTestAbstract {
 
     @Test
     public void test() throws Exception {
-        driver.get(getAuthUrl(auth) + "/netmarkets/jsp/com/wincomplm/wex/example/ui/index.jsp");
+        driver.get(getAuthUrl() + "/netmarkets/jsp/com/wincomplm/wex/example/ui/index.jsp");
         driver.findElement(By.id("wex-ui-test-btn")).click();
         WebElement elem = driver.findElement(By.cssSelector(".jBox-content"));
         System.out.println("This is the text:" + elem.getText());
