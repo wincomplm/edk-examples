@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.wincomplm</groupId>
+        <artifactId>wex-parent</artifactId>
+        <version>2.36</version>
+    </parent>
+    <properties>
+        <major>1</major>
+        <minor>5</minor>
+        <beta></beta>
+        <revision>${major}.${minor}-${wex.wt}</revision>
+    </properties>
+    <groupId>com.wincomplm</groupId>
+    <artifactId>wex-example-security</artifactId>
+    <version>${revision}</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.ptc</groupId>
+            <artifactId>windchill-pdmlink</artifactId>     
+        </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-kernel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-system</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-junit</artifactId>
+        </dependency>
+    </dependencies> 
+</project>

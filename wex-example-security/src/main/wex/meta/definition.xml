@@ -1,0 +1,20 @@
+<wex-definition>
+    <meta>
+        <group-id>${groupId}</group-id>      
+        <artifact-id>${artifactId}</artifact-id>      
+        <display-name>Example - Security</display-name>
+        <system>false</system> 
+        <description>Hello to the world of security</description>  
+    </meta>
+    <build>
+        <version>
+            <major>${major}</major>
+            <minor>${minor}</minor>
+            <beta>${beta}</beta>
+        </version>
+        <host>
+            <release>${wex.wt}</release>
+        </host>
+    </build> 
+
+</wex-definition>
