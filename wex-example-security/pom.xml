@@ -33,5 +33,10 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-junit</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-security-doc-annotations</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies> 
 </project>
