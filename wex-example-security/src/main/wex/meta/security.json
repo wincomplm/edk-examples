@@ -20,7 +20,7 @@
             
         ],
         "LevelC": [
-            { "desc":"Implements a Windchill UI",                           "valid":"false" }
+            { "desc":"Implements a Windchill UI",                           "valid":"true" }
         ]                 
     }
 }
