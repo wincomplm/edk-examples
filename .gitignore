@@ -49,3 +49,4 @@ wex-example-features/ZKM_TrimLog.txt
 /testi/target/
 /testi2/target/
 wex-example-security/src/main/wex/docs/generated/security.pdf
+/wex-example-security/src/main/resources/security/generated/security.pdf
