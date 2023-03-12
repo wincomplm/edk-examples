@@ -15,16 +15,6 @@
             <username>[userid]</username>
             <password>[password]</password>
         </server>
-         <server>
-            <id>WINCOM-PRIVATE-REPO</id>
-            <username>[userid]</username>
-            <password>[password]</password>
-        </server>
-        <server>
-            <id>WINCOM-RELEASES-REPO</id>
-            <username>[userid]</username>
-            <password>[password]</password>
-        </server>
         <server>
             <id>wincom-windchill-repo</id>
             <username>[userid]</username>
@@ -37,16 +27,6 @@
         </server>
         <server>
             <id>wincom-legacy-repo</id>
-            <username>[userid]</username>
-            <password>[password]</password>
-        </server>
-        <server>
-            <id>wincom-geavio-repo</id>
-            <username>[userid]</username>
-            <password>[password]</password>
-        </server>
-        <server>
-            <id>wincom-geavio-snapshots-repo</id>
             <username>[userid]</username>
             <password>[password]</password>
         </server>
@@ -65,17 +45,6 @@
                     <url>https://nexus.wex-cloud.net/repository/releases/</url>
                     <layout>default</layout>
                 </repository>
-                <repository>
-                    <id>WINCOM-PRIVATE-REPO</id>
-                    <url>https://nexus.wex-cloud.net/repository/private/</url>
-                    <layout>default</layout>
-                </repository>
-                <repository>
-                    <id>WINCOM-RELEASES-REPO</id>
-                    <url>https://nexus.wex-cloud.net/repository/releases/</url>
-                    <layout>default</layout>
-                </repository>
-
                 <repository>
                     <id>wincom-windchill-repo</id>
                     <url>https://nexus.wex-cloud.net/repository/windchill/</url>
@@ -98,17 +67,6 @@
                     <url>https://nexus.wex-cloud.net/repository/legacy/</url>
                     <layout>default</layout>
                 </repository>
-                <repository>
-                    <id>wincom-geavio-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/clients-geavio/</url>
-                    <layout>default</layout>
-                </repository>
-                <repository>
-                    <id>wincom-geavio-snapshots-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/clients-geavio-snapshots/</url>
-                    <layout>default</layout>
-                </repository>
-
 
             </repositories>
 
