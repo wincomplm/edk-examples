@@ -111,6 +111,35 @@
 
 
             </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>wincom-private-repo</id>
+                    <url>https://nexus.wex-cloud.net/repository/private/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>wincom-snapshots-repo</id>
+                    <url>https://nexus.wex-cloud.net/repository/snapshots/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+
+
         </profile>
     </profiles>
     <activeProfiles>
