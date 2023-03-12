@@ -96,8 +96,6 @@
                     </snapshots>
                 </pluginRepository>
             </pluginRepositories>
-
-
         </profile>
     </profiles>
     <activeProfiles>
