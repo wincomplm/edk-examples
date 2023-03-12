@@ -10,6 +10,9 @@
     <approval>
         <!-- <approved>windchill-plus</approved> -->
     </approval>
+    <security>
+        <docid></docid>
+    </security>
     <build>
         <version>
             <major>${major}</major>
