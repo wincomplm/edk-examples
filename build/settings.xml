@@ -15,6 +15,16 @@
             <username>[userid]</username>
             <password>[password]</password>
         </server>
+         <server>
+            <id>WINCOM-PRIVATE-REPO</id>
+            <username>[userid]</username>
+            <password>[password]</password>
+        </server>
+        <server>
+            <id>WINCOM-RELEASES-REPO</id>
+            <username>[userid]</username>
+            <password>[password]</password>
+        </server>
         <server>
             <id>wincom-windchill-repo</id>
             <username>[userid]</username>
@@ -46,6 +56,17 @@
                     <layout>default</layout>
                 </repository>
                 <repository>
+                    <id>WINCOM-PRIVATE-REPO</id>
+                    <url>https://nexus.wex-cloud.net/repository/private/</url>
+                    <layout>default</layout>
+                </repository>
+                <repository>
+                    <id>WINCOM-RELEASES-REPO</id>
+                    <url>https://nexus.wex-cloud.net/repository/releases/</url>
+                    <layout>default</layout>
+                </repository>
+
+                <repository>
                     <id>wincom-windchill-repo</id>
                     <url>https://nexus.wex-cloud.net/repository/windchill/</url>
                     <layout>default</layout>
@@ -67,6 +88,8 @@
                     <url>https://nexus.wex-cloud.net/repository/legacy/</url>
                     <layout>default</layout>
                 </repository>
+
+
 
             </repositories>
 
@@ -96,6 +119,8 @@
                     </snapshots>
                 </pluginRepository>
             </pluginRepositories>
+
+
         </profile>
     </profiles>
     <activeProfiles>
