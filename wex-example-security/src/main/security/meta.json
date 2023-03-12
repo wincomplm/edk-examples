@@ -3,7 +3,7 @@
     "approval": {
         "review": { "name":"Ellis Douglas", "date":"2023-2-20" },
         "approve": { "name":"Simon Heath", "date":"2023-2-20" },
-        "ptcapprove": { "name":"Bob Jones", "date":"2023-2-21"" }
+        "ptcapprove": { "name":"Bob Jones", "date":"2023-2-21"}
     },
     "suppress": [
         { "id":"CVE-2022-45688", "reason":"This API is encapsulated and there is no attack, hutool-json not used" },
@@ -21,7 +21,7 @@
             { "desc":"Escalation privilage access to Windchill",            "valid":"false" },
             { "desc":"Administration Only UIs",                             "valid":"false" },
             { "desc":"Direct access UIs e.g. downloads",                    "valid":"false" },
-            { "desc":"Requires XSS/CSRF testing",                           "valid":"false" }
+            { "desc":"Requires XSS/CSRF testing",                           "valid":"true" }
             
         ],
         "LevelC": [
