@@ -3,7 +3,7 @@
 <%@ page import="com.ptc.core.appsec.CSRFProtector"%>
 <%@ taglib uri="http://www.wincom-plm.com/taglib/wex-kernel" prefix="wex" %>
 
-${wex:invoke("com.wincomplm.wex-watermark-manager","ui-methods.securePage",null)}
+${wex:invoke("com.wincomplm.wex-example-ui","ui-methods.securePage",null)}
 
 <%
     String urlpath = request.getRequestURI(); // Get the full URL
