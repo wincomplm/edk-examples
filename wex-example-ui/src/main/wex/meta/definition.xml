@@ -24,7 +24,7 @@
         </menus>
         <actions>
             <command class="com.wincomplm.wex.kernel.impl.actions.WexActionMethods" method="execute" name="action-methods.example-command"  shortcut="false"/>
-            <page name="exampleManager"   url="manager.jsp"/>  
+            <page name="exampleManager"   url="manager2.jsp"/>  
         </actions>
     </install>
  
