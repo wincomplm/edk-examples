@@ -3,7 +3,7 @@ resources:
   - repository: edk-examples
     type: github
     endpoint: EDK Examples
-    name: edk-examples
+    name: EDK Examples
   - repository: wex-junit
     type: github
     endpoint: wex-junit
