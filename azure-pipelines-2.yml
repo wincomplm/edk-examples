@@ -1,3 +1,13 @@
+resources:
+  repositories:
+  - repository: edk-examples
+    type: github
+    name: self
+  - repository: wex-junit
+    type: github
+    endpoint: wincomplm/wex-junit
+    name: wex-junit
+  
 pool:
   vmImage: windows-latest
 
@@ -9,6 +19,8 @@ jobs:
   displayName: Build Extension
   
   steps:
+  - checkout: self
+  - checkout: wex-junit
 
   - task: JavaToolInstaller@0
     displayName: 'Use Java 11'
@@ -29,27 +41,11 @@ jobs:
         ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
         ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
         Copy-Item $(Build.SourcesDirectory)/build/settings.xml -Destination ~/.m2
-  
-  - task: Maven@3
-    displayName: 'Build $(wcversion)'
-    inputs:
-      mavenPomFile: '$(artifactId)/pom.xml'
-      mavenOptions: '-Xmx3072m'
-      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '1.11'
-      jdkArchitectureOption: 'x64'
-      goals: 'install'
 
-  - task: CopyFiles@2
-    displayName: 'Move to staging area'
-    inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)'
   - task: Maven@4
     displayName: 'Build 12.1 Junit'
     inputs:
+      mavenPomFile: '$(artifactIdJunit)/pom.xml'
       goals: 'clean install'
       options: '-P 12.1 -Dwex.junit.exclude=none -Dwindchill.api.skip=$(windchill.api.skip) -Dcve.check.skip=$(cve.check.skip) -Dcheckstyle.skip=$(checkstyle.skip) -Djar.sign=$(jar.sign) -Dwex.sign=$(wex.sign) -Dobfuscate=$(obfuscate) -Denv.ZKM_HOME=$(system.defaultworkingdirectory)/zkm '
       publishJUnitResults: false
@@ -68,6 +64,25 @@ jobs:
       filePath: './$(Build.SourcesDirectory)/build/deployWexesToWindchill.ps1'
       arguments: '-user=$(wcadmin) -pass=$(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -dir $(build.artifactstagingdirectory)/junit'
 
+  
+  - task: Maven@3
+    displayName: 'Build $(wcversion)'
+    inputs:
+      mavenPomFile: '$(artifactId)/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      goals: 'install'
+
+  - task: CopyFiles@2
+    displayName: 'Move to staging area'
+    inputs:
+      SourceFolder: '$(system.defaultworkingdirectory)'
+      Contents: '**/*.wex'
+      TargetFolder: '$(build.artifactstagingdirectory)'
+ 
   - task: PowerShell@2
     displayName: 'Execute jUnit tests on Auto Test Server'
     inputs:
