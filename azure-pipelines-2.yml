@@ -2,6 +2,7 @@ resources:
   repositories:
   - repository: edk-examples
     type: github
+    endpoint: edk-examples
     name: self
   - repository: wex-junit
     type: github
