@@ -1,9 +1,5 @@
 resources:
   repositories:
-  - repository: edk-examples
-    type: github
-    endpoint: EDK Examples
-    name: EDK Examples
   - repository: wex-junit
     type: github
     endpoint: wex-junit
