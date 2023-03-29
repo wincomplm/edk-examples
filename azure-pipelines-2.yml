@@ -2,7 +2,7 @@ resources:
   repositories:
   - repository: wex-junit
     type: github
-    endpoint: wex-junit
+    endpoint: wincomplm/wex-junit
     name: wex-junit
   
 pool:
