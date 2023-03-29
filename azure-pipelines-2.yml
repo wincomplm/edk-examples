@@ -43,7 +43,7 @@ jobs:
         $userid = '$(support-wex-userid)'
         ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
         ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
-        Copy-Item $(Build.SourcesDirectory)/build/settings.xml -Destination ~/.m2
+        Copy-Item $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Destination ~/.m2
 
   - task: Maven@4
     displayName: 'Build 12.1 Junit'
