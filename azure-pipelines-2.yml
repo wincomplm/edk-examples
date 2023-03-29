@@ -61,7 +61,7 @@ jobs:
     inputs:
       targetType: filePath
       filePath: ' $(Build.SourcesDirectory)/edk-examples/build/deployWexesToWindchill.ps1'
-      arguments: '-user=$(wcadmin) -pass=$(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -dir $(build.artifactstagingdirectory)/junit/*'
+      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -dir $(build.artifactstagingdirectory)/junit/*'
 
   
   - task: Maven@3
