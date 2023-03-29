@@ -37,8 +37,8 @@ jobs:
       script: |  
         $pwd = '$(support-wex-pwd)'
         $userid = '$(support-wex-userid)'
-        ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
-        ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
+        ((Get-Content -path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml
+        ((Get-Content -path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml
         Copy-Item $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Destination ~/.m2
 
   - task: Maven@4
