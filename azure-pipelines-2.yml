@@ -2,11 +2,11 @@ resources:
   repositories:
   - repository: edk-examples
     type: github
-    endpoint: edk-examples
+    endpoint: EDK Examples
     name: self
   - repository: wex-junit
     type: github
-    endpoint: wincomplm/wex-junit
+    endpoint: wex-junit
     name: wex-junit
   
 pool:
