@@ -3,7 +3,7 @@ resources:
   - repository: wex-junit
     type: github
     endpoint: wex-junit
-    name: wex-junit
+    name: wincomplm/wex-junit
   
 pool:
   vmImage: windows-latest
