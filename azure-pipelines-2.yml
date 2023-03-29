@@ -29,24 +29,6 @@ jobs:
         ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
         ((Get-Content -path $(Build.SourcesDirectory)/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path $(Build.SourcesDirectory)/build/settings.xml
         Copy-Item $(Build.SourcesDirectory)/build/settings.xml -Destination ~/.m2
-  - task: Maven@3
-    displayName: 'Build $(wcversion)'
-    inputs:
-      mavenPomFile: '$(artifactId)/pom.xml'
-      mavenOptions: '-Xmx3072m'
-      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '1.11'
-      jdkArchitectureOption: 'x64'
-      goals: 'install'
-
-  - task: CopyFiles@2
-    displayName: 'Copy Files Staging'
-    inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)'
-        
   - task: Maven@4
     displayName: 'Build 12.1 Junit'
     inputs:
