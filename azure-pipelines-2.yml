@@ -67,7 +67,7 @@ jobs:
   - task: Maven@3
     displayName: 'Build $(wcversion)'
     inputs:
-      mavenPomFile: '$(artifactId)/pom.xml'
+      mavenPomFile: ' $(Build.SourcesDirectory)/edk-examples/$(artifactId)/pom.xml'
       mavenOptions: '-Xmx3072m'
       options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
       javaHomeOption: 'JDKVersion'
