@@ -64,6 +64,13 @@ jobs:
       arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -dir $(build.artifactstagingdirectory)/junit/*'
 
   
+  - task: PowerShell@2
+    displayName: 'Execute jUnit tests on Auto Test Server'
+    inputs:
+      targetType: filePath
+      filePath: ' $(Build.SourcesDirectory)/edk-examples/build/runJunitTests.ps1'
+      arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"'
+
   - task: Maven@3
     displayName: 'Build $(wcversion)'
     inputs:
@@ -82,12 +89,7 @@ jobs:
       Contents: '**/*.wex'
       TargetFolder: '$(build.artifactstagingdirectory)'
  
-  - task: PowerShell@2
-    displayName: 'Execute jUnit tests on Auto Test Server'
-    inputs:
-      targetType: filePath
-      filePath: ' $(Build.SourcesDirectory)/edk-examples/build/runJunitTests.ps1'
-      arguments: -user=$(wcadmin) -pass=$(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"'
+
 
   - task: PowerShell@2
     displayName: 'Upload release to teams'
