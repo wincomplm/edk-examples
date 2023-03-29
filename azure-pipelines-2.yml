@@ -19,11 +19,7 @@ jobs:
   - checkout: self
   - checkout: wex-junit
 
-  - task: PowerShell@2
-    displayName: 'Maven setup'
-    inputs:
-      targetType: 'inline'
-      script: Get-ChildItem -Path  $(Build.SourcesDirectory) -Recurse
+
 
   - task: JavaToolInstaller@0
     displayName: 'Use Java 11'
