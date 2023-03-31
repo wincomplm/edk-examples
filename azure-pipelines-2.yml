@@ -1,10 +1,10 @@
 resources:
   repositories:
-  - repository: wex-junit
+  - repository: ci-wex-build
     type: github
-    endpoint: wex-junit
-    name: wincomplm/wex-junit
-  
+    endpoint: ci-wex-build
+    name: wincomplm/ci-wex-build
+
 pool:
   vmImage: windows-latest
 
