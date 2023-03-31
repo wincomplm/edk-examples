@@ -17,7 +17,7 @@ jobs:
   
   steps:
   - checkout: self
-  - checkout: wex-junit
+  - checkout: ci-wex-build
 
 
 
@@ -41,36 +41,6 @@ jobs:
         ((Get-Content -path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml
         Copy-Item $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Destination ~/.m2
 
-  - task: Maven@4
-    displayName: 'Build 12.1 Junit'
-    inputs:
-      mavenPomFile: '$(artifactIdJunit)/pom.xml'
-      goals: 'clean install'
-      options: '-P 12.1 -Dwex.junit.exclude=none -Dwindchill.api.skip=$(windchill.api.skip) -Dcve.check.skip=$(cve.check.skip) -Dcheckstyle.skip=$(checkstyle.skip) -Djar.sign=$(jar.sign) -Dwex.sign=$(wex.sign) -Dobfuscate=$(obfuscate) -Denv.ZKM_HOME=$(system.defaultworkingdirectory)/zkm '
-      publishJUnitResults: false
-
-  - task: CopyFiles@2
-    displayName: 'Move to staging area (Junit)'
-    inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)/junit'
-
-  - task: PowerShell@2
-    displayName: 'Deploy jUnit WEX on Auto Test Server'
-    inputs:
-      targetType: filePath
-      filePath: ' $(Build.SourcesDirectory)/edk-examples/build/deployWexesToWindchill.ps1'
-      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -dir $(build.artifactstagingdirectory)/junit/*'
-
-  
-  - task: PowerShell@2
-    displayName: 'Execute jUnit tests on Auto Test Server'
-    inputs:
-      targetType: filePath
-      filePath: ' $(Build.SourcesDirectory)/edk-examples/build/runJunitTests.ps1'
-      arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"'
-
   - task: Maven@3
     displayName: 'Build $(wcversion)'
     inputs:
@@ -82,38 +52,9 @@ jobs:
       jdkArchitectureOption: 'x64'
       goals: 'install'
 
-  - task: CopyFiles@2
-    displayName: 'Move to staging area'
-    inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)'
- 
-
-
   - task: PowerShell@2
-    displayName: 'Upload release to teams'
+    displayName: 'Execute jUnit tests on Auto Test Server'
     inputs:
       targetType: filePath
-      filePath: ' $(Build.SourcesDirectory)/edk-examples/build/uploadToSharePointFilePath.ps1'
-      arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK-External -SPFolder /Documentos%20compartidos%2FGeneral%2FLatest -Folder $(build.artifactstagingdirectory)'
-
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: '$(build.artifactstagingdirectory)'
-      Contents: '**/*.wex'
-
-  - task: CopyFiles@2
-    displayName: 'Copy Files Staging'
-    inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.security.pdf'
-      TargetFolder: '$(build.artifactstagingdirectory)'
-
-  - task: PowerShell@2
-    displayName: 'Upload security report to teams'
-    inputs:
-      targetType: filePath
-      filePath: ' $(Build.SourcesDirectory)/edk-examples/build/uploadToSharePointFilePath.ps1'
-      arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK-External -SPFolder /Documentos%20compartidos%2FReports -Folder $(build.artifactstagingdirectory)'      
-      
+      filePath: ' $(Build.SourcesDirectory)/edk-examples/build/runJunitTests.ps1'
+      arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"'
