@@ -49,12 +49,15 @@ jobs:
       jdkArchitectureOption: 'x64'
       goals: 'install'
 
-  - task: CopyFiles@2
-    displayName: 'Move to staging area (wex)'
+  - task: PowerShell@2
+    displayName: 'Getting Wex file'
     inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)/wex'
+      targetType: inline
+      script: |
+        $dir = $(system.defaultworkingdirectory)
+        $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")}
+        Copy-Item $file -Destination '$(build.artifactstagingdirectory)/wex'
+
   
   - task: PowerShell@2
     displayName: 'Deploy Single WEX on Auto Test Server'
