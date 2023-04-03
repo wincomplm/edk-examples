@@ -54,7 +54,7 @@ jobs:
     inputs:
       targetType: inline
       script: |
-        $dir = $(system.defaultworkingdirectory)
+        $dir = $(system.defaultworkingdirectory)\
         $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")}
         Copy-Item $file -Destination '$(build.artifactstagingdirectory)/wex'
 
