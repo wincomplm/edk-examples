@@ -9,7 +9,7 @@
     <version>2.37</version>
   </parent>
       
-  <artifactId>wex-watermark-pack</artifactId>
+  <artifactId>wex-examples-pack</artifactId>
   <version>1.5</version>      
   <packaging>pom</packaging>
       
