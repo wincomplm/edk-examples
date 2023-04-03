@@ -63,7 +63,7 @@ jobs:
     displayName: 'Deploy Single WEX on Auto Test Server'
     inputs:
       targetType: filePath
-      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/deployWexesToWindchill.ps1'
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/deployToWindchill.ps1'
       arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -file $(build.artifactstagingdirectory)/$(buildId)'
 
   - task: PowerShell@2
