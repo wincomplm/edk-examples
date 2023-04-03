@@ -20,41 +20,9 @@ jobs:
   - checkout: ci-wex-build
 
 
-
-  - task: JavaToolInstaller@0
-    displayName: 'Use Java 11'
-    inputs:
-      versionSpec: 11
-      jdkArchitectureOption: x64
-      jdkSourceOption: PreInstalled
-  - task: MavenAuthenticate@0
-    inputs:
-      artifactsFeeds: 'wincomplm-products'
-  - task: PowerShell@2
-    displayName: 'Maven setup'
-    inputs:
-      targetType: 'inline'
-      script: |  
-        $pwd = '$(support-wex-pwd)'
-        $userid = '$(support-wex-userid)'
-        ((Get-Content -path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml
-        ((Get-Content -path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path  $(Build.SourcesDirectory)/edk-examples/build/settings.xml
-        Copy-Item $(Build.SourcesDirectory)/edk-examples/build/settings.xml -Destination ~/.m2
-
-  - task: Maven@3
-    displayName: 'Build $(wcversion)'
-    inputs:
-      mavenPomFile: ' $(Build.SourcesDirectory)/edk-examples/$(artifactId)/pom.xml'
-      mavenOptions: '-Xmx3072m'
-      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '1.11'
-      jdkArchitectureOption: 'x64'
-      goals: 'install'
-
   - task: PowerShell@2
     displayName: 'Execute jUnit tests on Auto Test Server'
     inputs:
       targetType: filePath
       filePath: ' $(Build.SourcesDirectory)/ci-wex-build/build/runJunitTests.ps1'
-      arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"'
+      arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"
