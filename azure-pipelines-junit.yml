@@ -53,9 +53,9 @@ jobs:
     displayName: 'Move to staging area (wex)'
     inputs:
       SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '*.wex'
+      Contents: '/*.wex'
       TargetFolder: '$(build.artifactstagingdirectory)/wex'
-
+  
   - task: PowerShell@2
     displayName: 'Deploy Single WEX on Auto Test Server'
     inputs:
