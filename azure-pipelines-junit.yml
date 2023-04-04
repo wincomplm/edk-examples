@@ -68,27 +68,7 @@ jobs:
       targetType: filePath
       filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/runJunitTests.ps1'
       arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"
-  - task: Maven@4
-    displayName: 'Build $(wcversion)'
-    inputs:
-      goals: 'clean install'
-      options: '-P ${w.version} -Dcve.check.skip=$(cve.check.skip) -Dwindchill.api.skip=$(windchill.api.skip) -Djar.sign=$(jar.sign) -Dcheckstyle.skip=$(checkstyle.skip) -Dwex.sign=$(wex.sign) -Dobfuscate=$(obfuscate) -Denv.ZKM_HOME=$(system.defaultworkingdirectory)/zkm '
-      publishJUnitResults: false
-    
-  - task: CopyFiles@2
-    displayName: 'Copy Files Staging'
-    inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)'
-        
-  - task: PowerShell@2
-    displayName: 'Upload release to teams'
-    inputs:
-      targetType: filePath
-      filePath: '$(Build.SourcesDirectory)/build/uploadToSharePointFilePath.ps1'
-      arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK-External -SPFolder /Documentos%20compartidos%2FGeneral%2FLatest -Folder $(build.artifactstagingdirectory)'
-
+  
   - task: DeleteFiles@1
     inputs:
       SourceFolder: '$(build.artifactstagingdirectory)'
