@@ -49,20 +49,26 @@ jobs:
       jdkArchitectureOption: 'x64'
       goals: 'install'
 
-  - task: CopyFiles@2
-    displayName: 'Move to staging area (JunitVersion)'
+  - task: PowerShell@2
+    displayName: 'Getting Wex file'
     inputs:
-      SourceFolder: '$(system.defaultworkingdirectory)'
-      Contents: '**/*.wex'
-      TargetFolder: '$(build.artifactstagingdirectory)/junitWex'
-    
+      targetType: inline
+      script: |
+        $dir = '$(Build.SourcesDirectory)/edk-examples/'
+        $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")} | % { $_.FullName }
+        Write-Host "##vso[task.setvariable variable=buildId;] $file"
+        Copy-Item $file -Destination '$(build.artifactstagingdirectory)/'
+        [string] $wexId= $Env:buildId
+        Write-Host "The buildId environment variable value is '$wexId'." 
+        write-host "env $env:buildId"
+
   - task: PowerShell@2
     displayName: 'Deploy Single WEX on Auto Test Server'
     inputs:
       targetType: filePath
-      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/deployWexesToWindchill.ps1'
-      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -dir $(build.artifactstagingdirectory)/junitWex'
-      
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/deployToWindchill.ps1'
+      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -file $(build.artifactstagingdirectory)/$(buildId)'
+
   - task: PowerShell@2
     displayName: 'Execute jUnit tests on Auto Test Server'
     inputs:
