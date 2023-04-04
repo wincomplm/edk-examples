@@ -58,8 +58,6 @@ jobs:
         $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")} | % { $_.FullName }
         Write-Host "##vso[task.setvariable variable=buildId;] $file"
         Copy-Item $file -Destination '$(build.artifactstagingdirectory)/'
-        [string] $wexId= $Env:buildId
-        Write-Host "The buildId environment variable value is '$wexId'." 
         write-host "env $env:buildId"
 
   - task: PowerShell@2
