@@ -69,11 +69,6 @@ jobs:
       targetType: filePath
       filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/runJunitTests.ps1'
       arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"
-  
-  - task: DeleteFiles@1
-    inputs:
-      SourceFolder: '$(build.artifactstagingdirectory)'
-      Contents: '**/*.wex'
 
   - task: CopyFiles@2
     displayName: 'Copy Files Staging'
