@@ -29,5 +29,5 @@ jobs:
     displayName: 'Execute jUnit tests on Auto Test Server'
     inputs:
       targetType: filePath
-      filePath: ' $(Build.SourcesDirectory)/ci-wex-build/build/runJunitTests.ps1'
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/runJunitTests.ps1'
       arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"
