@@ -85,6 +85,6 @@ jobs:
     displayName: 'Upload security report to teams'
     inputs:
       targetType: filePath
-      filePath: '$(Build.SourcesDirectory)/build/uploadToSharePointFilePath.ps1'
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/uploadToSharePointFilePath.ps1'
       arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK-External -SPFolder /Documentos%20compartidos%2FReports -Folder $(build.artifactstagingdirectory)'      
       
