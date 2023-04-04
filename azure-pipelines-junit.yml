@@ -88,3 +88,10 @@ jobs:
     inputs:
       SourceFolder: '$(build.artifactstagingdirectory)'
       Contents: '**/*.wex'
+  - task: PowerShell@2
+    displayName: 'Undeploy WEX from Test Server'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/undeployWex.ps1'
+      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -wexid "com.wincomplm.wex-example-ui"'
+    condition: succeededOrFailed()
