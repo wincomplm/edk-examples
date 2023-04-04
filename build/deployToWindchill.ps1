@@ -12,7 +12,7 @@ param(
 
 # Install SharePoint Module
 function Deploy-Windchill {
-    $action = ($wcserver + '/netmarkets/jsp/com/wincomplm/wex/remote/control/wex.jsp?action=deploy')
+    $action = ($wcserver + '/netmarkets/jsp/com/wincomplm/wex/orchestra/wex.jsp?action=deploy')
     $pair = "$($user):$($pass)"
     $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
     $basicAuthValue = "Basic $encodedCreds"
