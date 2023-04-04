@@ -28,11 +28,4 @@ jobs:
         Write-Host "##vso[task.setvariable variable=buildId;]$file"
         [string] $wexId= $Env:buildId
         Write-Host "The buildId environment variable value is '$wexId'." 
-        write-host "env $env:buildId"
-
-  - task: PowerShell@2
-    displayName: 'Deploy Single WEX on Auto Test Server'
-    inputs:
-      targetType: filePath
-      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/deployToWindchill.ps1'
-      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -file $(build.artifactstagingdirectory)/$(buildId)'
+        write-host "env $Env:buildId"
