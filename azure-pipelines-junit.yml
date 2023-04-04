@@ -56,7 +56,7 @@ jobs:
       script: |
         $dir = '$(Build.SourcesDirectory)/edk-examples/'
         $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")} | % { $_.FullName }
-        Write-Host "##vso[task.setvariable variable=buildId;] $file"
+        Write-Host "##vso[task.setvariable variable=buildId;]$file"
         Copy-Item $file -Destination '$(build.artifactstagingdirectory)/'
         write-host "env $env:buildId"
 
