@@ -25,7 +25,7 @@ jobs:
       targetType: inline
       script: |
         $file = "pepito"
-        Write-Host "##vso[task.setvariable variable=buildId;]$file"
+        Write-Host "##vso[task.setvariable variable=buildId;]pepito"
         [string] $wexId= $Env:buildId
         Write-Host "The buildId environment variable value is '$wexId'." 
         write-host "env $Env:buildId"
