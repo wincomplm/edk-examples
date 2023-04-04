@@ -19,13 +19,78 @@ jobs:
   - checkout: self
   - checkout: ci-wex-build
 
-  - task: PowerShell@2
-    displayName: 'Getting Wex file'
+  - task: JavaToolInstaller@0
+    displayName: 'Use Java 11'
     inputs:
-      targetType: inline
+      versionSpec: 11
+      jdkArchitectureOption: x64
+      jdkSourceOption: PreInstalled
+  - task: MavenAuthenticate@0
+    inputs:
+      artifactsFeeds: 'wincomplm-products'
+  - task: PowerShell@2
+    displayName: 'Maven setup'
+    inputs:
+      targetType: 'inline'
       script: |
-        $file = "pepito"
-        Write-Host "##vso[task.setvariable variable=buildId;]pepito"
-        [string] $wexId= $Env:buildId
-        Write-Host "The buildId environment variable value is '$wexId'." 
-        write-host "env $Env:buildId"
+        $pwd = '$(support-wex-pwd)'
+        $userid = '$(support-wex-userid)'
+        ((Get-Content -path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml
+        ((Get-Content -path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml
+        Copy-Item $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml -Destination ~/.m2
+  - task: Maven@3
+    displayName: 'Build $(wcversion)'
+    inputs:
+      mavenPomFile: '$(Build.SourcesDirectory)/edk-examples/$(artifactId)/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true -Dwex.junit.exclude=none'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      goals: 'install'
+
+  - task: CopyFiles@2
+    displayName: 'Move to staging area (JunitVersion)'
+    inputs:
+      SourceFolder: '$(system.defaultworkingdirectory)'
+      Contents: '**/*.wex'
+      TargetFolder: '$(build.artifactstagingdirectory)/junitWex'
+
+  - task: PowerShell@2
+    displayName: 'Deploy Single WEX on Auto Test Server'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/deployWexesToWindchill.ps1'
+      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -dir $(build.artifactstagingdirectory)/junitWex'
+  - task: PowerShell@2
+    displayName: 'Execute jUnit tests on Auto Test Server'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/runJunitTests.ps1'
+      arguments: -user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -junitpath "wex/example/ui"
+
+  - task: CopyFiles@2
+    displayName: 'Copy Files Staging'
+    inputs:
+      SourceFolder: '$(system.defaultworkingdirectory)'
+      Contents: '**/*.security.pdf'
+      TargetFolder: '$(build.artifactstagingdirectory)'
+
+  - task: PowerShell@2
+    displayName: 'Upload security report to teams'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/uploadToSharePointFilePath.ps1'
+      arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK-External -SPFolder /Documentos%20compartidos%2FReports -Folder $(build.artifactstagingdirectory)'      
+      
+  - task: DeleteFiles@1
+    inputs:
+      SourceFolder: '$(build.artifactstagingdirectory)'
+      Contents: '**/*.wex'
+  - task: PowerShell@2
+    displayName: 'Undeploy WEX from Test Server'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/undeployWex.ps1'
+      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -wexid "com.wincomplm.wex-example-ui"'
+    condition: succeededOrFailed()
