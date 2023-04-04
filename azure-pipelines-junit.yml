@@ -26,7 +26,6 @@ jobs:
       script: |
         $file = "pepito"
         Write-Host "##vso[task.setvariable variable=buildId;]$file"
-        Copy-Item $file -Destination '$(build.artifactstagingdirectory)/'
         [string] $wexId= $Env:buildId
         Write-Host "The buildId environment variable value is '$wexId'." 
         write-host "env $env:buildId"
