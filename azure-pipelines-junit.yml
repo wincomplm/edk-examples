@@ -19,6 +19,17 @@ jobs:
   - checkout: self
   - checkout: ci-wex-build
 
+  - task: Maven@3
+    displayName: 'Build $(wcversion)'
+    inputs:
+      mavenPomFile: '$(Build.SourcesDirectory)/edk-examples/$(artifactId)/pom.xml'
+      mavenOptions: '-Xmx3072m'
+      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true -Dwex.junit.exclude=none'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      goals: 'install'
+
   - task: PowerShell@2
     displayName: 'Getting Wex file'
     inputs:
@@ -26,8 +37,13 @@ jobs:
       script: |
         $dir = '$(Build.SourcesDirectory)/edk-examples/'
         $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")} | % { $_.FullName }
-        Write-Host "##vso[task.setvariable variable=buildId;]$file"
-        $wexId= 'hola'
+        Copy-Item $file -Destination '$(build.artifactstagingdirectory)/'
         ${env:BUILDID} = $file
-        Write-Host "The buildId environment variable value is ${env:BUILDID}." 
-        Write-Host "The buildId environment variable value is $wexId." 
+  - task: PowerShell@2
+    displayName: 'Deploy Single WEX on Auto Test Server'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/deployToWindchill.ps1'
+      arguments: '-user $(wcadmin) -pass $(wcpassword) -wcserver "https://wex-auto-test.wincom-cloud.net/Windchill" -file $(build.artifactstagingdirectory)/$(buildId)'
+
+
