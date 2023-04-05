@@ -28,6 +28,6 @@ jobs:
         $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")} | % { $_.FullName }
         Write-Host "##vso[task.setvariable variable=buildId;]$file"
         $wexId= 'hola'
-        $(buildId) = $file
-        Write-Host "The buildId environment variable value is $file." 
+        ${env:BUILDID} = $file
+        Write-Host "The buildId environment variable value is ${env:BUILDID}." 
         Write-Host "The buildId environment variable value is $wexId." 
