@@ -18,7 +18,25 @@ jobs:
   steps:
   - checkout: self
   - checkout: ci-wex-build
-
+  - task: JavaToolInstaller@0
+    displayName: 'Use Java 11'
+    inputs:
+      versionSpec: 11
+      jdkArchitectureOption: x64
+      jdkSourceOption: PreInstalled
+  - task: MavenAuthenticate@0
+    inputs:
+      artifactsFeeds: 'wincomplm-products'
+  - task: PowerShell@2
+    displayName: 'Maven setup'
+    inputs:
+      targetType: 'inline'
+      script: |
+        $pwd = '$(support-wex-pwd)'
+        $userid = '$(support-wex-userid)'
+        ((Get-Content -path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml -Raw) -replace [regex]::escape('[password]'),$pwd) | Set-Content -Path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml
+        ((Get-Content -path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml -Raw) -replace [regex]::escape('[userid]'),$userid) | Set-Content -Path $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml
+        Copy-Item $(Build.SourcesDirectory)/ci-wex-build/build/settings.xml -Destination ~/.m2
   - task: Maven@3
     displayName: 'Build $(wcversion)'
     inputs:
