@@ -28,5 +28,5 @@ jobs:
         write-host "dir '$dir'"
         $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")} | % { $_.FullName }
         Write-Host "##vso[task.setvariable variable=buildId;]$file"
-        $(buildId) = $file
+        $(buildId) << $file
         write-host "env $env:buildId"
