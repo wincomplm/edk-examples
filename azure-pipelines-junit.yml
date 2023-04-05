@@ -27,6 +27,5 @@ jobs:
         $dir = '$(Build.SourcesDirectory)/edk-examples/'
         $file = Get-ChildItem $dir -Recurse | where {$_.extension -in @(".wex")} | % { $_.FullName }
         Write-Host "##vso[task.setvariable variable=buildId;]$file"
-        Write-Host "The file environment variable value is '$file'."
-        Echo $file
+        Write-Host $file
         Write-host "env $env:buildId"
