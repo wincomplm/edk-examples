@@ -3,17 +3,18 @@
       
   <modelVersion>4.0.0</modelVersion>
       
-  <parent>        
-    <groupId>com.wincomplm</groupId>        
-    <artifactId>wex-parent</artifactId>         
-    <version>2.37</version>
-  </parent>
+<parent>
+    <groupId>com.wincomplm</groupId>
+    <artifactId>wex-example-parent</artifactId>
+    <version>1.0</version>
+</parent>
       
-  <artifactId>wex-watermark-pack</artifactId>
-  <version>1.5</version>      
+  <artifactId>wex-example-pack</artifactId>
+  <version>1.6</version>      
   <packaging>pom</packaging>
       
   <modules>         
+    <module>wex-example-parent</module>         
     <module>wex-example-config</module>         
     <module>wex-example-diags</module>           
     <module>wex-example-features</module>           
