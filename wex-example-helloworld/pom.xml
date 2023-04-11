@@ -31,5 +31,6 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-system</artifactId>
         </dependency>
-    </dependencies> 
+    </dependencies>
+    <description>Simple Hello World that show the basic concept of an extension</description>
 </project>
