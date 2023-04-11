@@ -34,11 +34,11 @@ jobs:
     inputs:
       mavenPomFile: '$(artifactId)/pom.xml'
       mavenOptions: '-Xmx3072m'
-      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true'
+      options: '-P $(wcversion) -Dcve.check.skip=false -Djar.sign=true -Dwex.sign=true -Dsonar.login=$(test-sonar-pwd)'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
       jdkArchitectureOption: 'x64'
-      goals: 'install'
+      goals: 'install sonar:sonar'
 
   - task: CopyFiles@2
     displayName: 'Copy Files Staging'
