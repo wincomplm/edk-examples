@@ -26,6 +26,6 @@ steps:
     displayName: 'Upload to teams'
     inputs:
       targetType: filePath
-      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/uploadToSharePointFilePath.ps1'
+      filePath: '$(Build.SourcesDirectory)/build/uploadToSharePointFilePath.ps1'
       arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK2 -SPFolder /Documentos%20compartidos/General/PipeTest -Folder '      
       
