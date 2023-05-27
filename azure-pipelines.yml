@@ -6,15 +6,26 @@
 trigger:
 - main
 
+resources:
+  repositories:
+  - repository: ci-wex-build
+    type: github
+    endpoint: ci-wex-build
+    name: wincomplm/ci-wex-build
+    
+variables:
+- group: EDK Build Settings
+
 pool:
   vmImage: ubuntu-latest
 
 steps:
+  - checkout: ci-wex-build
 
-- task: PowerShell@2
-  displayName: 'Upload to teams'
-  inputs:
-    targetType: filePath
-    filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/uploadToSharePointFilePath.ps1'
-    arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/WexProducts -SPFolder /Documentos%20compartidos/$(teams-folder)/Latest -Folder $(build.artifactstagingdirectory)/wex'      
+  - task: PowerShell@2
+    displayName: 'Upload to teams'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/uploadToSharePointFilePath.ps1'
+      arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/EDK2 -SPFolder /Documentos%20compartidos/General/PipeTest -Folder '      
       
