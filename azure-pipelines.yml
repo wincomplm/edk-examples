@@ -10,10 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: PowerShell@2
+  displayName: 'Upload to teams'
+  inputs:
+    targetType: filePath
+    filePath: '$(Build.SourcesDirectory)/ci-wex-build/build/uploadToSharePointFilePath.ps1'
+    arguments: '-SPVersion "Online" -SPUsername $(sp.user) -SPPassword $(sp.pwd) -SPURL https://wincomconsulting.sharepoint.com/sites/WexProducts -SPFolder /Documentos%20compartidos/$(teams-folder)/Latest -Folder $(build.artifactstagingdirectory)/wex'      
+      
