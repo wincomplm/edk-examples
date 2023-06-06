@@ -30,7 +30,9 @@
     <module>wex-example-wizard</module>       
     <module>wex-example-file</module>     
     <module>wex-example-resources</module>    
-    <module>wex-example-security</module>    
+    <module>wex-example-security</module>
+    <module>test</module>
+    <module>Validators</module>
   </modules>
       
   <name>wex-example-pack</name>
