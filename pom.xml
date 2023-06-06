@@ -10,7 +10,7 @@
 </parent>
       
   <artifactId>wex-example-pack</artifactId>
-  <version>1.6</version>      
+  <version>1.7</version>      
   <packaging>pom</packaging>
       
   <modules>         
@@ -31,8 +31,7 @@
     <module>wex-example-file</module>     
     <module>wex-example-resources</module>    
     <module>wex-example-security</module>
-    <module>test</module>
-    <module>Validators</module>
+    <module>wex-example-promotevalidate</module>    
   </modules>
       
   <name>wex-example-pack</name>
