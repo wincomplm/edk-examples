@@ -1,0 +1,31 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+resources:
+  repositories:
+  - repository: ci-wex-build
+    type: github
+    endpoint: ci-wex-build
+    name: wincomplm/ci-wex-build
+    
+variables:
+- group: EDK Build Settings
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: ci-wex-build
+
+  - task: PowerShell@2
+    displayName: 'Upload to teams'
+    inputs:
+      targetType: filePath
+      filePath: '$(Build.SourcesDirectory)/build/uploadToSharePointFilePath.ps1'
+      arguments: '-SPVersion "Online" -SPUsername simonh@wincom-plm.com -SPPassword NilKiller#1 -SPURL https://wincomconsulting.sharepoint.com/sites/EDK2 -SPFolder /Documentos%20compartidos/General/PipeTest -Folder $(Build.SourcesDirectory)/build'      
+      
