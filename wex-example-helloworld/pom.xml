@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.0</version>
+        <version>1.2</version>
     </parent>
     <properties>
         <major>1</major>
@@ -20,8 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
-            <artifactId>windchill-pdmlink</artifactId>
-            
+            <artifactId>windchill-pdmlink</artifactId>      
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>
