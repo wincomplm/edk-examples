@@ -55,3 +55,4 @@ wex-example-security/src/main/security/generated/security.pdf
 /wex-example-parent/target/
 /wex-example-method - Copy/target/
 /wex-example-promotevalidate/target/
+wex-example-helloworld/nb-configuration.xml
