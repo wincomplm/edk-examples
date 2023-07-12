@@ -21,7 +21,7 @@ import com.wincomplm.wex.ui.commons.validators.WexAdminUIValidator;
  * We could inherit directly from DefaultUIComponentValidator
  * @author simon
  */
-@WexValidator({"edkHelloWorld","edkHelloWorldNonPop"})
+@WexValidator({"exampleManager"})
 @WexComponent(uid = "wex-example-ui.validator", description = "Menu validator")
 public class WexMenuAdminUIValidator extends WexAdminUIValidator { 
 
@@ -31,7 +31,7 @@ public class WexMenuAdminUIValidator extends WexAdminUIValidator {
     public UIValidationStatus preValidateAction(UIValidationKey uivk, UIValidationCriteria uivc) {
         logger.trace("=>preValidateAction");        
         UIValidationStatus displayStatus = super.preValidateAction(uivk, uivc);
-
+        System.out.println("Hello");
         // Uncomment to show for all users
         // displayStatus = UIValidationStatus.ENABLED;
         logger.trace("<=preValidateAction {0}", displayStatus.getDisplay());
