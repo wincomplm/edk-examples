@@ -8,7 +8,7 @@
     </parent>
     <properties>
         <major>1</major>
-        <minor>5</minor>
+        <minor>6</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
