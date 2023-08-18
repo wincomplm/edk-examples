@@ -8,8 +8,8 @@ package com.wincomplm.wex.example.log.methods;
 
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
+import com.wincomplm.wex.log.api.WexLogger;
 import com.wincomplm.wex.log.base.api.IWexLogger;
-import com.wincomplm.wex.log.base.api.WexLoggerFactory;
 /**
  * A few example to demonstrate how create a log
 
@@ -22,7 +22,7 @@ import com.wincomplm.wex.log.base.api.WexLoggerFactory;
 public class ExampleMethods {
     
     // This gets the logger for this ex
-    final IWexLogger logger = WexLoggerFactory.getLogger(getClass());
+    final IWexLogger logger = WexLogger.getLogger(getClass());
     
     @WexMethod(name = "createLog", description = "A simple log test")
     public void example() throws Exception {
