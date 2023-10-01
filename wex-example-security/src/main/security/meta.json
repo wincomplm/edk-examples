@@ -5,7 +5,7 @@
         "approve": { "name":"Simon Heath", "date":"2023-2-20" }
     },
     "suppress": [
-        { "id":"CVE-2022-45688", "reason":"This API is encapsulated and there is no attack, hutool-json not used" },
+        { "id":"CVE-2022-45688", "reason":"This API is encapsulated and there is no attack, hutool-json not used","reference":"SEC-45" },
         { "id":"CVE-2022-26336", "reason":"poi-scratchpad is not used" }
     ],
     "assessments": {

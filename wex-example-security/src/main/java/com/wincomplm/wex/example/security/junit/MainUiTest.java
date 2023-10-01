@@ -48,7 +48,7 @@ public class MainUiTest extends JunitTestAbstract {
     @Test
     @TestDef(
             title = "Other test 1",
-            description = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+                description = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
             category = Category.Other,
             otherCategory = "Custom",
             execution = Execution.Manual
@@ -56,5 +56,173 @@ public class MainUiTest extends JunitTestAbstract {
 
     public void other() throws Exception {
     }
+
+    @TestDef(
+            title = "Permissions Test",
+            description = "The test will evaluate the role-based access control system in place. It will ensure that user roles are clearly defined, and permissions are associated with these roles. In this case, the focus is on the \"admin\" role and its exclusive access to the UI.",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void permissionsTest() throws Exception {
+
+    }
+
+    @TestDef(
+            title = "Input Validation",
+            description = "Test that validates and sanitizes input data received from request parameters to ensure it adheres to expected formats and ranges.",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void inputValidation() throws Exception {
+
+    }
+
+    @TestDef(
+            title = "Request parameter test",
+            description = "Calling xxx.jsp try to pass an oid that is not accessible by the current user ",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void requestParameterRundiagsTest() throws Exception {
+
+    }
+
+    @TestDef(
+            title = "XSS test ",
+            description = "Call xxx.jsp <br>"
+            + "Ensure XSS security<br>",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void xssRundiags() throws Exception {
+    }
+
+    @TestDef(
+            title = "CSRF xxxxx.jsp test",
+            description = "Ensure INVALID_NONCE is returned<br>"
+            + "xxxx.jsp",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void csrfRundiags() throws Exception {
+    }
+
+    @TestDef(
+            title = "XSS xxxxx test ",
+            description = "Call xxxxx.jsp <br>"
+            + "Ensure XSS security<br>"
+            + "xxxxx.jsp",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void xssWexRepExportPlusDownload() throws Exception {
+    }
+
+    @TestDef(
+            title = "CSRF xxxxx.jsp test",
+            description = "Ensure INVALID_NONCE is returned<br>",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void csrfWexRepExportPlusDownload() throws Exception {
+    }
+
+    @TestDef(
+            title = "Access xxxxx.jsp test",
+            description = "Ensure that unauthorized users cannot access files by manipulating the file path.<br>"
+            + "xxxxx.jsp",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void accessxxxxx() throws Exception {
+    }
+
+    @TestDef(
+            title = "Privilege escalation using session",
+            description = "Ensure that unauthorized users cannot escalate privileges.<br>"
+            + "DocumentCreator",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void privilegeEscalationSession() throws Exception {
+    }
+
+    @TestDef(
+            title = "CSRF Do table action test",
+            description = "Call xxxxx.jsp<br>"
+            + "Ensure INVALID_NONCE is returned<br>",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void csrfTableAction() throws Exception {
+    }
+
+    @TestDef(
+            title = " Do table action(param wexid) test",
+            description = "Call xxxxx1.jsp<br>"
+            + "Ensure XSS security<br>",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void TableActionParamWexid() throws Exception {
+    }
+
+    @TestDef(
+            title = " Do table action(param action) test",
+            description = "Call xxxxx.jsp<br>"
+            + "Ensure XSS security<br>",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void TableActionParamAction() throws Exception {
+    }
+
+    @TestDef(
+            title = "FormProcessor param test ",
+            description = "Call FormProcessor<br>"
+            + "Ensure XSS security<br>",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void FormProcessor() throws Exception {
+    }
+     @TestDef(
+            title = "Create escalation privilege test ",
+            description = "Ensure that unauthorized users cannot escalate privileges",
+            category = Category.Security,
+            execution = Execution.Manual,
+            reference = "SEC-46"
+    )
+    @Test
+    public void DocumentCreatorPrivilegeEscalation() throws Exception {
+    }
+    
+    
 
 }
