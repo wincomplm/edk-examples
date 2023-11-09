@@ -12,6 +12,7 @@ import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
 import com.wincomplm.wex.wt.framework.commons.persist.WexQueryHelper;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.owasp.html.Sanitizers;
 import wt.part.WTPart;
 
 /**
@@ -25,7 +26,7 @@ public class ExampleMethods {
     public String test(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String oid = request.getParameter("oid");
         WTPart part = (WTPart) WexQueryHelper.getObject(oid);
-        return "Number: " + part.getNumber();
+        return "Number: " + Sanitizers.FORMATTING.sanitize(part.getNumber());
     }//test
 
 }

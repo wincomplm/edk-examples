@@ -8,7 +8,7 @@
     </parent>
     <properties>
         <major>1</major>
-        <minor>7</minor>
+        <minor>8</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
@@ -34,5 +34,11 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-framework-commons</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+            <artifactId>owasp-java-html-sanitizer</artifactId>
+            <version>20220608.1</version>
+        </dependency>
+
     </dependencies> 
 </project>
