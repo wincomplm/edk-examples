@@ -1,0 +1,39 @@
+[
+    {
+        "groupId": "com.wincomplm",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.ptc",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "javax.activation",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "javax.activation",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.googlecode",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.google",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.checkerframework",
+        "artifactId": "*",
+        "versions": ["*"]
+    }
+]
+
+
