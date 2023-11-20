@@ -1,5 +1,18 @@
 ## Release Notes
-### 1.5
+
+### 1.14
+    * Added bean example
+### 1.11-13
+    * Security checks
+### 1.10
+    * Added sonar checks
+### 1.9
+    * Added security
+### 1.8
+    * Added security
+### 1.7
+    * Add junit test
+### 1.6
     * Added Junit test link in Admin guide
     * Updated to latest Junit
 ### 1.5

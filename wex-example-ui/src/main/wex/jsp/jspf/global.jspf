@@ -13,6 +13,7 @@ ${wex:invoke("com.wincomplm.wex-example-ui","methods.securePage",null)}
     String nonce = CSRFProtector.getNonce(request.getSession());
 %>
 
+<%@ taglib uri = "http://www.wincom-plm.com/taglib/wex-kernel" prefix = "wex" %>
 
 <script src="<%=jspath%>/main.js"></script>   
 <script src="<%=jspath%>/lib/jquery-3.6.0.min.js"></script>   
@@ -27,6 +28,10 @@ ${wex:invoke("com.wincomplm.wex-example-ui","methods.securePage",null)}
 
 
 <input type="hidden" id="CSRF_NONCE" name="CSRF_NONCE" value="<%=nonce%>"/>
+
+<wex:bean id="exampleBean" packageId="com.wincomplm.wex-example-ui" featureId="example-bean"> 
+    <!-- set params here wex:set name="commandBean" value="${commandBean}" --> 
+</wex:bean>
 
 <div class="wex-background-body global-body" >   
     <%@include file="header.jspf" %>

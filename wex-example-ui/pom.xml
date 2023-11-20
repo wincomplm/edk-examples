@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.5</version>
+        <version>1.9</version>
     </parent>
     <properties>
         <major>1</major>
-        <minor>13</minor>
+        <minor>14</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
@@ -48,12 +48,15 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-wt-framework</artifactId>
         </dependency>  
-  
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-junit</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+            <artifactId>owasp-java-html-sanitizer</artifactId>
+            <version>20220608.1</version>
+        </dependency>
     </dependencies> 
     
     <build>
