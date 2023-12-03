@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.9</version>
+        <version>1.10</version>
     </parent>
     <properties>
         <major>1</major>
-        <minor>9</minor>
+        <minor>10</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
@@ -35,10 +35,8 @@
             <artifactId>wt-framework-commons</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
-            <artifactId>owasp-java-html-sanitizer</artifactId>
-            <version>20220608.1</version>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wt-security-commons</artifactId>
         </dependency>
-
     </dependencies> 
 </project>

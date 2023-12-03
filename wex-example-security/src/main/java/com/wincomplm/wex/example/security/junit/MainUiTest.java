@@ -19,6 +19,22 @@ public class MainUiTest extends JunitTestAbstract {
     public void tearDown() {
         super.tearDown();
     }
+  
+    @Test
+    @TestDef(
+        title = "WVE Review",
+        description = "Example Review all WVES<br/><br/>"
+            + "- 501 - All back end access secure<br/>"
+            + "- 501 - global.jspf - Secure backend call only<br/>"
+            + "- 502 - ZipHelper.java - File creation secured<br/>",
+        category = TestDef.Category.Other,
+        otherCategory = "Review",
+        execution = TestDef.Execution.Manual
+    )
+    public void reviewWVEs() throws Exception {
+    }
+    
+    
 
     @Test
     @TestDef(

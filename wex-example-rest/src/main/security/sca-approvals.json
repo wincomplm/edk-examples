@@ -1,0 +1,18 @@
+[
+    {
+        "groupId": "com.wincomplm",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.ptc",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "javax.activation",
+        "artifactId": "*",
+        "versions": ["*"]
+    }
+]
+

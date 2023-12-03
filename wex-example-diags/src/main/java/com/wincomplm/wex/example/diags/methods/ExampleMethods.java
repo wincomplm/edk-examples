@@ -9,10 +9,11 @@ package com.wincomplm.wex.example.diags.methods;
 
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
+import com.wincomplm.wex.security.commons.impl.SecureRequestWrapper;
+import com.wincomplm.wex.security.commons.impl.WexSanitizer;
 import com.wincomplm.wex.wt.framework.commons.persist.WexQueryHelper;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.owasp.html.Sanitizers;
 import wt.part.WTPart;
 
 /**
@@ -23,10 +24,11 @@ import wt.part.WTPart;
 public class ExampleMethods {
     
     @WexMethod(name = "test", description = "Display configuration")
-    public String test(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String oid = request.getParameter("oid");
+    public String test(HttpServletRequest requestUnsafe, HttpServletResponse response) throws Exception {
+        SecureRequestWrapper request = new SecureRequestWrapper(requestUnsafe);  
+        String oid = request.getSecureParameter("oid");
         WTPart part = (WTPart) WexQueryHelper.getObject(oid);
-        return "Number: " + Sanitizers.FORMATTING.sanitize(part.getNumber());
+        return WexSanitizer.sanitize("Number: " + part.getNumber());
     }//test
 
 }
