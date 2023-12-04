@@ -46,7 +46,10 @@
             <artifactId>poi</artifactId>
             <version>5.2.3</version>
         </dependency>
-        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>wt-security-commons</artifactId>
+        </dependency>
        <!-- Will fail if not in the approval list
             <dependency>
                 <groupId>commons-io</groupId>
