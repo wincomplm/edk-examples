@@ -7,6 +7,9 @@ import org.junit.Before;
 import org.junit.After;
 import com.wincomplm.wex.security.doc.annotations.TestDef;
 import com.wincomplm.wex.security.doc.annotations.TestDef.Execution;
+import static org.junit.Assert.assertEquals;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class MainUiTest extends JunitTestAbstract {
 
@@ -34,21 +37,34 @@ public class MainUiTest extends JunitTestAbstract {
     public void reviewWVEs() throws Exception {
     }
     
-    
-
+   
     @Test
     @TestDef(
-        title = "Functional test 1",
-        description = "This test will la la la<br/><br/>"
-                + "- Step 1<br/>"
-                + "- Step 2<br/>"
-                + "- Step 3<br/>",
+        title = "Hello World Test",
+        description = "This an auto test of a basic Hello World page<br/>",
         category = Category.Functional,
         execution = Execution.Automatic
     )
-    public void functional() throws Exception {
-        driver.get(getAuthUrl() + "/netmarkets/jsp/com/wincomplm/wex/example/security/call.jsp");
+    public void helloWorld() throws Exception {
+        driver.get(getAuthUrl() + "/netmarkets/jsp/com/wincomplm/wex/example/security/edkHelloWorld.jsp");    
+        WebElement elem = driver.findElement(By.tagName("h1"));
+        assertEquals(elem.getText(), "Hello World");
     }
+    
+    @Test
+    @TestDef(
+        title = "Secure Test",
+        description = "This an auto test of a secure request<br/>",
+        category = Category.Functional,
+        execution = Execution.Automatic
+    )
+    public void secureUITest() throws Exception {
+        driver.get(getAuthUrl() + "/netmarkets/jsp/com/wincomplm/wex/example/security/edkSecureTest.jsp");    
+        WebElement elem = driver.findElement(By.tagName("body"));
+        assertEquals(elem.getText(), "javascript could be here, or a path [NOT DISCLOSED]");
+    }
+    
+    
 
     @Test
     @TestDef(

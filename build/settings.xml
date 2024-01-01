@@ -1,7 +1,7 @@
 <settings>
     <servers>
         <server>
-            <id>sign.wex-cloud.net</id>
+            <id>sign.wex.solutions</id>
             <username>[userid]</username>
             <password>[password]</password>
         </server>
@@ -47,33 +47,33 @@
             <repositories>
                 <repository>
                     <id>wincom-private-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/private/</url>
+                    <url>https://nexus.wex.solutions/repository/private/</url>
                     <layout>default</layout>
                 </repository>
                 <repository>
                     <id>wincom-releases-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/releases/</url>
+                    <url>https://nexus.wex.solutions/repository/releases/</url>
                     <layout>default</layout>
                 </repository>
                 <repository>
                     <id>WINCOM-PRIVATE-REPO</id>
-                    <url>https://nexus.wex-cloud.net/repository/private/</url>
+                    <url>https://nexus.wex.solutions/repository/private/</url>
                     <layout>default</layout>
                 </repository>
                 <repository>
                     <id>WINCOM-RELEASES-REPO</id>
-                    <url>https://nexus.wex-cloud.net/repository/releases/</url>
+                    <url>https://nexus.wex.solutions/repository/releases/</url>
                     <layout>default</layout>
                 </repository>
 
                 <repository>
                     <id>wincom-windchill-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/windchill/</url>
+                    <url>https://nexus.wex.solutions/repository/windchill/</url>
                     <layout>default</layout>
                 </repository>
                 <repository>
                     <id>wincom-snapshots-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/snapshots/</url>
+                    <url>https://nexus.wex.solutions/repository/snapshots/</url>
                     <layout>default</layout>
                     <releases>
                         <enabled>false</enabled>
@@ -85,7 +85,7 @@
                 </repository>
                 <repository>
                     <id>wincom-legacy-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/legacy/</url>
+                    <url>https://nexus.wex.solutions/repository/legacy/</url>
                     <layout>default</layout>
                 </repository>
 
@@ -96,7 +96,7 @@
             <pluginRepositories>
                 <pluginRepository>
                     <id>wincom-private-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/private/</url>
+                    <url>https://nexus.wex.solutions/repository/private/</url>
                     <layout>default</layout>
                     <releases>
                         <enabled>true</enabled>
@@ -108,7 +108,7 @@
                 </pluginRepository>
                 <pluginRepository>
                     <id>wincom-snapshots-repo</id>
-                    <url>https://nexus.wex-cloud.net/repository/snapshots/</url>
+                    <url>https://nexus.wex.solutions/repository/snapshots/</url>
                     <layout>default</layout>
                     <releases>
                         <enabled>false</enabled>

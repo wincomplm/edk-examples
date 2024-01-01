@@ -1,3 +1,3 @@
 ## Overview
 
-Implements security testing
+Implements security testing and safe coding techniques

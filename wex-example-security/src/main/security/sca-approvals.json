@@ -38,6 +38,26 @@
         "groupId": "org.apache.logging.log4j",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "javax.activation",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.googlecode",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.google.code",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.json",
+        "artifactId": "*",
+        "versions": ["*"]
     }
 ]
 

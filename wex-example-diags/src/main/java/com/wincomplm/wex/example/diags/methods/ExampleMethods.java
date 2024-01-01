@@ -9,8 +9,8 @@ package com.wincomplm.wex.example.diags.methods;
 
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
-import com.wincomplm.wex.security.commons.impl.SecureRequestWrapper;
 import com.wincomplm.wex.security.commons.impl.WexSanitizer;
+import com.wincomplm.wex.security.commons.impl.WexSecureRequestWrapper;
 import com.wincomplm.wex.wt.framework.commons.persist.WexQueryHelper;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,7 +25,7 @@ public class ExampleMethods {
     
     @WexMethod(name = "test", description = "Display configuration")
     public String test(HttpServletRequest requestUnsafe, HttpServletResponse response) throws Exception {
-        SecureRequestWrapper request = new SecureRequestWrapper(requestUnsafe);  
+        WexSecureRequestWrapper request = new WexSecureRequestWrapper(requestUnsafe);  
         String oid = request.getSecureParameter("oid");
         WTPart part = (WTPart) WexQueryHelper.getObject(oid);
         return WexSanitizer.sanitize("Number: " + part.getNumber());

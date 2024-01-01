@@ -7,10 +7,12 @@
 
 package com.wincomplm.wex.example.security.secure;
 
+import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
-import com.wincomplm.wex.security.commons.impl.SecureRequestWrapper;
+import com.wincomplm.wex.security.commons.impl.WexSecureRequestWrapper;
 import com.wincomplm.wex.security.commons.impl.WexSanitizer;
 import com.wincomplm.wex.security.commons.impl.WexSecurePage;
+import com.wincomplm.wex.wt.framework.commons.system.WTConstants;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -18,18 +20,24 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author SimonHeath
  */
+@WexComponent(uid = "methods", description = "Wex Security Methods")
 public class ExampleRequestSecure {
     
-    @WexMethod(name = "get-feature-data", description = "Get features")
-    public void getFeatureData(HttpServletRequest httprequestUnsafe, HttpServletResponse httpresponse) throws Exception { 
+    @WexMethod(name = "get-example-data", description = "Get example")
+    public void getExampleData(HttpServletRequest httprequestUnsafe, HttpServletResponse httpresponse) throws Exception { 
         WexSecurePage.secureAdminOnly();
-        SecureRequestWrapper httprequest = new SecureRequestWrapper(httprequestUnsafe);
+        WexSecureRequestWrapper httprequest = new WexSecureRequestWrapper(httprequestUnsafe);
         // No XSS can be passed in
         String fid = httprequest.getSecureParameter("id");
         // No XSS can be sent out
-        String safeOutput = WexSanitizer.sanitize("javascript could be here");
-        // This will be picked up by WVE-2023-0506
+        String safeOutput = WexSanitizer.sanitize("javascript <img src=1 onerror=alert('xss')> could be here, or a path " + WTConstants.WTHOME); 
         httpresponse.getOutputStream().print(safeOutput);
-    }//getFeatures
+    }//getExampleData
+    
+    
+    @WexMethod(name = "securePage", description = "A simple security example")
+    public void securePage() throws Exception {
+        WexSecurePage.secureAdminOnly();
+    }//securePage
     
 }
