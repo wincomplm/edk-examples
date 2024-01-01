@@ -9,8 +9,8 @@
     <properties>
         <major>1</major>
         <minor>13</minor>
-        <beta>1</beta>
-        <revision>${major}.${minor}b${beta}-${wex.wt}</revision>
+        <beta></beta>
+        <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-security</artifactId>
