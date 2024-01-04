@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.12</version>
+        <version>1.13</version>
     </parent>
     <properties>
         <major>1</major>
-        <minor>13</minor>
+        <minor>14</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
@@ -63,6 +63,16 @@
                 <version>2.13.0</version>
             </dependency>
         -->
-
+       <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>3.1.2.RELEASE</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>                             
+            </exclusions> 
+        </dependency>
     </dependencies> 
 </project>

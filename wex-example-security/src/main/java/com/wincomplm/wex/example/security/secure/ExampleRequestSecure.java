@@ -9,10 +9,12 @@ package com.wincomplm.wex.example.security.secure;
 
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
+import com.wincomplm.wex.security.commons.impl.WexPerUserRateLimiter;
 import com.wincomplm.wex.security.commons.impl.WexSecureRequestWrapper;
 import com.wincomplm.wex.security.commons.impl.WexSanitizer;
 import com.wincomplm.wex.security.commons.impl.WexSecurePage;
 import com.wincomplm.wex.wt.framework.commons.system.WTConstants;
+import java.util.concurrent.TimeUnit;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -23,9 +25,13 @@ import javax.servlet.http.HttpServletResponse;
 @WexComponent(uid = "methods", description = "Wex Security Methods")
 public class ExampleRequestSecure {
     
+    static WexPerUserRateLimiter limiter = WexPerUserRateLimiter.newPerUserRateLimiter(10, TimeUnit.MILLISECONDS.convert(10, TimeUnit.MINUTES));
+
     @WexMethod(name = "get-example-data", description = "Get example")
     public void getExampleData(HttpServletRequest httprequestUnsafe, HttpServletResponse httpresponse) throws Exception { 
         WexSecurePage.secureAdminOnly();
+        limiter.checkException();
+
         WexSecureRequestWrapper httprequest = new WexSecureRequestWrapper(httprequestUnsafe);
         // No XSS can be passed in
         String fid = httprequest.getSecureParameter("id");
