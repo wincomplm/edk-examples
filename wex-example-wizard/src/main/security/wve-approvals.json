@@ -1,0 +1,7 @@
+[
+    {
+        "id": "com.wincomplm.wex-example-wizard",
+        "rules": ["WVE-2024-0511"],
+        "falsePositives": []    
+    }
+]
