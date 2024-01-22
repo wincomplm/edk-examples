@@ -21,10 +21,12 @@
         <menus>
             <extension menu="more parts actions" file="PartClient-actionmodels" action="action-methods.example-command" position="SETSTATE"/>
             <extension menu="header actions" file="navigation-actionModels" action="exampleManager"/>
+            <extension menu="relatedItems" file="infoPage-actionmodels" action="tabExample"/>
         </menus>
         <actions>
             <command class="com.wincomplm.wex.kernel.impl.actions.WexActionMethods" method="execute" name="action-methods.example-command"  shortcut="false"/>
             <page name="exampleManager"   url="manager2.jsp"/>  
+            <page name="tabExample" url="tabExample.jsp"/>
         </actions>
     </install>
  

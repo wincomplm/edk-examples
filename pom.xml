@@ -18,7 +18,6 @@
     <module>wex-example-config</module>         
     <module>wex-example-diags</module>           
     <module>wex-example-features</module>           
-    <module>wex-example-helloworld</module>           
     <module>wex-example-listener</module>            
     <module>wex-example-log</module>           
     <module>wex-example-method</module>       
@@ -29,8 +28,7 @@
     <module>wex-example-ui</module>               
     <module>wex-example-wizard</module>       
     <module>wex-example-file</module>     
-    <module>wex-example-resources</module>    
-    <module>wex-example-security</module>
+    <module>wex-example-resources</module>
     <module>wex-example-promotevalidate</module>    
   </modules>
       

@@ -1,5 +1,9 @@
 ## Release Notes
 
+### 1.16
+    * Added tab to part page
+### 1.15
+    * Security update
 ### 1.14
     * Added bean example
 ### 1.11-13

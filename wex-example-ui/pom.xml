@@ -8,7 +8,7 @@
     </parent>
     <properties>
         <major>1</major>
-        <minor>15</minor>
+        <minor>16</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>

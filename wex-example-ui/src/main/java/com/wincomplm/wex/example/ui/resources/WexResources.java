@@ -46,4 +46,12 @@ public class WexResources extends WTListResourceBundle {
     public static final String PU6 = "com.wincomplm.wex.example.ui.exampleManager.activetooltip";
     
     
+    @RBEntry("Example Tab")
+    public static final String PT1 = "com.wincomplm.wex.example.ui.tabExample.description";
+    @RBEntry("Example Tab")
+    public static final String PT2 = "com.wincomplm.wex.example.ui.tabExample.tooltip";
+    @RBEntry("Example Tab")
+    public static final String PT3 = "com.wincomplm.wex.example.ui.tabExample.activetooltip";
+    
+    
 }
