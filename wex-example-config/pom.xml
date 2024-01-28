@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.10</version>
+        <version>1.14</version>
     </parent>
     <properties>
         <major>1</major>
-        <minor>6</minor>
+        <minor>7</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
@@ -34,9 +34,13 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-config</artifactId>
         </dependency>
-         <dependency>
+        <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-config-aux</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wt-security-commons</artifactId>
         </dependency>
     </dependencies> 
 </project>

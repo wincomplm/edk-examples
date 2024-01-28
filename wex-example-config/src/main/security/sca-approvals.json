@@ -8,5 +8,15 @@
         "groupId": "com.ptc",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "com.googlecode",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.google",
+        "artifactId": "*",
+        "versions": ["*"]
     }
 ]

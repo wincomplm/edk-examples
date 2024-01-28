@@ -12,6 +12,7 @@ import com.wincomplm.wex.config.impl.annotations.ConfigOption;
 import com.wincomplm.wex.config.impl.exceptions.WexValidationException;
 import com.wincomplm.wex.config.impl.ifc.IWexConfiguration;
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
+import com.wincomplm.wex.security.commons.impl.WexSanitizer;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
@@ -71,7 +72,7 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
     }
 
     public Map<String, String> getExampleMap() {
-        return exampleMap;
+        return WexSanitizer.sanitize(exampleMap);
     }
 
     public void setExampleMap(Map<String, String> exampleMap) {
@@ -79,7 +80,7 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
     }
 
     public List<String> getExampleStateList() {
-        return exampleStateList;
+        return (List<String>) WexSanitizer.sanitize(exampleStateList);
     }
 
     public void setExampleStateList(List<String> exampleStateList) {
@@ -87,7 +88,7 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
     }
 
     public String getExampleString() {
-        return exampleString;
+        return WexSanitizer.sanitize(exampleString);
     }
 
     public void setExampleString(String exampleString) {
@@ -113,10 +114,10 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
     // We add new items at the end 
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
-        out.writeObject(exampleString);
+        out.writeObject(WexSanitizer.sanitize(exampleString));
         out.writeObject(exampleBoolean);
-        out.writeObject(exampleList);
-        out.writeObject(exampleMap);
+        out.writeObject(WexSanitizer.sanitize(exampleList));
+        out.writeObject(WexSanitizer.sanitize(exampleMap));
         out.writeObject(exampleStateList);
     }//writeExternal
 
