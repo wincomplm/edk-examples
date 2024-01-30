@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.14</version>
+        <version>1.15</version>
     </parent>
     <properties>
         <major>1</major>
-        <minor>7</minor>
+        <minor>8</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
