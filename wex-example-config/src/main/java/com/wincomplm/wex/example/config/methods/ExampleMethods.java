@@ -31,6 +31,7 @@ public class ExampleMethods {
         result += "Example List: " + config.getExampleList()+ EOL;
         result += "Example Map: " + config.getExampleMap()+ EOL;
         result += "Example State List: " + config.getExampleStateList()+ EOL;
+        result += "Example Password: " + config.getExamplePassword()+ EOL;
         return result;
     }//string
 

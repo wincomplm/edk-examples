@@ -55,6 +55,10 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
             longdesc = "String list with handler", required = false, handler = LifeCycleStateHandler.class)
     List<String> exampleStateList = new ArrayList();
 
+    @ConfigOption(category = "Security", description = "Password", required = false, hidden=true)
+    String examplePassword = "";
+        
+    
     public boolean isExampleBoolean() {
         return exampleBoolean;
     }
@@ -95,10 +99,19 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
         this.exampleString = exampleString;
     }
 
+    public String getExamplePassword() {
+        return examplePassword;
+    }
 
+    public void setExamplePassword(String examplePassword) {
+        this.examplePassword = examplePassword;
+    }
+
+    
     public void assign(ExampleConfiguration configuration) throws WexValidationException {
         // Can add code here to adjust assignment
         // for example cross ref the system
+        System.out.println("Hello");
     }
         
     @Override
@@ -119,6 +132,7 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
         out.writeObject(WexSanitizer.sanitize(exampleList));
         out.writeObject(WexSanitizer.sanitize(exampleMap));
         out.writeObject(exampleStateList);
+        out.writeObject(WexSanitizer.sanitize(examplePassword));
     }//writeExternal
 
     @Override
@@ -129,6 +143,7 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
             this.exampleList = (List<String>) in.readObject();   
             this.exampleMap = (Map<String,String>) in.readObject();   
             this.exampleStateList = (List<String>) in.readObject();   
+            this.examplePassword = (String) in.readObject();   
             
         } catch (OptionalDataException ode) {
             System.out.println("Failed to process config [OK] if post install");

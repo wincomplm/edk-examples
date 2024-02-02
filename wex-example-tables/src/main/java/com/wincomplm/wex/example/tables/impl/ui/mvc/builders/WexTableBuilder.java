@@ -42,7 +42,8 @@ public class WexTableBuilder extends AbstractConfigurableTableBuilder {
         table.setSelectable(false);
         table.setConfigurable(false);
         table.setLabel("Title");
-        addColumn(factory, "data", "wex-default-du", "Example Data", 200, table);
+        addColumn(factory, "number", "wex-default-du", "Number", 200, table);
+        
         logger.trace("<=buildComponentConfig");
         return table;
     }//buildComponentConfig
@@ -64,7 +65,6 @@ public class WexTableBuilder extends AbstractConfigurableTableBuilder {
         logger.trace("=>buildComponentData {0} {1}", cc, cp);
         Collection<WexTableRow> result = new ArrayList();
         result.add(WexTableRow.newWexTableRow("Row 1"));
-        result.add(WexTableRow.newWexTableRow("Row 2"));
         logger.trace("<=buildComponentData");
         return result;
     }//buildComponentData
