@@ -8,7 +8,7 @@
         <version>2.57</version>
     </parent>
     <artifactId>wex-example-parent</artifactId>
-    <version>1.15</version>
+    <version>1.16</version>
     <packaging>pom</packaging>
     <properties>
         <sonar.organization>wincom-test</sonar.organization>
@@ -16,4 +16,13 @@
         <!-- <wex.security.wveadb>src/main/security/wve-approvals.json</wex.security.wveadb> This is the default -->
         <wex.security.scaadb>https://raw.githubusercontent.com/wincomplm/edk/main/external/sca-approvals.json</wex.security.scaadb>
     </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.wincomplm</groupId>
+                <artifactId>wex-example-commons</artifactId>
+                <version>1.0-${wex.wt}</version> 
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

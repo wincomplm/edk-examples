@@ -6,7 +6,7 @@
 <parent>
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-parent</artifactId>
-    <version>1.13</version>
+    <version>1.16</version>
 </parent>
       
   <artifactId>wex-example-pack</artifactId>
@@ -30,6 +30,8 @@
     <module>wex-example-file</module>     
     <module>wex-example-resources</module>
     <module>wex-example-promotevalidate</module>    
+    <module>wex-example-commons</module>    
+    <module>wex-example-commons-ext</module>    
   </modules>
       
   <name>wex-example-pack</name>

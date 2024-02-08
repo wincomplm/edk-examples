@@ -57,3 +57,5 @@ wex-example-security/src/main/security/generated/security.pdf
 /wex-example-promotevalidate/target/
 wex-example-helloworld/nb-configuration.xml
 /wex-example-security/nb-configuration.xml
+/wex-example-commons/target/
+/wex-example-commons-ext/target/
