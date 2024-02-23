@@ -1,13 +1,17 @@
 <%@ page import="com.wincomplm.wex.kernel.api.invoke.WexInvoker"%>
-
+<%
+    String urlpath = request.getRequestURI(); // Get the full URL
+    urlpath=urlpath.substring(0,request.getRequestURI().lastIndexOf("/")); // Shorten
+    String jspath =  urlpath.replace("/jsp/","/javascript/"); // Adjust to new paths
+    String csspath = urlpath.replace("/jsp/","/css/");
+%>
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <title>Example Extension Diagnostics</title>
-        <style>
-            <%@ include file="kernel-css.jspf"%>
-        </style>
-        <script src="../lib/jquery-3.6.1.min.js"></script>
+        <link href="<%=csspath%>/kernel.css" rel="stylesheet"/>
+        <script src="<%=jspath%>/libs/jquery-3.6.1.min.js"/>
     </head>
     <body style="font-family: Arial; font-size: 90%; margin: 20px;  margin-top: 60px; ">
         <div class="wex-header">Example Diagnostics</div>
