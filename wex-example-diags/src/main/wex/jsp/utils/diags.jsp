@@ -10,8 +10,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Example Extension Diagnostics</title>
-        <link href="<%=csspath%>/kernel.css" rel="stylesheet"/>
-        <script src="<%=jspath%>/libs/jquery-3.6.1.min.js"/>
+        <link href="<%=csspath%>/kernel.css" rel="stylesheet"></link>
+        <script src="<%=jspath%>/libs/jquery-3.6.1.min.js"></script>
     </head>
     <body style="font-family: Arial; font-size: 90%; margin: 20px;  margin-top: 60px; ">
         <div class="wex-header">Example Diagnostics</div>
