@@ -1,4 +1,6 @@
 ## Release Notes
+### 1.15
+    * Minor formating
 ### 1.14
     * Placed css and javascript in correct locations
 ### 1.13

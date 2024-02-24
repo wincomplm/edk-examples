@@ -18,10 +18,13 @@
         <button class="wex-button wex-close" onClick="window.close()">Close</button>
 
         <table style="font-size: 90%">
-            <tr><td>Part OID</td>
+            <tr>
+                <td>Part OID</td>
                 <td><input  class="wex-input" id="wex-diags-oid" size="30"/></td>
+            </tr>
+            <tr>
                 <td></td>
-                <td><button class="wex-button wex-button-active" onclick="doAction()">Test</button></td>
+                <td align="right"><button class="wex-button wex-button-active" onclick="doAction()">Test</button></td>
             </tr>
         </table>
 
