@@ -4,7 +4,7 @@
         <div class="d-flex align-middle">
             <!-- logo -->
             <a class="navbar-brand mr-0 mr-md-2" aria-label="Bootstrap">
-                <img class="wex-nav-logo" src="images/ptc_color.svg"/>
+                <img class="wex-nav-logo" src="images/wincom.png"/>
             </a>
 
             <%-- Title --%>
