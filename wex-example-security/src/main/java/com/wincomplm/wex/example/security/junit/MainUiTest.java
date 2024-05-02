@@ -25,14 +25,12 @@ public class MainUiTest extends JunitTestAbstract {
   
     @Test
     @TestDef(
-        id = "W1",
         title = "WVE Review",
         description = "Example Review all WVES<br/><br/>"
             + "- 501 - All back end access secure<br/>"
             + "- 501 - global.jspf - Secure backend call only<br/>"
             + "- 502 - ZipHelper.java - File creation secured<br/>",
         category = TestDef.Category.Other,
-        securityCategory = TestDef.SecurityCategory.WVE_Review,
         otherCategory = "Review",
         execution = TestDef.Execution.Manual
     )
@@ -95,7 +93,6 @@ public class MainUiTest extends JunitTestAbstract {
             title = "Permissions Test",
             description = "The test will evaluate the role-based access control system in place. It will ensure that user roles are clearly defined, and permissions are associated with these roles. In this case, the focus is on the \"admin\" role and its exclusive access to the UI.",
             category = Category.Security,
-            securityCategory = TestDef.SecurityCategory.OWASP,
             execution = Execution.Manual,
             reference = "SEC-46"
     )

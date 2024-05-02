@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.18-SNAPSHOT</version>
+        <version>1.17</version>
     </parent>
     <properties>
         <major>1</major>
-        <minor>15</minor>
+        <minor>14</minor>
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
@@ -51,7 +51,11 @@
             <artifactId>poi</artifactId>
             <version>5.2.3</version>
         </dependency>
-
+        <dependency> <!-- This is included as it has a CVE and is suppressed by an entry in owasp-suppress.xml -->
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230618</version>
+        </dependency>
        <!-- Will fail if not in the approval list
             <dependency>
                 <groupId>commons-io</groupId>
@@ -69,14 +73,6 @@
                     <artifactId>slf4j-api</artifactId>
                 </exclusion>                             
             </exclusions> 
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>wt-framework-commons</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>wt-security-commons</artifactId>
         </dependency>
     </dependencies> 
 </project>

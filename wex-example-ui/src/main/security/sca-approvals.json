@@ -18,16 +18,6 @@
         "groupId": "com.googlecode.owasp-java-html-sanitizer",
         "artifactId": "*",
         "versions": ["*"]
-    },
-    {
-        "groupId": "commons-io",
-        "artifactId": "*",
-        "versions": ["*"]
-    },
-    {
-        "groupId": "com.google",
-        "artifactId": "*",
-        "versions": ["*"]
     }
 ]
 
