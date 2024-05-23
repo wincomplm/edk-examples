@@ -1,4 +1,6 @@
 ## Release Notes
+### 1.15
+    * Fixed security issue on 12.0
 ### 1.13
     * Added owasp suppression
     * Secure request handling

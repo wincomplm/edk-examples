@@ -42,7 +42,7 @@ public class ExampleRequestSecure {
     
     
     @WexMethod(name = "securePage", description = "A simple security example")
-    public void securePage() throws Exception {
+    public void securePage(HttpServletRequest httprequestUnsafe, HttpServletResponse httpresponse) throws Exception {
         WexSecurePage.secureAdminOnly();
     }//securePage
     
