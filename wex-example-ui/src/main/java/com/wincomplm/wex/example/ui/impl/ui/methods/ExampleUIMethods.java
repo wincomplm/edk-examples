@@ -20,7 +20,7 @@ import com.wincomplm.wex.security.commons.impl.WexSecurePage;
 public class ExampleUIMethods {
 
     @WexMethod(name = "securePage", description = "A simple security example")
-    public void securePage() throws Exception {
+    public void securePage(Object... args) throws Exception {
         WexSecurePage.secureAdminOnly();
     }//securePage
 
