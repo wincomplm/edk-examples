@@ -1,12 +1,12 @@
 package com.wincomplm.wex.example.security.junit;
 
-import com.wincomplm.wex.security.doc.annotations.TestDef.Category;
 import com.wincomplm.wex.junit.impl.test.JunitTestAbstract;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import com.wincomplm.wex.security.doc.annotations.TestDef;
-import com.wincomplm.wex.security.doc.annotations.TestDef.Execution;
+import com.wincomplm.wex.testplan.doc.annotations.TestDef;
+import com.wincomplm.wex.testplan.doc.annotations.TestDef.Category;
+import com.wincomplm.wex.testplan.doc.annotations.TestDef.Execution;
 import static org.junit.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -26,10 +26,10 @@ public class MainUiTest extends JunitTestAbstract {
     @Test
     @TestDef(
         title = "WVE Review",
-        description = "Example Review all WVES<br/><br/>"
-            + "- 501 - All back end access secure<br/>"
-            + "- 501 - global.jspf - Secure backend call only<br/>"
-            + "- 502 - ZipHelper.java - File creation secured<br/>",
+        description = "Example Review all WVES<br><br>",
+        actions ="- 501 - All back end access secure<br>"
+            + "- 501 - global.jspf - Secure backend call only<br>"
+            + "- 502 - ZipHelper.java - File creation secured<br>",
         category = TestDef.Category.Other,
         otherCategory = "Review",
         execution = TestDef.Execution.Manual
@@ -42,6 +42,10 @@ public class MainUiTest extends JunitTestAbstract {
     @TestDef(
         title = "Hello World Test",
         description = "This an auto test of a basic Hello World page<br/>",
+        actions ="- Do this<br>" 
+                + "- Do that<br>"
+                + "<image>hellomenu.png</image>",
+        result ="It works <image>helloworld.png</image>",
         category = Category.Functional,
         execution = Execution.Automatic
     )
@@ -149,29 +153,6 @@ public class MainUiTest extends JunitTestAbstract {
     public void csrfRundiags() throws Exception {
     }
 
-    @TestDef(
-            title = "XSS xxxxx test ",
-            description = "Call xxxxx.jsp <br>"
-            + "Ensure XSS security<br>"
-            + "xxxxx.jsp",
-            category = Category.Security,
-            execution = Execution.Manual,
-            reference = "SEC-46"
-    )
-    @Test
-    public void xssWexRepExportPlusDownload() throws Exception {
-    }
-
-    @TestDef(
-            title = "CSRF xxxxx.jsp test",
-            description = "Ensure INVALID_NONCE is returned<br>",
-            category = Category.Security,
-            execution = Execution.Manual,
-            reference = "SEC-46"
-    )
-    @Test
-    public void csrfWexRepExportPlusDownload() throws Exception {
-    }
 
     @TestDef(
             title = "Access xxxxx.jsp test",
@@ -209,17 +190,6 @@ public class MainUiTest extends JunitTestAbstract {
     public void csrfTableAction() throws Exception {
     }
 
-    @TestDef(
-            title = " Do table action(param wexid) test",
-            description = "Call xxxxx1.jsp<br>"
-            + "Ensure XSS security<br>",
-            category = Category.Security,
-            execution = Execution.Manual,
-            reference = "SEC-46"
-    )
-    @Test
-    public void TableActionParamWexid() throws Exception {
-    }
 
     @TestDef(
             title = " Do table action(param action) test",

@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.17</version>
+        <version>1.18</version>
     </parent>
     <properties>
         <major>1</major>
@@ -12,7 +12,7 @@
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
-    <groupId>com.wincomplm</groupId>
+     <groupId>gov.nasa</groupId>
     <artifactId>wex-example-security</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
@@ -35,7 +35,7 @@
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>
-            <artifactId>wex-security-doc-annotations</artifactId>
+            <artifactId>wex-testplan-doc-annotations</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -43,19 +43,21 @@
             <version>5.2.3</version>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>com.wincomplm</groupId>
             <artifactId>wt-security-commons</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>5.2.3</version>
         </dependency>
         <dependency> <!-- This is included as it has a CVE and is suppressed by an entry in owasp-suppress.xml -->
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20230618</version>
+        </dependency>        
+        
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wt-framework-commons</artifactId>
+            <version>1.13-${wex.wt}</version>
         </dependency>
+        
        <!-- Will fail if not in the approval list
             <dependency>
                 <groupId>commons-io</groupId>

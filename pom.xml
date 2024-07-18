@@ -29,6 +29,7 @@
     <module>wex-example-wizard</module>       
     <module>wex-example-file</module>     
     <module>wex-example-resources</module>
+    <module>wex-example-security</module>
     <module>wex-example-promotevalidate</module>    
     <module>wex-example-commons</module>    
     <module>wex-example-commons-ext</module>    
