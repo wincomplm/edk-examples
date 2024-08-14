@@ -12,7 +12,7 @@
         <beta></beta>
         <revision>${major}.${minor}-${wex.wt}</revision>
     </properties>
-     <groupId>gov.nasa</groupId>
+     <groupId>example.group</groupId>
     <artifactId>wex-example-security</artifactId>
     <version>${revision}</version>
     <packaging>jar</packaging>
