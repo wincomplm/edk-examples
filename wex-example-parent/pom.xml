@@ -5,10 +5,10 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-parent</artifactId>
-        <version>3.7</version>
+        <version>3.8</version>
     </parent>
     <artifactId>wex-example-parent</artifactId>
-    <version>1.18</version>
+    <version>1.19</version>
     <packaging>pom</packaging>
     <properties>
         <sonar.organization>wincom-test</sonar.organization>
