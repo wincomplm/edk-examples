@@ -1,0 +1,10 @@
+<%@ page trimDirectiveWhitespaces="true" %>
+<%@ taglib uri = "http://www.wincom-plm.com/taglib/wex-kernel" prefix = "wex" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+${wex:invoke("com.wincomplm.wex-example-security","methods.securePage",request,response)}
+
+<html>
+    <body>
+        <h1>This can ONLY be included and not called via a URL</h1>
+    </body>
+</html>
