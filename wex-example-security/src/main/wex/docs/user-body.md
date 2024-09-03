@@ -10,9 +10,9 @@ There are two main UI pages
 
 Which is an admin only page and will be rejected for other users.
 
-[Secure Test](netmarkets/jsp/com/wincomplm/wex/example/security/edkSecureTest.jsp)
+[XSS Test](netmarkets/jsp/com/wincomplm/wex/example/security/xssTest.jsp?id=<img%20src=1%20href=1%20onerror="javascript:alert(1)"></img>)
 
-Performs sanitization to ensure there is no path disclosure or XSS 
+A page that triggers an XSS failure, it will alert 1 on the browser
 
 [Junit Testing](netmarkets/jsp/com/wincomplm/wex/example/security/junit.jsp?pretty=true)
 
