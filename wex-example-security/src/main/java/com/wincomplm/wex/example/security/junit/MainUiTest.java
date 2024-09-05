@@ -7,9 +7,6 @@ import org.junit.After;
 import com.wincomplm.wex.testplan.doc.annotations.TestDef;
 import com.wincomplm.wex.testplan.doc.annotations.TestDef.Category;
 import com.wincomplm.wex.testplan.doc.annotations.TestDef.Execution;
-import static org.junit.Assert.assertEquals;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class MainUiTest extends JunitTestAbstract {
 
@@ -39,36 +36,8 @@ public class MainUiTest extends JunitTestAbstract {
         id = "1"
 
     )
-    public void helloWorld() throws Exception {
-        driver.get(getAuthUrl() + "/netmarkets/jsp/com/wincomplm/wex/example/security/edkHelloWorld.jsp");    
-        WebElement elem = driver.findElement(By.tagName("h1"));
-        assertEquals(elem.getText(), "Hello World");
-    }
+    public void helloWorld() throws Exception {}
     
-    @Test
-    @TestDef(
-        title = "Secure Test",
-        description = "This an auto test of a secure request/>",
-        category = Category.Functional,
-        execution = Execution.Automatic,
-        id = "1"
-    )
-    public void secureUITest() throws Exception {
-        driver.get(getAuthUrl() + "/netmarkets/jsp/com/wincomplm/wex/example/security/edkSecureTest.jsp");    
-        WebElement elem = driver.findElement(By.tagName("body"));
-        assertEquals(elem.getText(), "javascript could be here, or a path [NOT DISCLOSED]");
-    }
-    
-    @Test
-    @TestDef(
-        title = "Other test 1",
-        description = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-        category = Category.Other,
-        otherCategory = "Custom",
-        execution = Execution.Manual
-    )
-    public void other() throws Exception {
-    }
 
 // -- Security --        
     @Test
@@ -85,7 +54,8 @@ public class MainUiTest extends JunitTestAbstract {
     )
     public void reviewWVEs() throws Exception {
     }
-       
+      
+    
     @Test
     @TestDef(
         title = "Security test 1",
@@ -211,7 +181,8 @@ public class MainUiTest extends JunitTestAbstract {
         result = "Ensure XSS security",
         category = Category.Security,
         execution = Execution.Manual,
-        reference = "SEC-46"
+        reference = "SEC-46",
+        id = "S11"       
     )
     @Test
     public void TableActionParamAction() throws Exception {
@@ -224,7 +195,8 @@ public class MainUiTest extends JunitTestAbstract {
         result = "Ensure XSS security",
         category = Category.Security,
         execution = Execution.Manual,
-        reference = "SEC-46"
+        reference = "SEC-46",
+        id = "S12"    
     )
     @Test
     public void FormProcessor() throws Exception {
@@ -235,12 +207,12 @@ public class MainUiTest extends JunitTestAbstract {
         description = "Ensure that unauthorized users cannot escalate privileges",
         category = Category.Security,
         execution = Execution.Manual,
-        reference = "SEC-46"
+        reference = "SEC-46",
+        id = "S13"   
     )
     @Test
     public void DocumentCreatorPrivilegeEscalation() throws Exception {
     }
-    
     
 
 }

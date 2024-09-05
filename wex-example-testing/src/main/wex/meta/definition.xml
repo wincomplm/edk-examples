@@ -1,0 +1,27 @@
+<wex-definition>
+    <meta>
+        <group-id>${groupId}</group-id>      
+        <artifact-id>${artifactId}</artifact-id>      
+        <display-name>Example - Testing</display-name>
+        <system>false</system> 
+        <description>Hello to the world of testing</description>  
+    </meta>
+        
+    <approval>
+        <!-- <approved>windchill-plus</approved> -->
+    </approval>
+    <security>
+        <docid></docid>
+    </security>
+    <build>
+        <version>
+            <major>${major}</major>
+            <minor>${minor}</minor>
+            <beta>${beta}</beta>
+        </version>
+        <host>
+            <release>${wex.wt}</release>
+        </host>
+    </build> 
+
+</wex-definition>

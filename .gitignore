@@ -61,3 +61,4 @@ wex-example-helloworld/nb-configuration.xml
 /wex-example-commons-ext/target/
 wex-example-commons/nbactions.xml
 wex-example-commons-ext/.LCKpom.xml~
+/wex-example-testing/target/

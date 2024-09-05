@@ -1,0 +1,89 @@
+[
+    {
+        "groupId": "com.wincomplm",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.ptc",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.apache.poi",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "commons-codec",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.apache.commons",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "commons-io",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.zaxxer",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "javax.activation",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.googlecode",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.thymeleaf",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "ognl",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.javassist",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.attoparser",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.unbescape",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.json",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.google",
+        "artifactId": "*",
+        "versions": ["*"]
+    }
+
+]
+
