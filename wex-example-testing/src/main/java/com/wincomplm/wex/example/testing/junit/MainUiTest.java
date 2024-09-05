@@ -56,8 +56,7 @@ public class MainUiTest extends JunitTestAbstract {
         execution = Execution.Manual,
         id = "2"
     )
-    public void manualTest() throws Exception {
-    }
+    public void manualTest() throws Exception {}
 
 // -- Security --        
 // We should add security tests here
