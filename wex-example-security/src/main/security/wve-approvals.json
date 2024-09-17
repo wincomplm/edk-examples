@@ -1,6 +1,5 @@
 [
     {
-        "id": "com.wincomplm.wex-example-security",
         "rules": ["WVE-2022-0204","WVE-2022-0101","WVE-2022-0201","WVE-2022-0202","WVE-2022-0301","WVE-2022-0401","WVE-2022-0402","WVE-2022-0403","WVE-2022-0501","WVE-2023-0506"],
         "falsePositives": ["WVE-2022-0301"]    
     }

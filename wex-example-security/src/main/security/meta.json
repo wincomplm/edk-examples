@@ -1,8 +1,8 @@
 {
     "level":"B",
     "approval": {
-        "review": { "name":"Ellis Douglas", "date":"2023-2-20" },
-        "approve": { "name":"Simon Heath", "date":"2023-2-20" }
+        "review": { "name":"", "date":"" },
+        "approve": { "name":"", "date":"" }
     },
     "suppress": [
         { "id":"CVE-2022-45688", "reason":"This API is encapsulated and there is no attack, hutool-json not used","reference":"SEC-45" },
@@ -26,7 +26,15 @@
         "LevelC": [
             { "desc":"Implements a Windchill UI",                           "valid":"true" }
         ]                 
-    }
+    },
+    "endpoints": [
+            {"id":"xssTest","admin":true,"params":["id"],"action":"read"},
+            {"id":"edkUpdate","admin":false,"params":["id"],"action":"update"},
+            {"id":"edkDownload","admin":false,"params":["id"],"action":"download"},
+            {"id":"edkNoParams","admin":false,"params":[],"action":"read"},
+            {"id":"edkAdminOnly","admin":true,"params":[],"action":"read"}
+    ]
+
 }
        
 
