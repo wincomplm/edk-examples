@@ -4,13 +4,13 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.24</version>
+        <version>1.25</version>
     </parent>
     <properties>
         <major>1</major>
-        <minor>16</minor>
+        <minor>17</minor>
         <beta></beta>
-        <revision>${major}.${minor}-${wex.wt}</revision>
+        <revision>${major}.${minor}${beta}-${wex.wt}</revision>
     </properties>
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-security</artifactId>

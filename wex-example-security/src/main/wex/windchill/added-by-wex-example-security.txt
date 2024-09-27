@@ -1,0 +1,1 @@
+This file has been added as a test and will be removed if the extension is undeployed.

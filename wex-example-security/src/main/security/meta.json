@@ -29,7 +29,7 @@
     },
     "endpoints": [
             {"id":"xssTest","admin":true,"params":["id"],"action":"read"},
-            {"id":"edkUpdate","admin":false,"params":["id"],"action":"update"},
+            {"id":"edkUpdate","admin":false,"params":["id","aParemeter","anotherParemeter","yetAnpthterParemeter"],"action":"update"},
             {"id":"edkDownload","admin":false,"params":["id"],"action":"download"},
             {"id":"edkNoParams","admin":false,"params":[],"action":"read"},
             {"id":"edkAdminOnly","admin":true,"params":[],"action":"read"}
