@@ -1,9 +1,10 @@
 package com.wincomplm.wex.example.ui.junit;
 
 import com.wincomplm.wex.junit.impl.test.JunitTestAbstract;
-import com.wincomplm.wex.security.doc.annotations.TestDef;
-import com.wincomplm.wex.security.doc.annotations.TestDef.Category;
-import com.wincomplm.wex.security.doc.annotations.TestDef.Execution;
+import com.wincomplm.wex.testplan.doc.annotations.TestDef;
+import com.wincomplm.wex.testplan.doc.annotations.TestDef.Category;
+import com.wincomplm.wex.testplan.doc.annotations.TestDef.Execution;
+
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
