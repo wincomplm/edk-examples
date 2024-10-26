@@ -1,5 +1,4 @@
 <%@include file="pindex.jspf" %>
-<%@ page import="javax.servlet.http.HttpUtils"%>
 <%@ page import="com.ptc.core.appsec.CSRFProtector"%>
 <%@ taglib uri="http://www.wincom-plm.com/taglib/wex-kernel" prefix="wex" %>
 
