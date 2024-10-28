@@ -7,7 +7,6 @@
 package com.wincomplm.wex.example.config.methods;
 
 
-import com.wincomplm.wex.config.auxs.helpers.WexConfigRegistryHelper;
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.example.config.impl.config.ExampleConfiguration;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
