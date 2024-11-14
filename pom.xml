@@ -6,7 +6,7 @@
 <parent>
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-parent</artifactId>
-    <version>1.17</version>
+    <version>1.27</version>
 </parent>
       
   <artifactId>wex-example-pack</artifactId>
@@ -26,7 +26,7 @@
     <module>wex-example-tables</module>        
     <module>wex-example-tree</module>    
     <module>wex-example-ui</module>               
-    <module>wex-example-wizard</module>       
+    <!--<module>wex-example-wizard</module>-->       
     <module>wex-example-file</module>     
     <module>wex-example-resources</module>
     <module>wex-example-security</module>

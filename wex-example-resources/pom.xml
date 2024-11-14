@@ -4,7 +4,8 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.17</version>    </parent>
+        <version>1.27</version>    
+    </parent>
     <properties>
         <major>1</major>
         <minor>5</minor>
