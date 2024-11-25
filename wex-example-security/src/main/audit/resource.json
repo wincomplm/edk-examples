@@ -1,0 +1,34 @@
+{
+    "notes":"Hello",
+    "operation": { 
+        "notes":"Operational details...", 
+        "adminMode":false,
+        "userMode":true,
+        "workflowRobots":false,
+        "userSyncWorkflow":true
+    },
+    "diskUsage": { 
+        "notes":"This disk is used like this...",    
+        "averageMb":0,
+        "maxMb":0
+    },
+    "memoryUsage": { 
+        "notes":"Memory is allocated...",
+        "caching":false,
+        "averageMb":0,
+        "maxMb":0
+    },
+    "networkUsage": { 
+        "notes":"This extension uses the network to...",
+        "applies":false,
+        "freqPolling":0,
+        "avgPayloadMb":0.0,
+        "maxPayloadMb":0.0,
+        "avgRxSizeMb":0.0,
+        "maxRxSizeMb":0.0
+    }
+
+}
+       
+
+      

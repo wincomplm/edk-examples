@@ -18,6 +18,7 @@
             <major>${major}</major>
             <minor>${minor}</minor>
             <beta>${beta}</beta>
+            <revision></revision>
         </version>
         <host>
             <release>${wex.wt}</release>
