@@ -15,8 +15,11 @@
     "memoryUsage": { 
         "notes":"Memory is allocated...",
         "caching":false,
-        "averageMb":0,
-        "maxMb":0
+        "averageBgMb":0,
+        "maxBgMb":0,
+        "averageFgMb":0,
+        "maxFgMb":0
+        
     },
     "networkUsage": { 
         "notes":"This extension uses the network to...",

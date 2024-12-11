@@ -29,7 +29,7 @@ public class ExampleRequestSecure {
 
     @WexMethod(name = "get-example-data", description = "Get example")
     public void getExampleData(HttpServletRequest httprequestUnsafe, HttpServletResponse httpresponse) throws Exception { 
-        WexSecurePage.secureAdminOnly();
+        WexSecurePage.secureSiteAdminOnly();
         limiter.checkException();
 
         WexSecureRequestWrapper httprequest = new WexSecureRequestWrapper(httprequestUnsafe);
@@ -43,7 +43,7 @@ public class ExampleRequestSecure {
     
     @WexMethod(name = "securePage", description = "A simple security example")
     public void securePage(HttpServletRequest httprequestUnsafe, HttpServletResponse httpresponse) throws Exception {
-        WexSecurePage.secureAdminOnly();
+        WexSecurePage.secureSiteAdminOnly();
     }//securePage
     
 }

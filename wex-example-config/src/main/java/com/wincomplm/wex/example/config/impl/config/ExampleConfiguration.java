@@ -58,7 +58,9 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
     @ConfigOption(category = "Security", description = "Password", required = false, hidden=true)
     String examplePassword = "";
         
-    
+    @ConfigOption(category = "Business Admin", description = "An option visible to the business admins", required = false, business=true)
+    String businessString = "";
+        
     public boolean isExampleBoolean() {
         return exampleBoolean;
     }
@@ -107,6 +109,14 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
         this.examplePassword = examplePassword;
     }
 
+    public String getBusinessString() {
+        return businessString;
+    }
+
+    public void setBusinessString(String businessString) {
+        this.businessString = businessString;
+    }
+
     
     public void assign(ExampleConfiguration configuration) throws WexValidationException {
         // Can add code here to adjust assignment
@@ -133,6 +143,8 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
         out.writeObject(WexSanitizer.sanitize(exampleMap));
         out.writeObject(exampleStateList);
         out.writeObject(WexSanitizer.sanitize(examplePassword));
+        out.writeObject(businessString);
+        
     }//writeExternal
 
     @Override
@@ -144,6 +156,7 @@ public class ExampleConfiguration implements IWexConfiguration<ExampleConfigurat
             this.exampleMap = (Map<String,String>) in.readObject();   
             this.exampleStateList = (List<String>) in.readObject();   
             this.examplePassword = (String) in.readObject();   
+            this.businessString = (String) in.readObject();   
             
         } catch (OptionalDataException ode) {
             System.out.println("Failed to process config [OK] if post install");

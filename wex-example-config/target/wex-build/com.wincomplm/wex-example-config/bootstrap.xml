@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bootstrap>
+    <uid>com.wincomplm.wex-example-config</uid>
+    <service>com.wincomplm.wex.example.config.impl.bootstrap.WexBootstrap</service>
+    <classpath>
+        <element>codebase/wex-example-config.jar</element>
+        <element>codebase/wex-config-aux-1.7-13.0.jar</element>
+        <element>codebase/java8-shim-20240325.1.jar</element>
+        <element>codebase/java10-shim-20240325.1.jar</element>
+        <element>codebase/error_prone_annotations-2.27.0.jar</element>
+        <element>codebase/wex-annotations-config-2.0-SNAPSHOT.jar</element>
+        <element>codebase/wt-security-commons-2.0-13.0-SNAPSHOT.jar</element>
+        <element>codebase/owasp-java-html-sanitizer-20240325.1.jar</element>
+        <element>codebase/gson-2.11.0.jar</element>
+    </classpath>
+    <required>
+        <uid>com.wincomplm.wex-system</uid>
+        <uid>com.wincomplm.wex-config</uid>
+    </required>
+</bootstrap>

@@ -1,0 +1,3 @@
+com\wincomplm\wex\example\config\impl\bootstrap\WexBootstrap.class
+com\wincomplm\wex\example\config\impl\config\ExampleConfiguration.class
+com\wincomplm\wex\example\config\methods\ExampleMethods.class

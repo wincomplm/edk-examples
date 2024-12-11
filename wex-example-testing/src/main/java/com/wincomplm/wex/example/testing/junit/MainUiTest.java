@@ -37,7 +37,6 @@ public class MainUiTest extends JunitTestAbstract {
         category = Category.Functional,
         execution = Execution.Automatic,
         id = "1"
-
     )
     public void helloWorld() throws Exception {
         driver.get(getAuthUrl() + "/netmarkets/jsp/com/wincomplm/wex/example/testing/edkHelloWorld.jsp");    
@@ -49,7 +48,7 @@ public class MainUiTest extends JunitTestAbstract {
     @TestDef(
         title = "Manual functional test",
         description = "This is a manual functional test",
-        actions ="- Do this>", 
+        actions ="- Do this...<link>http://google.com</link>", 
         result ="This is the result <image>result.png</image>",
         category = Category.Other,
         otherCategory = "Custom",

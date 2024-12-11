@@ -35,5 +35,10 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-security-commons</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-annotations-config</artifactId>
+        </dependency>
     </dependencies> 
 </project>

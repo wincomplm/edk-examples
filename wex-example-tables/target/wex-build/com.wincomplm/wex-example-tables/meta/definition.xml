@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wex-definition>
+  <meta>
+    <group-id>com.wincomplm</group-id>
+    <artifact-id>wex-example-tables</artifact-id>
+    <display-name>Example - Table</display-name>
+    <system>false</system>
+    <description>Extension table example</description>
+  </meta>
+  <build>
+    <version>
+      <major>2</major>
+      <minor>0</minor>
+      <beta>false</beta>
+      <revision/>
+    </version>
+    <host>
+      <release>13.0</release>
+    </host>
+  </build>
+  <install>
+    <menus>
+      <extension action="edkExampleTable" file="navigation-actionModels" menu="header actions"/>
+    </menus>
+    <actions>
+      <page name="edkExampleTable" url="edkExampleTable.jsp"/>
+    </actions>
+  </install>
+  <build-ext>
+    <snapshot>true</snapshot>
+    <windchill>13.0.1</windchill>
+    <version>2.0-13.0-SNAPSHOT</version>
+  </build-ext>
+</wex-definition>

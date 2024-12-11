@@ -6,6 +6,9 @@
         <system>false</system> 
         <description>Hello to the world</description>  
     </meta>
+    <approval>
+            <!-- <approved>windchill-plus</approved> -->
+    </approval>
     <build>
         <version>
             <major>${major}</major>
