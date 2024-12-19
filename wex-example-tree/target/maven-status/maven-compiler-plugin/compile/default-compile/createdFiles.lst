@@ -1,6 +1,0 @@
-com\wincomplm\wex\example\tree\impl\bootstrap\WexBootstrap.class
-com\wincomplm\wex\example\tree\impl\ui\mvc\builders\WexExampleTreeHandler.class
-com\wincomplm\wex\example\tree\impl\ui\model\WexTreeRow.class
-com\wincomplm\wex\example\tree\resources\WexResources.class
-com\wincomplm\wex\example\tree\impl\ui\datautilities\ExampleDataUtil.class
-com\wincomplm\wex\example\tree\impl\ui\mvc\builders\WexTreeBuilder.class

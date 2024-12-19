@@ -6,7 +6,15 @@
         <artifactId>wex-edk-examples</artifactId>
         <version>${examples.wt.version}</version>
     </parent>  
+    <properties>
+        <major>2</major>
+        <minor>0</minor>
+        <beta></beta>
+        <snapshot>false</snapshot>
+    </properties>
     <artifactId>wex-example-helloworld</artifactId>
+    <version>${major}.${minor}-${wex.wt}</version>
+    
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>

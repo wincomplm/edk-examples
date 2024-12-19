@@ -6,8 +6,15 @@
         <artifactId>wex-edk-examples</artifactId>
         <version>2.0-SNAPSHOT</version>
     </parent>  
+    
+        <properties>
+        <major>2</major>
+        <minor>0</minor>
+        <beta></beta>
+        <snapshot>false</snapshot>
+    </properties>    
     <artifactId>wex-example-config</artifactId>
-    <version>${examples.wt.version}</version>
+    <version>${major}.${minor}-${wex.wt}</version>
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
@@ -36,9 +43,6 @@
             <artifactId>wt-security-commons</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.wincomplm</groupId>
-            <artifactId>wex-annotations-config</artifactId>
-        </dependency>
-    </dependencies> 
+    </dependencies>
+    <name>wex-example-config</name>
 </project>
