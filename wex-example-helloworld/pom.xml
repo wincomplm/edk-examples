@@ -6,12 +6,12 @@
         <artifactId>wex-edk-examples</artifactId>
         <version>${examples.wt.version}</version>
     </parent>  
-    <properties>
+    <!-- <properties>
         <major>2</major>
-        <minor>0</minor>
+        <minor>1</minor>
         <beta></beta>
         <snapshot>false</snapshot>
-    </properties>
+    </properties> -->
     <artifactId>wex-example-helloworld</artifactId>
     <version>${major}.${minor}-${wex.wt}</version>
     

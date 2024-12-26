@@ -3,3 +3,12 @@
 /wex-example-diags/target/
 /wex-example-testing/target/
 /wex-example-config2/target/
+/wex-example-sync/target/
+/wex-example-method/target/
+/wex-example-features/target/
+/wex-example-file/target/
+/wex-example-commons-ext/target/
+/wex-example-commons/target/
+/wex-example-log/target/
+/wex-example-promotevalidate/target/
+/wex-example-queues/target/
