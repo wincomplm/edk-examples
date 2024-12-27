@@ -20,10 +20,10 @@ import wt.part.WTPart;
  * A simple listener
  * @author simon
  */
-@WexComponent(uid = "wex-example-listener", description = "Example Set State Listener")
+@WexComponent(uid = "wex-example-listener2", description = "Example Set State Listener")
 @WexWtListener({
 @WexWtEventKey(eventClass = LifeCycleServiceEvent.class, keys = LifeCycleServiceEvent.SET_STATE, supported = {WTPart.class}, fatal = false)})
-public class StateListener implements IWexWtListener<Object> {
+public class StateListener2 implements IWexWtListener<Object> {
  
     private IWexLogger logger = WexLogger.getLogger(this.getClass());
 
@@ -32,7 +32,7 @@ public class StateListener implements IWexWtListener<Object> {
         WTPart part = (WTPart) target;
         
         // Use a warning logger (which always logs) to print the number of the part 
-        logger.warn("[L1]  A part has changed state {0} to {1}",part.getNumber(),part.getState().toString());
+        logger.warn("[L2] A part has changed state {0} to {1}",part.getNumber(),part.getState().toString());
     
     }
     

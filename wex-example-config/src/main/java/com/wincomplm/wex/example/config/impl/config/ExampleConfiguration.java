@@ -7,10 +7,10 @@
 
 package com.wincomplm.wex.example.config.impl.config;
 
-import com.wincomplm.wex.config.auxs.handlers.LifeCycleStateHandler;
 import com.wincomplm.wex.config.impl.annotations.ConfigOption;
 import com.wincomplm.wex.config.impl.exceptions.WexValidationException;
 import com.wincomplm.wex.config.impl.ifc.IWexConfiguration;
+import com.wincomplm.wex.example.config.handlers.LifeCycleStateHandler;
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.security.commons.impl.WexSanitizer;
 import java.io.Externalizable;

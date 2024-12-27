@@ -6,13 +6,14 @@
         <artifactId>wex-edk-examples</artifactId>
         <version>${examples.wt.version}</version>
     </parent>  
-    <!-- <properties>
+    <artifactId>wex-example-helloworld</artifactId>
+
+    <properties>
         <major>2</major>
-        <minor>1</minor>
+        <minor>0</minor>
         <beta></beta>
         <snapshot>false</snapshot>
-    </properties> -->
-    <artifactId>wex-example-helloworld</artifactId>
+    </properties> 
     <version>${major}.${minor}-${wex.wt}</version>
     
     <dependencies>

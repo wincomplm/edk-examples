@@ -6,15 +6,7 @@
         <artifactId>wex-edk-examples</artifactId>
         <version>2.0-SNAPSHOT</version>
     </parent>  
-    
-        <properties>
-        <major>2</major>
-        <minor>0</minor>
-        <beta></beta>
-        <snapshot>false</snapshot>
-    </properties>    
     <artifactId>wex-example-config</artifactId>
-    <version>${major}.${minor}-${wex.wt}</version>
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
@@ -31,12 +23,6 @@
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wincomplm</groupId>
-            <artifactId>wex-config-aux</artifactId>
-            <version>1.7-${wex.wt}</version>
-            
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>

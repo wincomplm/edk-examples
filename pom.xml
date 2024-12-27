@@ -51,12 +51,13 @@
         <module>wex-example-method</module>
         <module>wex-example-promotevalidate</module>
         <module>wex-example-queues</module>        
-        <module>wex-example-resources</module>  
+        <!--  <module>wex-example-resources</module>   -->
         <module>wex-example-rest</module>
         <module>wex-example-tables</module>
-        <module>wex-example-testing</module> 
+        <!--  <module>wex-example-testing</module>    -->
         <module>wex-example-tree</module>
-        <module>wex-example-config</module>
+        <module>wex-example-config</module>  
         <module>wex-example-sync</module>
+        <module>wex-example-listener</module>
     </modules>
 </project>
