@@ -8,7 +8,6 @@
     </parent>  
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-log</artifactId>
-    <version>${examples.wt.version}</version>
 
     <dependencies>
         <dependency>

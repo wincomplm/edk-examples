@@ -28,7 +28,7 @@
      
      </properties>
     <artifactId>wex-edk-examples</artifactId>
-    <version>${examples.wt.version}</version>
+    <version>${examples.version}</version>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>

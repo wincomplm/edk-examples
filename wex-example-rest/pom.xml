@@ -6,6 +6,7 @@
         <artifactId>wex-edk-examples</artifactId>
         <version>2.0-SNAPSHOT</version>
     </parent>  
+    
     <artifactId>wex-example-rest</artifactId>
     <version>${examples.wt.version}</version>
 

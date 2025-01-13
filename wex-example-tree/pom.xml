@@ -8,7 +8,7 @@
     </parent>  
     <artifactId>wex-example-tree</artifactId>
     <version>${examples.wt.version}</version>
-
+ 
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>

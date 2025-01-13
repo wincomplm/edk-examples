@@ -7,6 +7,16 @@
         <version>2.0-SNAPSHOT</version>
     </parent>  
     <artifactId>wex-example-config</artifactId>
+     
+    <properties>
+        <major>2</major>
+        <minor>0</minor>
+        <beta></beta>
+        <snapshot>false</snapshot>
+    </properties> 
+    <version>${major}.${minor}-${wex.wt}</version>
+    
+    
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
