@@ -24,7 +24,7 @@
         <major>${examples.version.major}</major>
         <minor>${examples.version.minor}</minor>
         <beta>${examples.version.beta}</beta>
-        <snapshot>true</snapshot>
+        <snapshot>${examples.version.snapshot}</snapshot>
      
      </properties>
     <artifactId>wex-edk-examples</artifactId>
