@@ -13,6 +13,11 @@
         "groupId": "javax.activation",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "commons-io",
+        "artifactId": "*",
+        "versions": ["*"]
     }
 ]
 

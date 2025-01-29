@@ -1,7 +1,7 @@
 [
     {
         "id": "com.wincomplm.wex-example-ui",
-        "rules": ["WVE-2022-0501","WVE-2023-0503"],
+        "rules": ["WVE-2022-0501", "WVE-2023-0503", "WVE-2024-0511"],
         "falsePositives": [""]    
     }
 ]

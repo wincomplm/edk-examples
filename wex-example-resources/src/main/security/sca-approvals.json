@@ -15,30 +15,39 @@
         "versions": ["*"]
     },
     {
-        "groupId": "javax.activation",
-        "artifactId": "*",
-        "versions": ["*"]
-    },
-    {
-        "groupId": "com.googlecode",
-        "artifactId": "*",
-        "versions": ["*"]
-    },
-    {
-        "groupId": "com.google",
-        "artifactId": "*",
-        "versions": ["*"]
-    },
-    {
-        "groupId": "org.checkerframework",
-        "artifactId": "*",
-        "versions": ["*"]
-    },
-    {
         "groupId": "commons-io",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "net.lingala.zip4j",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "net.lingala.zip4j",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.mybatis",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.googlecode.owasp-java-html-sanitizer",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "com.google.code.gson",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "org.apache.commons",
         "artifactId": "*",
         "versions": ["*"]
     }
 ]
-
 

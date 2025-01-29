@@ -1,7 +1,7 @@
 [
     {
         "id": "com.wincomplm.wex-example-queues",
-        "rules": ["WVE-2022-0202","WVE-2022-0501","WVE-2023-0504"],
+        "rules": ["WVE-2022-0202", "WVE-2022-0501", "WVE-2023-0504", "WVE-2022-0204"],
         "falsePositives": [""]    
     }
 ]

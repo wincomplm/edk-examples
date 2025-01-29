@@ -28,6 +28,11 @@
         "groupId": "commons-io",
         "artifactId": "commons-io",
         "versions": ["2.11.0"]
+    },
+    {
+        "groupId": "commons-io",
+        "artifactId": "*",
+        "versions": ["*"]
     }
 ]
 
