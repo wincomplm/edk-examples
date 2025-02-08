@@ -24,10 +24,6 @@
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>
-            <artifactId>wex-junit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wincomplm</groupId>
             <artifactId>wex-testplan-doc-annotations</artifactId>
         </dependency>
         <dependency>
@@ -48,7 +44,6 @@
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-framework-commons</artifactId>
-            <version>1.13-${wex.wt}</version>
         </dependency>
 
         <dependency>
