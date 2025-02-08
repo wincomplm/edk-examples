@@ -1,25 +1,12 @@
 package com.wincomplm.wex.example.security.junit;
 
-import com.wincomplm.wex.junit.impl.test.JunitTestAbstract;
 import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
 import com.wincomplm.wex.testplan.doc.annotations.TestDef;
 import com.wincomplm.wex.testplan.doc.annotations.TestDef.Category;
 import com.wincomplm.wex.testplan.doc.annotations.TestDef.Execution;
 
-public class MainUiTest extends JunitTestAbstract {
+public class MainUiTest {
 
-    @Before
-    public void setUp() {
-        super.setUp();
-    }
-
-    @After
-    public void tearDown() {
-        super.tearDown();
-    }
-  
   
 // -- Functional --  
    
