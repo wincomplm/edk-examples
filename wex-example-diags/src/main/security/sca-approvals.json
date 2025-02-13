@@ -33,6 +33,11 @@
         "groupId": "org.checkerframework",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "commons-io",
+        "artifactId": "*",
+        "versions": ["*"]
     }
 ]
 
