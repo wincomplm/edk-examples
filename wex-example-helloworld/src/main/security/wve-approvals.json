@@ -1,7 +1,5 @@
 [
     {
-        "id": "com.wincomplm.wex-example-helloworld",
-        "rules": ["WVE-2022-0501","WVE-2023-0503"],
-        "falsePositives": [""]    
+        "rules": ["WVE-2022-0501","WVE-2023-0503"]
     }
 ]
