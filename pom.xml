@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-parent</artifactId>
-        <version>4.0-SNAPSHOT</version>
+        <version>4.1-SNAPSHOT</version>
     </parent>
     <properties>
         <sonar.organization>wincom-test</sonar.organization>
@@ -40,24 +40,6 @@
         </dependencies>
     </dependencyManagement>  
     <modules>
-        <module>wex-example-helloworld</module>       
-        <module>wex-example-diags</module>
-        <module>wex-example-features</module>
-        <module>wex-example-file</module> 
-        <!--<module>wex-example-security</module> -->
-        <!--<module>wex-example-commons</module> -->
-        <!--<module>wex-example-commons-ext</module> -->
-        <module>wex-example-log</module>
-        <module>wex-example-method</module>
-        <module>wex-example-promotevalidate</module>
-        <module>wex-example-queues</module>        
-        <!--  <module>wex-example-resources</module>   -->
-        <module>wex-example-rest</module>
-        <module>wex-example-tables</module>
-        <!--  <module>wex-example-testing</module>    -->
-        <module>wex-example-tree</module>
-        <module>wex-example-config</module>  
-        <module>wex-example-sync</module>
-        <module>wex-example-listener</module>
+
     </modules>
 </project>

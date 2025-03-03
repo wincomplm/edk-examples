@@ -8,6 +8,7 @@
     </parent>  
     <groupId>com.wincomplm</groupId>
     <artifactId>wex-example-testing</artifactId>
+    
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
@@ -23,12 +24,17 @@
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>
-            <artifactId>wex-junit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wincomplm</groupId>
             <artifactId>wex-testplan-doc-annotations</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>4.16.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
     </dependencies> 
 </project>
