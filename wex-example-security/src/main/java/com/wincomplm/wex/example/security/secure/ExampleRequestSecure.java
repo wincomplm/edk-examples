@@ -13,6 +13,7 @@ import com.wincomplm.wex.security.commons.impl.WexPerUserRateLimiter;
 import com.wincomplm.wex.security.commons.impl.WexSecureRequestWrapper;
 import com.wincomplm.wex.security.commons.impl.WexSanitizer;
 import com.wincomplm.wex.security.commons.impl.WexSecurePage;
+import com.wincomplm.wex.security.commons.impl.access.WexAdminCheckAccess;
 import com.wincomplm.wex.wt.framework.commons.system.WTConstants;
 import java.util.concurrent.TimeUnit;
 import javax.servlet.http.HttpServletRequest;
@@ -29,7 +30,10 @@ public class ExampleRequestSecure {
 
     @WexMethod(name = "get-example-data", description = "Get example")
     public void getExampleData(HttpServletRequest httprequestUnsafe, HttpServletResponse httpresponse) throws Exception { 
-        WexSecurePage.secureSiteAdminOnly();
+        
+        if (!WexAdminCheckAccess.instance.isSiteOrBusinessAdmin()) {
+            httpresponse.sendError(403, "User is not an administrator.");
+        }       
         limiter.checkException();
 
         WexSecureRequestWrapper httprequest = new WexSecureRequestWrapper(httprequestUnsafe);
