@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-example-parent</artifactId>
-        <version>1.27</version>
+        <version>1.28</version>
     </parent>
     <properties>
         <major>1</major>
@@ -38,5 +38,5 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-security-commons</artifactId>
         </dependency>
-    </dependencies> 
+    </dependencies>
 </project>
