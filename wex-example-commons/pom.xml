@@ -3,23 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-example-parent</artifactId>
-        <version>1.27</version>
-    </parent>
-    <groupId>com.wincomplm</groupId>
+        <artifactId>wex-edk-examples</artifactId>
+        <version>2.0</version>
+    </parent>    
     <artifactId>wex-example-commons</artifactId>
-    <version>1.0-${wex.wt}</version>
     <packaging>jar</packaging>
+    <version>${examples.wt.version}</version>
     <properties>
-        <wex.activate>false</wex.activate>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <wex.package>false</wex.package>
     </properties>
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
             <artifactId>windchill-pdmlink</artifactId>      
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>

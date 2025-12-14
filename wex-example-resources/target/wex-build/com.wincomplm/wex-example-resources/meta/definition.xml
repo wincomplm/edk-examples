@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wex-definition>
+  <meta>
+    <group-id>com.wincomplm</group-id>
+    <artifact-id>wex-example-resources</artifact-id>
+    <display-name>Example - Resources</display-name>
+    <system>false</system>
+    <description>Shows how to load resources</description>
+  </meta>
+  <build>
+    <version>
+      <major>2</major>
+      <minor>0</minor>
+      <beta/>
+      <revision/>
+    </version>
+    <host>
+      <release>13.0</release>
+    </host>
+  </build>
+  <build-ext>
+    <snapshot>false</snapshot>
+    <windchill>13.0.1</windchill>
+    <version>2.0</version>
+  </build-ext>
+</wex-definition>

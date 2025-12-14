@@ -1,40 +1,66 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-      
-  <modelVersion>4.0.0</modelVersion>
-      
-<parent>
-    <groupId>com.wincomplm</groupId>
-    <artifactId>wex-example-parent</artifactId>
-    <version>1.27</version>
-</parent>
-      
-  <artifactId>wex-example-pack</artifactId>
-  <version>1.8</version>      
-  <packaging>pom</packaging>
-      
-  <modules>         
-    <module>wex-example-parent</module>         
-    <module>wex-example-config</module>         
-    <module>wex-example-diags</module>           
-    <module>wex-example-features</module>           
-    <module>wex-example-listener</module>            
-    <module>wex-example-log</module>           
-    <module>wex-example-method</module>       
-    <module>wex-example-queues</module>       
-    <module>wex-example-rest</module>       
-    <module>wex-example-tables</module>        
-    <module>wex-example-tree</module>    
-    <module>wex-example-ui</module>               
-    <!--<module>wex-example-wizard</module>-->       
-    <module>wex-example-file</module>     
-    <module>wex-example-resources</module>
-    <module>wex-example-security</module>
-    <module>wex-example-promotevalidate</module>    
-    <module>wex-example-commons</module>    
-    <module>wex-example-commons-ext</module>    
-  </modules>
-      
-  <name>wex-example-pack</name>
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.wincomplm</groupId>
+        <artifactId>wex-parent</artifactId>
+        <version>4.4</version>
+    </parent>
+    <properties>
+        <sonar.organization>wincom-test</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <wex.security.scaadb>https://raw.githubusercontent.com/wincomplm/edk/main/external/sca-approvals.json</wex.security.scaadb>
+
+        <examples.version.major>2</examples.version.major>
+        <examples.version.minor>0</examples.version.minor>
+        <examples.version.snapshot.string></examples.version.snapshot.string>
+        <examples.version.snapshot>false</examples.version.snapshot>
+        <examples.version.beta></examples.version.beta>
+        <examples.version.beta.string></examples.version.beta.string>
+        <examples.version>${examples.version.major}.${examples.version.minor}${examples.version.beta.string}${examples.version.snapshot.string}</examples.version>
+        <examples.wt.version>${examples.version.major}.${examples.version.minor}${examples.version.beta.string}-${wex.wt}${examples.version.snapshot.string}</examples.wt.version>
+            
+        <major>${examples.version.major}</major>
+        <minor>${examples.version.minor}</minor>
+        <beta>${examples.version.beta}</beta>
+        <snapshot>${examples.version.snapshot}</snapshot>
+     
+    </properties>
+    <artifactId>wex-edk-examples</artifactId>
+    <version>2.0</version>
+    <packaging>pom</packaging>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.wincomplm</groupId>
+                <artifactId>wex-example-commons</artifactId>
+                <version>${examples.wt.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>  
+    <modules>
+        <module>wex-example-config</module>
+        <module>wex-example-listener</module>
+        <module>wex-example-queues</module>
+        <!--  <module>wex-example-commons</module> -->
+        <module>wex-example-diags</module>
+        <module>wex-example-features</module>
+        <module>wex-example-file</module>
+        <module>wex-example-helloworld</module>
+        <module>wex-example-listener</module> 
+        <module>wex-example-log</module>
+        <module>wex-example-method</module>
+        <module>wex-example-parent</module>
+        <module>wex-example-promotevalidate</module>
+        <module>wex-example-resources</module>
+        <module>wex-example-rest</module>
+        <module>wex-example-security</module>
+        <module>wex-example-sync</module>
+        <module>wex-example-tables</module>
+        <module>wex-example-testing</module>
+        <module>wex-example-tree</module>
+        <module>wex-example-ui</module>
+        <module>wex-example-wizard</module>
+    </modules>
 </project>

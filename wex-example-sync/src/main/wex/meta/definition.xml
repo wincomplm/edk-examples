@@ -1,0 +1,22 @@
+    <wex-definition>
+    <meta>
+        <group-id>${groupId}</group-id>      
+        <artifact-id>${artifactId}</artifact-id>      
+        <display-name>Example - Sync</display-name>
+        <system>false</system> 
+        <description>Simple example to show how resource synchronization works</description>  
+    </meta>
+    <approval>
+        <approved>windchill-plus</approved>
+    </approval>
+    <build>
+        <version>
+            <major>${major}</major>
+            <minor>${minor}</minor>
+            <beta>${beta}</beta>
+        </version>
+        <host>
+            <release>${wex.wt}</release>
+        </host>
+    </build>
+</wex-definition>

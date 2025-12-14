@@ -3,19 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-example-parent</artifactId>
-        <version>1.27</version>
-    </parent>
-    <properties>
-        <major>1</major>
-        <minor>18</minor>
-        <beta></beta>
-        <revision>${major}.${minor}${beta}-${wex.wt}</revision>
-    </properties>
-    <groupId>com.wincomplm</groupId>
+        <artifactId>wex-edk-examples</artifactId>
+        <version>2.0</version>
+    </parent>  
     <artifactId>wex-example-security</artifactId>
-    <version>${revision}</version>
-    <packaging>jar</packaging>
+    <version>${examples.wt.version}</version>
+
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
@@ -28,10 +21,6 @@
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-system</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wincomplm</groupId>
-            <artifactId>wex-junit</artifactId>
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>
@@ -55,7 +44,6 @@
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-framework-commons</artifactId>
-            <version>1.13-${wex.wt}</version>
         </dependency>
 
         <dependency>
@@ -74,6 +62,11 @@
                     <artifactId>slf4j-api</artifactId>
                 </exclusion>                             
             </exclusions> 
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
         </dependency>
     </dependencies> 
 </project>

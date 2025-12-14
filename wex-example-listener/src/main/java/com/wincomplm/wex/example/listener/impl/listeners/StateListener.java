@@ -32,7 +32,7 @@ public class StateListener implements IWexWtListener<Object> {
         WTPart part = (WTPart) target;
         
         // Use a warning logger (which always logs) to print the number of the part 
-        logger.warn("A part has changed state {0} to {1}",part.getNumber(),part.getState().toString());
+        logger.warn("[L1]  A part has changed state {0} to {1}",part.getNumber(),part.getState().toString());
     
     }
     

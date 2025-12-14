@@ -18,6 +18,11 @@
         "groupId": "commons-io",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "commons-fileupload",
+        "artifactId": "*",
+        "versions": ["*"]
     }
 ]
 

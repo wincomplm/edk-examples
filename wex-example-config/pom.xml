@@ -3,20 +3,20 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wincomplm</groupId>
-        <artifactId>wex-example-parent</artifactId>
-        <version>1.27</version>    
-    </parent>
-    <properties>
-        <major>1</major>
-        <minor>9</minor>
-        <beta></beta>
-        <revision>${major}.${minor}-${wex.wt}</revision>
-    </properties>
-    <groupId>com.wincomplm</groupId>
+        <artifactId>wex-edk-examples</artifactId>
+        <version>2.0</version>
+    </parent>  
     <artifactId>wex-example-config</artifactId>
-    <version>${revision}</version>
-    <packaging>jar</packaging>
-    <name>wex-example-config</name>
+     
+    <properties>
+        <major>2</major>
+        <minor>0</minor>
+        <beta></beta>
+        <snapshot>false</snapshot>
+    </properties> 
+    <version>${major}.${minor}-${wex.wt}</version>
+    
+    
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
@@ -33,15 +33,12 @@
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-config</artifactId>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>com.wincomplm</groupId>
-            <artifactId>wex-config-aux</artifactId>
         </dependency>
         <dependency>
             <groupId>com.wincomplm</groupId>
             <artifactId>wt-security-commons</artifactId>
         </dependency>
-    </dependencies> 
+
+    </dependencies>
+    <name>wex-example-config</name>
 </project>
