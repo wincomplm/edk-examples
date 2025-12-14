@@ -40,6 +40,8 @@
         </dependencies>
     </dependencyManagement>  
     <modules>
-
+        <module>wex-example-config</module>
+        <module>wex-example-listener</module>
+        <module>wex-example-queues</module>
     </modules>
 </project>
