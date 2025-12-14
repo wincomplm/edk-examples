@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wex-definition>
+  <meta>
+    <group-id>com.wincomplm</group-id>
+    <artifact-id>wex-example-wizard</artifact-id>
+    <display-name>Example - Wizard</display-name>
+    <system>false</system>
+    <description>Extension wizard example</description>
+  </meta>
+  <build>
+    <version>
+      <major>2</major>
+      <minor>0</minor>
+      <beta/>
+      <revision/>
+    </version>
+    <host>
+      <release>13.0</release>
+    </host>
+  </build>
+  <install>
+    <menus>
+      <extension action="edkWizard" file="PartClient-actionmodels" menu="more parts actions"/>
+    </menus>
+    <actions>
+      <wizard class="com.wincomplm.wex.kernel.impl.forms.WexObjectFormProcessor" name="edkWizard" shortcut="false" url="edkWizard.jsp?wex-form-processor=com.wincomplm.wex-example-wizard.ExampleWizardFormProcessor"/>
+      <wizard-step name="edkWizardStep1" url="edkWizardStep1.jsp"/>
+      <wizard-step name="edkWizardStep2" preloadWizardPage="false" url="edkWizardStep2.jsp"/>
+    </actions>
+  </install>
+  <build-ext>
+    <snapshot>false</snapshot>
+    <windchill>13.0.1</windchill>
+    <version>2.0-13.0</version>
+  </build-ext>
+</wex-definition>
