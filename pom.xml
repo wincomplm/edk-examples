@@ -62,5 +62,6 @@
         <module>wex-example-tree</module>
         <module>wex-example-ui</module>
         <module>wex-example-wizard</module>
+        <module>wex-example-api</module>
     </modules>
 </project>

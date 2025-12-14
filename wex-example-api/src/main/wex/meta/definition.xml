@@ -1,0 +1,29 @@
+<wex-definition>
+    <meta>
+        <group-id>com.wincomplm</group-id>   
+        <artifact-id>wex-example-api</artifact-id>
+        <display-name>Example API</display-name>
+        <system>false</system>   
+        <description>Example API</description>
+    </meta>
+   <build>
+        <version>
+            <major>${major}</major>
+            <minor>${minor}</minor>
+            <beta>${beta}</beta>
+            <revision>${revision}</revision>
+        </version>
+        <host>
+            <release>${wex.wt}</release>
+        </host>
+    </build>
+    <additional>
+        <trial/>
+        <timestamp>0</timestamp>
+        <expires>0</expires>
+        <client-id/>
+        <client-name/>
+        <user-id/>
+    </additional>
+
+</wex-definition>
