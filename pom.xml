@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-parent</artifactId>
-        <version>4.1-SNAPSHOT</version>
+        <version>4.4</version>
     </parent>
     <properties>
         <sonar.organization>wincom-test</sonar.organization>
@@ -14,8 +14,8 @@
 
         <examples.version.major>2</examples.version.major>
         <examples.version.minor>0</examples.version.minor>
-        <examples.version.snapshot.string>-SNAPSHOT</examples.version.snapshot.string>
-        <examples.version.snapshot>true</examples.version.snapshot>
+        <examples.version.snapshot.string></examples.version.snapshot.string>
+        <examples.version.snapshot>false</examples.version.snapshot>
         <examples.version.beta></examples.version.beta>
         <examples.version.beta.string></examples.version.beta.string>
         <examples.version>${examples.version.major}.${examples.version.minor}${examples.version.beta.string}${examples.version.snapshot.string}</examples.version>
@@ -26,9 +26,9 @@
         <beta>${examples.version.beta}</beta>
         <snapshot>${examples.version.snapshot}</snapshot>
      
-     </properties>
+    </properties>
     <artifactId>wex-edk-examples</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>2.0</version>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
