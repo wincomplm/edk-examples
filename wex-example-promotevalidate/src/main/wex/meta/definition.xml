@@ -2,7 +2,7 @@
     <meta>
         <group-id>${groupId}</group-id>      
         <artifact-id>${artifactId}</artifact-id>      
-        <display-name>Example - Promote Validate</display-name>
+        <display-name>EDK Examples - Promote Validate</display-name>
         <system>false</system> 
         <description>Promote Validate examples</description>  
     </meta>

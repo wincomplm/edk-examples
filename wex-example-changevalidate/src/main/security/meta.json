@@ -1,0 +1,31 @@
+{
+    "level":"B",
+    "approval": {
+        "review": { "name":"Ellis Douglas", "date":"" },
+        "approve": { "name":"Simon Heath", "date":"" },
+        "ptcapprove": { "name":"", "date":"" }
+    },    
+    "suppress": [],
+    "assessments": {
+        "LevelA": [
+            { "desc":"Offers services to other systems",                    "valid":"true" },
+            { "desc":"Server to server with other systems",                 "valid":"true" },
+            { "desc":"Browser based communication with other systems",      "valid":"true" },
+            { "desc":"Stores and manages credentials",                      "valid":"true" },
+            { "desc":"Any direct database access",                          "valid":"true" }
+        ],    
+        "LevelB": [
+            { "desc":"Escalation privilage access to Windchill",            "valid":"true" },
+            { "desc":"Administration Only UIs",                             "valid":"true" },
+            { "desc":"Direct access UIs e.g. downloads",                    "valid":"true" },
+            { "desc":"Requires XSS/CSRF testing",                           "valid":"true" }
+            
+        ],
+        "LevelC": [
+            { "desc":"Implements a Windchill UI",                           "valid":"true" }
+        ]                 
+    }
+}
+       
+
+      
