@@ -43,7 +43,7 @@ public class ExampleMethods {
     
     @WexMethod(name = "single-value", description = "A simple single value example")
     public String singleValue(String param) throws Exception {
-        return "Hello " + param;
+        return param;
     }//exampleMethod
 
     
