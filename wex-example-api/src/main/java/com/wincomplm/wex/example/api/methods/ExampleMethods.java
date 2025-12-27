@@ -28,17 +28,17 @@ public class ExampleMethods {
         row1.add("ACME");
         row1.add("Bolt");
         List<String> row2 = new ArrayList();
-        row1.add("123456");
-        row1.add("ACME");
-        row1.add("Screw");        
+        row2.add("123456");
+        row2.add("ACME");
+        row2.add("Screw");        
         List<String> row3 = new ArrayList();
-        row1.add("12347");
-        row1.add("ACME");
-        row1.add("Rocket");
+        row3.add("12347");
+        row3.add("ACME");
+        row3.add("Rocket");
         result.add(row1);
         result.add(row2);
         result.add(row3);
-        return new ArrayList();
+        return result;
     }//exampleMethod
     
     @WexMethod(name = "single-value", description = "A simple single value example")
