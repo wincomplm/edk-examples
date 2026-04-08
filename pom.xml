@@ -43,12 +43,11 @@
         <module>wex-example-config</module>
         <module>wex-example-listener</module>
         <module>wex-example-queues</module>
-        <!--  <module>wex-example-commons</module> -->
+        <module>wex-example-commons</module>
         <module>wex-example-diags</module>
         <module>wex-example-features</module>
         <module>wex-example-file</module>
         <module>wex-example-helloworld</module>
-        <module>wex-example-listener</module> 
         <module>wex-example-log</module>
         <module>wex-example-method</module>
         <module>wex-example-parent</module>
