@@ -18,20 +18,30 @@ public class WexTableRow {
     static IWexLogger logger = WexLogger.getLogger(WexTableRow.class);
 
     
-    public static WexTableRow newWexTableRow(String data) {
+    public static WexTableRow newWexTableRow(String name,String nickName) {
         WexTableRow row = new WexTableRow();
-        row.data=data;
+        row.name=name;
+        row.nickName=nickName;
         return row;
     }
     
-    public String data;
+    public String name;
+    public String nickName;
 
-    public String getData() {
-        return data;
+    public String getName() {
+        return name;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
     
         

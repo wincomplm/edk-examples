@@ -41,8 +41,9 @@ public class WexTableBuilder extends AbstractConfigurableTableBuilder {
         JcaTableConfig table = (JcaTableConfig) factory.newTableConfig();
         table.setSelectable(false);
         table.setConfigurable(false);
-        table.setLabel("Title");
-        addColumn(factory, "number", "wex-default-du", "Number", 200, table);
+        table.setLabel("Example Table");
+        addColumn(factory, "wex-example-table-name", "wex-default-du", "Name", 200, table);
+        addColumn(factory, "wex-example-table-nick", "wex-default-du", "Nick Name", 200, table);
         
         logger.trace("<=buildComponentConfig");
         return table;
@@ -64,7 +65,9 @@ public class WexTableBuilder extends AbstractConfigurableTableBuilder {
     public Object buildComponentData(ComponentConfig cc, ComponentParams cp) throws Exception {
         logger.trace("=>buildComponentData {0} {1}", cc, cp);
         Collection<WexTableRow> result = new ArrayList();
-        result.add(WexTableRow.newWexTableRow("Row 1"));
+        result.add(WexTableRow.newWexTableRow("Robert","Bobby"));
+        result.add(WexTableRow.newWexTableRow("Simon","Mr Chessy"));
+        result.add(WexTableRow.newWexTableRow("Gemma","Little Miss Happy"));
         logger.trace("<=buildComponentData");
         return result;
     }//buildComponentData

@@ -21,6 +21,12 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-system</artifactId>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <description>Simple Hello World that show the basic concept of an extension</description>
 </project>

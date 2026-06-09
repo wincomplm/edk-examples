@@ -13,7 +13,14 @@
         "groupId": "com.fasterxml",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "log4j",
+        "artifactId": "*",
+        "versions": ["*"]
     }
+    
+    
 ]
 
 

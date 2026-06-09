@@ -8,7 +8,10 @@ package com.wincomplm.wex.example.method.methods;
 
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
-import wt.session.SessionHelper;
+import wt.fc.PersistenceServerHelper;
+import wt.fc.QueryResult;
+import wt.part.WTPart;
+import wt.query.QuerySpec;
 
 /**
  * A few example to demonstrate how to declare a wex method
@@ -39,7 +42,29 @@ public class ExampleMethods {
 
     @WexMethod(name = "userName", description = "A simple method example")
     public String userName() throws Exception {
-        return SessionHelper.getPrincipal().getName();
+        QuerySpec qs = new QuerySpec(WTPart.class);
+
+        // Optional: only get latest iterations
+        qs.appendWhere(
+            new wt.query.SearchCondition(
+                WTPart.class,
+                WTPart.LATEST_ITERATION,
+                wt.query.SearchCondition.IS_TRUE
+            ),
+            new int[]{0}
+        );
+
+        //QueryResult qr = PersistenceHelper.manager.find(qs);
+        QueryResult qr = PersistenceServerHelper.manager.query(qs);
+
+         String result = "";
+        while (qr.hasMoreElements()) {
+            WTPart part = (WTPart) qr.nextElement();
+            result+=part.getNumber() + " ";
+        }
+        return result;
+       
+      // return SessionHelper.getPrincipal().getName();
     }//exampleMethod
     
 }
