@@ -26,5 +26,9 @@
             <groupId>com.wincomplm</groupId>
             <artifactId>wex-log</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.wincomplm</groupId>
+            <artifactId>wex-wt-framework</artifactId>
+        </dependency>
     </dependencies> 
 </project>

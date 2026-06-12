@@ -44,6 +44,7 @@ public class WexTableBuilder extends AbstractConfigurableTableBuilder {
         table.setLabel("Example Table");
         addColumn(factory, "wex-example-table-name", "wex-default-du", "Name", 200, table);
         addColumn(factory, "wex-example-table-nick", "wex-default-du", "Nick Name", 200, table);
+        addColumn(factory, "wex-example-table-project", "wex-default-du", "Project", 200, table);
         
         logger.trace("<=buildComponentConfig");
         return table;
