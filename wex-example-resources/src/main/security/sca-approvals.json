@@ -40,7 +40,7 @@
         "versions": ["*"]
     },
     {
-        "groupId": "com.google.code.gson",
+        "groupId": "com.google",
         "artifactId": "*",
         "versions": ["*"]
     },

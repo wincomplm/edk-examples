@@ -13,7 +13,6 @@
         <beta></beta>
         <snapshot>false</snapshot>
     </properties> 
-    <version>${major}.${minor}-${wex.wt}</version>
     
     <dependencies>
         <dependency>

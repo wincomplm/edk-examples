@@ -83,7 +83,18 @@
         "groupId": "com.google",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "org.seleniumhq",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "ju",
+        "artifactId": "*",
+        "versions": ["*"]
     }
+
 
 ]
 

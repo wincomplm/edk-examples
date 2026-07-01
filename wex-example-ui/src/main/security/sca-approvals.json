@@ -33,6 +33,16 @@
         "groupId": "commons-io",
         "artifactId": "*",
         "versions": ["*"]
+    },
+    {
+        "groupId": "com.google",
+        "artifactId": "*",
+        "versions": ["*"]
+    },
+    {
+        "groupId": "junit.junit",
+        "artifactId": "*",
+        "versions": ["*"]
     }
 ]
 
