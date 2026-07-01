@@ -8,7 +8,6 @@
     </parent>    
     <artifactId>wex-example-commons</artifactId>
     <packaging>jar</packaging>
-    <version>${examples.wt.version}</version>
     <properties>
         <wex.package>false</wex.package>
     </properties>
