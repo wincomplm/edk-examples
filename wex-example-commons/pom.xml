@@ -25,5 +25,4 @@
             <artifactId>wex-kernel</artifactId>
         </dependency>
     </dependencies>
-    <name>wex-example-commons</name>
 </project>

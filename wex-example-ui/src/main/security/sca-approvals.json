@@ -40,10 +40,11 @@
         "versions": ["*"]
     },
     {
-        "groupId": "junit.junit",
+        "groupId": "junit",
         "artifactId": "*",
         "versions": ["*"]
     }
+
 ]
 
 

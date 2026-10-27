@@ -8,10 +8,6 @@
         <version>4.4</version>
     </parent>
     <properties>
-        <sonar.organization>wincom-test</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <wex.security.scaadb>https://raw.githubusercontent.com/wincomplm/edk/main/external/sca-approvals.json</wex.security.scaadb>
-
         <examples.version.major>2</examples.version.major>
         <examples.version.minor>0</examples.version.minor>
         <examples.version.snapshot.string></examples.version.snapshot.string>
@@ -25,7 +21,8 @@
         <minor>${examples.version.minor}</minor>
         <beta>${examples.version.beta}</beta>
         <snapshot>${examples.version.snapshot}</snapshot>
-     
+        <version>${examples.wt.version}</version>
+
     </properties>
     <artifactId>wex-edk-examples</artifactId>
     <version>2.0</version>
@@ -39,28 +36,26 @@
             </dependency>
         </dependencies>
     </dependencyManagement>  
-    <modules>
+    <modules>     
+        <module>wex-example-helloworld</module> 
         <module>wex-example-config</module>
         <module>wex-example-listener</module>
         <module>wex-example-queues</module>
-        <!--- <module>wex-example-commons</module> -->
         <module>wex-example-diags</module>
         <module>wex-example-features</module>
         <module>wex-example-file</module>
-        <module>wex-example-helloworld</module>
         <module>wex-example-log</module>
         <module>wex-example-method</module>
         <module>wex-example-parent</module>
-        <module>wex-example-promotevalidate</module>
         <module>wex-example-resources</module>
         <module>wex-example-rest</module>
         <module>wex-example-security</module>
         <module>wex-example-sync</module>
         <module>wex-example-tables</module>
         <module>wex-example-testing</module>
-        <module>wex-example-tree</module>
+        <module>wex-example-tree</module> 
         <module>wex-example-ui</module>
         <module>wex-example-wizard</module>
-        <module>wex-example-api</module>
+        <module>wex-example-api</module>  
     </modules>
 </project>

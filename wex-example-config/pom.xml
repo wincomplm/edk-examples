@@ -14,7 +14,7 @@
         <beta></beta>
         <snapshot>false</snapshot>
     </properties> 
-    <version>${major}.${minor}-${wex.wt}</version>
+    <version>${examples.wt.version}</version>
     
     
     <dependencies>

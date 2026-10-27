@@ -7,7 +7,8 @@
         <version>2.0</version>
     </parent>  
     <artifactId>wex-example-helloworld</artifactId>
-    
+    <version>${examples.wt.version}</version>
+
     <dependencies>
         <dependency>
             <groupId>com.ptc</groupId>
