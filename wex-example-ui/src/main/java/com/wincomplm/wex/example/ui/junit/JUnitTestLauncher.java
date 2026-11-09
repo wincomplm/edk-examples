@@ -11,8 +11,7 @@ package com.wincomplm.wex.example.ui.junit;
 import com.wincomplm.wex.kernel.api.invoke.WexInvoker;
 import com.wincomplm.wex.kernel.impl.annotations.WexComponent;
 import com.wincomplm.wex.kernel.impl.annotations.WexMethod;
-import com.wincomplm.wex.servlet.support.WexServletRequestWrapper;
-import com.wincomplm.wex.servlet.support.WexServletResponseWrapper;
+import com.wincomplm.wex.security.commons.impl.WexSecureRequestWrapper;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -26,10 +25,9 @@ public class JUnitTestLauncher {
     @WexMethod(name = "run", description = "Run junit tests")
     public void run(HttpServletRequest httprequest, HttpServletResponse httpresponse) throws Exception {
         
-        WexServletRequestWrapper wRequest = new WexServletRequestWrapper(httprequest);
-        WexServletResponseWrapper wResponse = new WexServletResponseWrapper(httpresponse);
+        WexSecureRequestWrapper wRequest = new WexSecureRequestWrapper(httprequest);
         
-        WexInvoker.invoke("com.wincomplm.wex-junit","junit-methods.runTest",wRequest, wResponse,MainUiTest.class);
+        WexInvoker.invoke("com.wincomplm.wex-junit","junit-methods.runTest",wRequest, httpresponse,MainUiTest.class);
     }
 
 }

@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.wincomplm</groupId>
         <artifactId>wex-parent</artifactId>
-        <version>4.4</version>
+        <version>4.20</version>
     </parent>
     <properties>
         <examples.version.major>2</examples.version.major>
@@ -47,7 +47,6 @@
         <module>wex-example-log</module>
         <module>wex-example-method</module>
         <module>wex-example-parent</module>
-        <module>wex-example-resources</module>
         <module>wex-example-rest</module>
         <module>wex-example-security</module>
         <module>wex-example-sync</module>
